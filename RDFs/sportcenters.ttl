@@ -2,6 +2,7 @@
 @prefix safeair: <http://safeare.es/project/ontology/SafeAir#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 
@@ -9,779 +10,779 @@
 <http://safeair.es/project/resources/SportPark/49338> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL ALBERTO GARCA" ;
 	vcard:street-address "CALLE REGUERA DE TOMATEROS, 39B" ;
-	vcard:postal-code "28053" ;
+	vcard:postal-code "28053"^^xsd:int ;
 	vcard:region "ENTREVIAS" ;
 	vcard:locality "PUENTE DE VALLECAS" ;
-	geo:lat "40.3724214180634" ;
-	geo:long "-3.6574515621755106" ;
-	safeair:isClosestTo "28079040" ;
-	safeair:locId "49338" .
+	geo:lat "40.3724214180634"^^xsd:double ;
+	geo:long "-3.6574515621755106"^^xsd:double ;
+	safeair:isClosestTo "28079040"^^xsd:int ;
+	safeair:locId "49338"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/10183549> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL ALCANTARA" ;
 	vcard:street-address "CALLE ALCANTARA" ;
-	vcard:postal-code "28006" ;
+	vcard:postal-code "28006"^^xsd:int ;
 	vcard:region "GOYA" ;
 	vcard:locality "SALAMANCA" ;
-	geo:lat "40.4281029153811" ;
-	geo:long "-3.6737317205040494" ;
-	safeair:isClosestTo "28079008" ;
-	safeair:locId "10183549" .
+	geo:lat "40.4281029153811"^^xsd:double ;
+	geo:long "-3.6737317205040494"^^xsd:double ;
+	safeair:isClosestTo "28079008"^^xsd:int ;
+	safeair:locId "10183549"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/114782> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL ALFREDO GOYENECHE" ;
 	vcard:street-address "CALLE ARROYO DE POZUELO" ;
-	vcard:postal-code "28023" ;
+	vcard:postal-code "28023"^^xsd:int ;
 	vcard:region "ARAVACA" ;
 	vcard:locality "MONCLOA-ARAVACA" ;
-	geo:lat "40.4521213501285" ;
-	geo:long "-3.78328320371919" ;
-	safeair:isClosestTo "28079024" ;
-	safeair:locId "114782" .
+	geo:lat "40.4521213501285"^^xsd:double ;
+	geo:long "-3.78328320371919"^^xsd:double ;
+	safeair:isClosestTo "28079024"^^xsd:int ;
+	safeair:locId "114782"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4696> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL ALUCHE" ;
 	vcard:street-address "AVENIDA DE LAS AGUILAS" ;
-	vcard:postal-code "28044" ;
+	vcard:postal-code "28044"^^xsd:int ;
 	vcard:region "LAS AGUILAS" ;
 	vcard:locality "LATINA" ;
-	geo:lat "40.382720517194706" ;
-	geo:long "-3.77365360088156" ;
-	safeair:isClosestTo "28079018" ;
-	safeair:locId "4696" .
+	geo:lat "40.382720517194706"^^xsd:double ;
+	geo:long "-3.77365360088156"^^xsd:double ;
+	safeair:isClosestTo "28079018"^^xsd:int ;
+	safeair:locId "4696"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/99578> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL BARAJAS" ;
 	vcard:street-address "AVENIDA LOGROO" ;
-	vcard:postal-code "28042" ;
+	vcard:postal-code "28042"^^xsd:int ;
 	vcard:region "ALAMEDA DE OSUNA" ;
 	vcard:locality "BARAJAS" ;
-	geo:lat "40.4630138280965" ;
-	geo:long "-3.58769332407462" ;
-	safeair:isClosestTo "28079055" ;
-	safeair:locId "99578" .
+	geo:lat "40.4630138280965"^^xsd:double ;
+	geo:long "-3.58769332407462"^^xsd:double ;
+	safeair:isClosestTo "28079055"^^xsd:int ;
+	safeair:locId "99578"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/10051058> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL BARCEL" ;
 	vcard:street-address "MERCADO BARCELO" ;
-	vcard:postal-code "28004" ;
+	vcard:postal-code "28004"^^xsd:int ;
 	vcard:region "JUSTICIA/ CENTRO" ;
-	geo:lat "40.4267106934776" ;
-	geo:long "-3.6988277636112703" ;
-	safeair:isClosestTo "28079035" ;
-	safeair:locId "10051058" .
+	geo:lat "40.4267106934776"^^xsd:double ;
+	geo:long "-3.6988277636112703"^^xsd:double ;
+	safeair:isClosestTo "28079035"^^xsd:int ;
+	safeair:locId "10051058"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4705> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL CASA DE CAMPO" ;
 	vcard:street-address "PASEO PUERTA DEL ANGEL" ;
-	vcard:postal-code "28011" ;
+	vcard:postal-code "28011"^^xsd:int ;
 	vcard:region "CASA DE CAMPO" ;
 	vcard:locality "MONCLOA-ARAVACA" ;
-	geo:lat "40.416126287892" ;
-	geo:long "-3.7335365736416204" ;
-	safeair:isClosestTo "28079024" ;
-	safeair:locId "4705" .
+	geo:lat "40.416126287892"^^xsd:double ;
+	geo:long "-3.7335365736416204"^^xsd:double ;
+	safeair:isClosestTo "28079024"^^xsd:int ;
+	safeair:locId "4705"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/78960> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL CENTRO INTEGRADO ARGANZUELA" ;
 	vcard:street-address "CALLE CANARIAS" ;
-	vcard:postal-code "28045" ;
+	vcard:postal-code "28045"^^xsd:int ;
 	vcard:region "PALOS DE MOGUER" ;
 	vcard:locality "ARGANZUELA" ;
-	geo:lat "40.4020727986286" ;
-	geo:long "-3.6955325387824" ;
-	safeair:isClosestTo "28079047" ;
-	safeair:locId "78960" .
+	geo:lat "40.4020727986286"^^xsd:double ;
+	geo:long "-3.6955325387824"^^xsd:double ;
+	safeair:isClosestTo "28079047"^^xsd:int ;
+	safeair:locId "78960"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4687> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL CERRO ALMODVAR" ;
 	vcard:street-address "CALLE CERRO DE ALMODOVAR" ;
-	vcard:postal-code "28007" ;
+	vcard:postal-code "28007"^^xsd:int ;
 	vcard:region "SANTA EUGENIA" ;
 	vcard:locality "VILLA DE VALLECAS" ;
-	geo:lat "40.3816857061153" ;
-	geo:long "-3.60233646095348" ;
-	safeair:isClosestTo "28079054" ;
-	safeair:locId "4687" .
+	geo:lat "40.3816857061153"^^xsd:double ;
+	geo:long "-3.60233646095348"^^xsd:double ;
+	safeair:isClosestTo "28079054"^^xsd:int ;
+	safeair:locId "4687"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4700> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL CHAMARTN" ;
 	vcard:street-address "AVENIDA PIO XII" ;
-	vcard:postal-code "28016" ;
+	vcard:postal-code "28016"^^xsd:int ;
 	vcard:region "NUEVA ESPAA" ;
 	vcard:locality "CHAMARTIN" ;
-	geo:lat "40.4611334983069" ;
-	geo:long "-3.67620824606112" ;
-	safeair:isClosestTo "28079011" ;
-	safeair:locId "4700" .
+	geo:lat "40.4611334983069"^^xsd:double ;
+	geo:long "-3.67620824606112"^^xsd:double ;
+	safeair:isClosestTo "28079011"^^xsd:int ;
+	safeair:locId "4700"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/6208448> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL CIRCUITO BMX" ;
 	vcard:street-address "CALLE EMBAJADORES" ;
-	vcard:postal-code "28045" ;
+	vcard:postal-code "28045"^^xsd:int ;
 	vcard:region "LEGAZPI" ;
 	vcard:locality "ARGANZUELA" ;
-	geo:lat "40.385539006771204" ;
-	geo:long "-3.6898722494765295" ;
-	safeair:isClosestTo "28079047" ;
-	safeair:locId "6208448" .
+	geo:lat "40.385539006771204"^^xsd:double ;
+	geo:long "-3.6898722494765295"^^xsd:double ;
+	safeair:isClosestTo "28079047"^^xsd:int ;
+	safeair:locId "6208448"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4702> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL CIUDAD DE LOS POETAS" ;
 	vcard:street-address "CALLE ANTONIO MACHADO" ;
-	vcard:postal-code "28035" ;
+	vcard:postal-code "28035"^^xsd:int ;
 	vcard:region "VALDEZARZA" ;
 	vcard:locality "MONCLOA-ARAVACA" ;
-	geo:lat "40.4659206780808" ;
-	geo:long "-3.7189325594658498" ;
-	safeair:isClosestTo "28079039" ;
-	safeair:locId "4702" .
+	geo:lat "40.4659206780808"^^xsd:double ;
+	geo:long "-3.7189325594658498"^^xsd:double ;
+	safeair:isClosestTo "28079039"^^xsd:int ;
+	safeair:locId "4702"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4672> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL CONCEPCIN" ;
 	vcard:street-address "CALLE JOSE DEL HIERRO" ;
-	vcard:postal-code "28027" ;
+	vcard:postal-code "28027"^^xsd:int ;
 	vcard:region "CONCEPCION" ;
 	vcard:locality "CIUDAD LINEAL" ;
-	geo:lat "40.437256520472495" ;
-	geo:long "-3.6484498132292" ;
-	safeair:isClosestTo "28079016" ;
-	safeair:locId "4672" .
+	geo:lat "40.437256520472495"^^xsd:double ;
+	geo:long "-3.6484498132292"^^xsd:double ;
+	safeair:isClosestTo "28079016"^^xsd:int ;
+	safeair:locId "4672"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/134059> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL DAOZ Y VELARDE 1" ;
 	vcard:street-address "PLAZA DAOIZ Y VELARDE" ;
-	vcard:postal-code "28007" ;
+	vcard:postal-code "28007"^^xsd:int ;
 	vcard:region "PACIFICO" ;
 	vcard:locality "RETIRO" ;
-	geo:lat "40.4013311774335" ;
-	geo:long "-3.67781314347642" ;
-	safeair:isClosestTo "28079047" ;
-	safeair:locId "134059" .
+	geo:lat "40.4013311774335"^^xsd:double ;
+	geo:long "-3.67781314347642"^^xsd:double ;
+	safeair:isClosestTo "28079047"^^xsd:int ;
+	safeair:locId "134059"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4726> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL DAOZ Y VELARDE 2" ;
 	vcard:street-address "CALLE ALBERCHE" ;
-	vcard:postal-code "28007" ;
+	vcard:postal-code "28007"^^xsd:int ;
 	vcard:region "PACIFICO" ;
 	vcard:locality "RETIRO" ;
-	geo:lat "40.4007991897123" ;
-	geo:long "-3.67789029703668" ;
-	safeair:isClosestTo "28079047" ;
-	safeair:locId "4726" .
+	geo:lat "40.4007991897123"^^xsd:double ;
+	geo:long "-3.67789029703668"^^xsd:double ;
+	safeair:isClosestTo "28079047"^^xsd:int ;
+	safeair:locId "4726"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/140197> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL EL ESPINILLO" ;
 	vcard:street-address "CARRETERA VILLAVERDE A VALLECAS" ;
-	vcard:postal-code "28041" ;
+	vcard:postal-code "28041"^^xsd:int ;
 	vcard:region "LOS ROSALES" ;
 	vcard:locality "VILLAVERDE" ;
-	geo:lat "40.3563419399193" ;
-	geo:long "-3.68659514182063" ;
-	safeair:isClosestTo "28079017" ;
-	safeair:locId "140197" .
+	geo:lat "40.3563419399193"^^xsd:double ;
+	geo:long "-3.68659514182063"^^xsd:double ;
+	safeair:isClosestTo "28079017"^^xsd:int ;
+	safeair:locId "140197"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/84661> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL EL OLIVILLO" ;
 	vcard:street-address "CALLE OLIVILLO" ;
-	vcard:postal-code "28011" ;
+	vcard:postal-code "28011"^^xsd:int ;
 	vcard:region "LUCERO" ;
 	vcard:locality "LATINA" ;
-	geo:lat "40.406524702214604" ;
-	geo:long "-3.74588923380108" ;
-	safeair:isClosestTo "28079024" ;
-	safeair:locId "84661" .
+	geo:lat "40.406524702214604"^^xsd:double ;
+	geo:long "-3.74588923380108"^^xsd:double ;
+	safeair:isClosestTo "28079024"^^xsd:int ;
+	safeair:locId "84661"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4676> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL ENTREVAS" ;
 	vcard:street-address "RONDA SUR" ;
-	vcard:postal-code "28053" ;
+	vcard:postal-code "28053"^^xsd:int ;
 	vcard:region "ENTREVIAS" ;
 	vcard:locality "PUENTE DE VALLECAS" ;
-	geo:lat "40.37841321270621" ;
-	geo:long "-3.67453231713748" ;
-	safeair:isClosestTo "28079040" ;
-	safeair:locId "4676" .
+	geo:lat "40.37841321270621"^^xsd:double ;
+	geo:long "-3.67453231713748"^^xsd:double ;
+	safeair:isClosestTo "28079040"^^xsd:int ;
+	safeair:locId "4676"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/6486044> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL ESCUELAS DE SAN ANTN" ;
 	vcard:street-address "CALLE FARMACIA" ;
-	vcard:postal-code "28004" ;
+	vcard:postal-code "28004"^^xsd:int ;
 	vcard:region "JUSTICIA" ;
 	vcard:locality "CENTRO" ;
-	geo:lat "40.4238267012085" ;
-	geo:long "-3.69901010326369" ;
-	safeair:isClosestTo "28079035" ;
-	safeair:locId "6486044" .
+	geo:lat "40.4238267012085"^^xsd:double ;
+	geo:long "-3.69901010326369"^^xsd:double ;
+	safeair:isClosestTo "28079035"^^xsd:int ;
+	safeair:locId "6486044"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4728> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL ESTANQUE DEL RETIRO" ;
 	vcard:street-address "PASEO COLOMBIA" ;
-	vcard:postal-code "28009" ;
+	vcard:postal-code "28009"^^xsd:int ;
 	vcard:region "LOS JERONIMOS" ;
 	vcard:locality "RETIRO" ;
-	geo:lat "40.4184360059608" ;
-	geo:long "-3.6845031319515695" ;
-	safeair:isClosestTo "28079008" ;
-	safeair:locId "4728" .
+	geo:lat "40.4184360059608"^^xsd:double ;
+	geo:long "-3.6845031319515695"^^xsd:double ;
+	safeair:isClosestTo "28079008"^^xsd:int ;
+	safeair:locId "4728"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4622862> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL FABIN RONCERO" ;
 	vcard:street-address "AVENIDA SEPTIMA" ;
-	vcard:postal-code "28022" ;
+	vcard:postal-code "28022"^^xsd:int ;
 	vcard:region "REJAS" ;
 	vcard:locality "SAN BLAS-CANILLEJAS" ;
-	geo:lat "40.4496568411444" ;
-	geo:long "-3.5975772011825002" ;
-	safeair:isClosestTo "28079059" ;
-	safeair:locId "4622862" .
+	geo:lat "40.4496568411444"^^xsd:double ;
+	geo:long "-3.5975772011825002"^^xsd:double ;
+	safeair:isClosestTo "28079059"^^xsd:int ;
+	safeair:locId "4622862"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4703> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL FERNANDO MARTN" ;
 	vcard:street-address "AVENIDA SANTO ANGEL DE LA GUARDA" ;
-	vcard:postal-code "28039" ;
+	vcard:postal-code "28039"^^xsd:int ;
 	vcard:region "VALDEZARZA" ;
 	vcard:locality "MONCLOA-ARAVACA" ;
-	geo:lat "40.4609354046231" ;
-	geo:long "-3.71219182992886" ;
-	safeair:isClosestTo "28079038" ;
-	safeair:locId "4703" .
+	geo:lat "40.4609354046231"^^xsd:double ;
+	geo:long "-3.71219182992886"^^xsd:double ;
+	safeair:isClosestTo "28079038"^^xsd:int ;
+	safeair:locId "4703"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4623547> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL FRANCISCO FERNNDEZ OCHOA" ;
 	vcard:street-address "CALLE CATORCE OLIVAS" ;
-	vcard:postal-code "28054" ;
+	vcard:postal-code "28054"^^xsd:int ;
 	vcard:region "BUENAVISTA" ;
 	vcard:locality "CARABANCHEL" ;
-	geo:lat "40.3658177697811" ;
-	geo:long "-3.7408939805337798" ;
-	safeair:isClosestTo "28079056" ;
-	safeair:locId "4623547" .
+	geo:lat "40.3658177697811"^^xsd:double ;
+	geo:long "-3.7408939805337798"^^xsd:double ;
+	safeair:isClosestTo "28079056"^^xsd:int ;
+	safeair:locId "4623547"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4685> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL FRANCOS RODRGUEZ" ;
 	vcard:street-address "CALLE NUMANCIA" ;
-	vcard:postal-code "28039" ;
+	vcard:postal-code "28039"^^xsd:int ;
 	vcard:region "CIUDAD UNIVERSITARIA" ;
 	vcard:locality "MONCLOA-ARAVACA" ;
-	geo:lat "40.453587531389104" ;
-	geo:long "-3.71309309458223" ;
-	safeair:isClosestTo "28079038" ;
-	safeair:locId "4685" .
+	geo:lat "40.453587531389104"^^xsd:double ;
+	geo:long "-3.71309309458223"^^xsd:double ;
+	safeair:isClosestTo "28079038"^^xsd:int ;
+	safeair:locId "4685"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4623697> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL FUENTE DEL BERRO" ;
 	vcard:street-address "CALLE ELVIRA" ;
-	vcard:postal-code "28028" ;
+	vcard:postal-code "28028"^^xsd:int ;
 	vcard:region "FUENTE DEL BERRO" ;
 	vcard:locality "SALAMANCA" ;
-	geo:lat "40.4217195685487" ;
-	geo:long "-3.6652515154670096" ;
-	safeair:isClosestTo "28079008" ;
-	safeair:locId "4623697" .
+	geo:lat "40.4217195685487"^^xsd:double ;
+	geo:long "-3.6652515154670096"^^xsd:double ;
+	safeair:isClosestTo "28079008"^^xsd:int ;
+	safeair:locId "4623697"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/124194> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL FLIX RUBIO" ;
 	vcard:street-address "CALLE ALIANZA" ;
-	vcard:postal-code "28041" ;
+	vcard:postal-code "28041"^^xsd:int ;
 	vcard:region "LOS ROSALES" ;
 	vcard:locality "VILLAVERDE" ;
-	geo:lat "40.3574296786752" ;
-	geo:long "-3.69152880469694" ;
-	safeair:isClosestTo "28079017" ;
-	safeair:locId "124194" .
+	geo:lat "40.3574296786752"^^xsd:double ;
+	geo:long "-3.69152880469694"^^xsd:double ;
+	safeair:isClosestTo "28079017"^^xsd:int ;
+	safeair:locId "124194"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4698> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL GALLUR" ;
 	vcard:street-address "CALLE GALLUR" ;
-	vcard:postal-code "28047" ;
+	vcard:postal-code "28047"^^xsd:int ;
 	vcard:region "LOS CARMENES" ;
 	vcard:locality "LATINA" ;
-	geo:lat "40.398465832065" ;
-	geo:long "-3.73538345068692" ;
-	safeair:isClosestTo "28079018" ;
-	safeair:locId "4698" .
+	geo:lat "40.398465832065"^^xsd:double ;
+	geo:long "-3.73538345068692"^^xsd:double ;
+	safeair:isClosestTo "28079018"^^xsd:int ;
+	safeair:locId "4698"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/51661> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL GIMNASIO MOSCARD" ;
 	vcard:street-address "CALLE PILAR DE ZARAGOZA" ;
-	vcard:postal-code "28028" ;
+	vcard:postal-code "28028"^^xsd:int ;
 	vcard:region "GUINDALERA" ;
 	vcard:locality "SALAMANCA" ;
-	geo:lat "40.4379452896769" ;
-	geo:long "-3.67450202999726" ;
-	safeair:isClosestTo "28079048" ;
-	safeair:locId "51661" .
+	geo:lat "40.4379452896769"^^xsd:double ;
+	geo:long "-3.67450202999726"^^xsd:double ;
+	safeair:isClosestTo "28079048"^^xsd:int ;
+	safeair:locId "51661"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4680> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL HORTALEZA" ;
 	vcard:street-address "CARRETERA ESTACION DE HORTALEZA" ;
-	vcard:postal-code "28033" ;
+	vcard:postal-code "28033"^^xsd:int ;
 	vcard:region "APOSTOL SANTIAGO" ;
 	vcard:locality "HORTALEZA" ;
-	geo:lat "40.4787279264401" ;
-	geo:long "-3.6527183525553" ;
-	safeair:isClosestTo "28079057" ;
-	safeair:locId "4680" .
+	geo:lat "40.4787279264401"^^xsd:double ;
+	geo:long "-3.6527183525553"^^xsd:double ;
+	safeair:isClosestTo "28079057"^^xsd:int ;
+	safeair:locId "4680"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4704> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL JOS MARA CAGIGAL" ;
 	vcard:street-address "CALLE SANTA POLA" ;
-	vcard:postal-code "28008" ;
+	vcard:postal-code "28008"^^xsd:int ;
 	vcard:region "CASA DE CAMPO" ;
 	vcard:locality "MONCLOA-ARAVACA" ;
-	geo:lat "40.4321495534278" ;
-	geo:long "-3.7369645992831297" ;
-	safeair:isClosestTo "28079024" ;
-	safeair:locId "4704" .
+	geo:lat "40.4321495534278"^^xsd:double ;
+	geo:long "-3.7369645992831297"^^xsd:double ;
+	safeair:isClosestTo "28079024"^^xsd:int ;
+	safeair:locId "4704"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4623700> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LA ALMUDENA" ;
 	vcard:street-address "CALLE NICOLAS SALMERN" ;
-	vcard:postal-code "28017" ;
+	vcard:postal-code "28017"^^xsd:int ;
 	vcard:region "PUEBLO NUEVO" ;
 	vcard:locality "CIUDAD LINEAL" ;
-	geo:lat "40.420606498695996" ;
-	geo:long "-3.63242373072276" ;
-	safeair:isClosestTo "28079036" ;
-	safeair:locId "4623700" .
+	geo:lat "40.420606498695996"^^xsd:double ;
+	geo:long "-3.63242373072276"^^xsd:double ;
+	safeair:isClosestTo "28079036"^^xsd:int ;
+	safeair:locId "4623700"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4722> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LA BOMBILLA" ;
 	vcard:street-address "CALLE SENDA DEL REY" ;
-	vcard:postal-code "28040" ;
+	vcard:postal-code "28040"^^xsd:int ;
 	vcard:region "CASA DE CAMPO" ;
 	vcard:locality "MONCLOA-ARAVACA" ;
-	geo:lat "40.432667912172796" ;
-	geo:long "-3.73194783649064" ;
-	safeair:isClosestTo "28079004" ;
-	safeair:locId "4722" .
+	geo:lat "40.432667912172796"^^xsd:double ;
+	geo:long "-3.73194783649064"^^xsd:double ;
+	safeair:isClosestTo "28079004"^^xsd:int ;
+	safeair:locId "4722"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4697> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LA CHOPERA" ;
 	vcard:street-address "PASEO FERNAN NU&Ntilde;EZ" ;
-	vcard:postal-code "28009" ;
+	vcard:postal-code "28009"^^xsd:int ;
 	vcard:region "LOS JERONIMOS" ;
 	vcard:locality "RETIRO" ;
-	geo:lat "40.4116632123776" ;
-	geo:long "-3.6856838249046096" ;
-	safeair:isClosestTo "28079049" ;
-	safeair:locId "4697" .
+	geo:lat "40.4116632123776"^^xsd:double ;
+	geo:long "-3.6856838249046096"^^xsd:double ;
+	safeair:isClosestTo "28079049"^^xsd:int ;
+	safeair:locId "4697"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4674> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LA ELIPA" ;
 	vcard:street-address "CALLE ALCALDE GARRIDO JUARISTI" ;
-	vcard:postal-code "28030" ;
+	vcard:postal-code "28030"^^xsd:int ;
 	vcard:region "MEDIA LEGUA" ;
 	vcard:locality "MORATALAZ" ;
-	geo:lat "40.4143312376848" ;
-	geo:long "-3.65594987585228" ;
-	safeair:isClosestTo "28079036" ;
-	safeair:locId "4674" .
+	geo:lat "40.4143312376848"^^xsd:double ;
+	geo:long "-3.65594987585228"^^xsd:double ;
+	safeair:isClosestTo "28079036"^^xsd:int ;
+	safeair:locId "4674"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4694> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LA FUNDI" ;
 	vcard:street-address "CALLE ALICANTE" ;
-	vcard:postal-code "28045" ;
+	vcard:postal-code "28045"^^xsd:int ;
 	vcard:region "DELICIAS" ;
 	vcard:locality "ARGANZUELA" ;
-	geo:lat "40.394377158851" ;
-	geo:long "-3.6913410601461" ;
-	safeair:isClosestTo "28079047" ;
-	safeair:locId "4694" .
+	geo:lat "40.394377158851"^^xsd:double ;
+	geo:long "-3.6913410601461"^^xsd:double ;
+	safeair:isClosestTo "28079047"^^xsd:int ;
+	safeair:locId "4694"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/104235> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LA MAS" ;
 	vcard:street-address "CALLE MASO" ;
-	vcard:postal-code "28034" ;
+	vcard:postal-code "28034"^^xsd:int ;
 	vcard:region "MIRASIERRA" ;
 	vcard:locality "FUENCARRAL-EL PARDO" ;
-	geo:lat "40.4844259993208" ;
-	geo:long "-3.71442225647198" ;
-	safeair:isClosestTo "28079039" ;
-	safeair:locId "104235" .
+	geo:lat "40.4844259993208"^^xsd:double ;
+	geo:long "-3.71442225647198"^^xsd:double ;
+	safeair:isClosestTo "28079039"^^xsd:int ;
+	safeair:locId "104235"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4695> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LA MINA" ;
 	vcard:street-address "CALLE MONSEOR OSCAR ROMERO" ;
-	vcard:postal-code "28025" ;
+	vcard:postal-code "28025"^^xsd:int ;
 	vcard:region "VISTA ALEGRE" ;
 	vcard:locality "CARABANCHEL" ;
-	geo:lat "40.382349556646" ;
-	geo:long "-3.7464825248237004" ;
-	safeair:isClosestTo "28079018" ;
-	safeair:locId "4695" .
+	geo:lat "40.382349556646"^^xsd:double ;
+	geo:long "-3.7464825248237004"^^xsd:double ;
+	safeair:isClosestTo "28079018"^^xsd:int ;
+	safeair:locId "4695"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4707> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LA VAGUADA" ;
 	vcard:street-address "AVENIDA MONFORTE DE LEMOS" ;
-	vcard:postal-code "28029" ;
+	vcard:postal-code "28029"^^xsd:int ;
 	vcard:region "EL PILAR" ;
 	vcard:locality "FUENCARRAL-EL PARDO" ;
-	geo:lat "40.4787675835745" ;
-	geo:long "-3.7086993281311904" ;
-	safeair:isClosestTo "28079039" ;
-	safeair:locId "4707" .
+	geo:lat "40.4787675835745"^^xsd:double ;
+	geo:long "-3.7086993281311904"^^xsd:double ;
+	safeair:isClosestTo "28079039"^^xsd:int ;
+	safeair:locId "4707"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4834> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LAGO CASA DE CAMPO" ;
 	vcard:street-address "PASEO EMBARCADERO" ;
-	vcard:postal-code "28011" ;
+	vcard:postal-code "28011"^^xsd:int ;
 	vcard:region "CASA DE CAMPO" ;
 	vcard:locality "MONCLOA-ARAVACA" ;
-	geo:lat "40.4170130975037" ;
-	geo:long "-3.7314952685679903" ;
-	safeair:isClosestTo "28079024" ;
-	safeair:locId "4834" .
+	geo:lat "40.4170130975037"^^xsd:double ;
+	geo:long "-3.7314952685679903"^^xsd:double ;
+	safeair:isClosestTo "28079024"^^xsd:int ;
+	safeair:locId "4834"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4538574> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LAS CRUCES" ;
 	vcard:street-address "AVENIDA POBLADOS" ;
-	vcard:postal-code "28044" ;
+	vcard:postal-code "28044"^^xsd:int ;
 	vcard:region "LAS AGUILAS" ;
 	vcard:locality "LATINA" ;
-	geo:lat "40.379148937377295" ;
-	geo:long "-3.7565547624119597" ;
-	safeair:isClosestTo "28079018" ;
-	safeair:locId "4538574" .
+	geo:lat "40.379148937377295"^^xsd:double ;
+	geo:long "-3.7565547624119597"^^xsd:double ;
+	safeair:isClosestTo "28079018"^^xsd:int ;
+	safeair:locId "4538574"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4619937> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LOS PRUNOS" ;
 	vcard:street-address "CALLE PETUNIAS" ;
-	vcard:postal-code "28042" ;
+	vcard:postal-code "28042"^^xsd:int ;
 	vcard:region "PALOMAS" ;
 	vcard:locality "HORTALEZA" ;
-	geo:lat "40.453257453448" ;
-	geo:long "-3.61869564281998" ;
-	safeair:isClosestTo "28079059" ;
-	safeair:locId "4619937" .
+	geo:lat "40.453257453448"^^xsd:double ;
+	geo:long "-3.61869564281998"^^xsd:double ;
+	safeair:isClosestTo "28079059"^^xsd:int ;
+	safeair:locId "4619937"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4681> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL LUIS ARAGONS" ;
 	vcard:street-address "CALLE EL PROVENCIO" ;
-	vcard:postal-code "28043" ;
+	vcard:postal-code "28043"^^xsd:int ;
 	vcard:region "CANILLAS" ;
 	vcard:locality "HORTALEZA" ;
-	geo:lat "40.4646509480538" ;
-	geo:long "-3.62758771450258" ;
-	safeair:isClosestTo "28079059" ;
-	safeair:locId "4681" .
+	geo:lat "40.4646509480538"^^xsd:double ;
+	geo:long "-3.62758771450258"^^xsd:double ;
+	safeair:isClosestTo "28079059"^^xsd:int ;
+	safeair:locId "4681"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/121729> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL MARQUS DE SAMARANCH" ;
 	vcard:street-address "PASEO IMPERIAL" ;
-	vcard:postal-code "28005" ;
+	vcard:postal-code "28005"^^xsd:int ;
 	vcard:region "IMPERIAL" ;
 	vcard:locality "ARGANZUELA" ;
-	geo:lat "40.4076150141064" ;
-	geo:long "-3.7173807221939104" ;
-	safeair:isClosestTo "28079035" ;
-	safeair:locId "121729" .
+	geo:lat "40.4076150141064"^^xsd:double ;
+	geo:long "-3.7173807221939104"^^xsd:double ;
+	safeair:isClosestTo "28079035"^^xsd:int ;
+	safeair:locId "121729"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4701827> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL MIGUEL GUILLN PRIM" ;
 	vcard:street-address "CALLE FUENTIDUEA" ;
-	vcard:postal-code "28031" ;
+	vcard:postal-code "28031"^^xsd:int ;
 	vcard:region "CASCO H.VALLECAS" ;
 	vcard:locality "VILLA DE VALLECAS" ;
-	geo:lat "40.373818554521606" ;
-	geo:long "-3.62315146859815" ;
-	safeair:isClosestTo "28079054" ;
-	safeair:locId "4701827" .
+	geo:lat "40.373818554521606"^^xsd:double ;
+	geo:long "-3.62315146859815"^^xsd:double ;
+	safeair:isClosestTo "28079054"^^xsd:int ;
+	safeair:locId "4701827"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4673> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL MORATALAZ" ;
 	vcard:street-address "CALLE VALDEBERNARDO" ;
-	vcard:postal-code "28030" ;
+	vcard:postal-code "28030"^^xsd:int ;
 	vcard:region "PAVONES" ;
 	vcard:locality "MORATALAZ" ;
-	geo:lat "40.39885854572329" ;
-	geo:long "-3.63243229021453" ;
-	safeair:isClosestTo "28079036" ;
-	safeair:locId "4673" .
+	geo:lat "40.39885854572329"^^xsd:double ;
+	geo:long "-3.63243229021453"^^xsd:double ;
+	safeair:isClosestTo "28079036"^^xsd:int ;
+	safeair:locId "4673"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4691> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL MOSCARD" ;
 	vcard:street-address "CALLE ANDRES ARTEAGA" ;
-	vcard:postal-code "28026" ;
+	vcard:postal-code "28026"^^xsd:int ;
 	vcard:region "MOSCARDO" ;
 	vcard:locality "USERA" ;
-	geo:lat "40.3885029042696" ;
-	geo:long "-3.70630307980802" ;
-	safeair:isClosestTo "28079056" ;
-	safeair:locId "4691" .
+	geo:lat "40.3885029042696"^^xsd:double ;
+	geo:long "-3.70630307980802"^^xsd:double ;
+	safeair:isClosestTo "28079056"^^xsd:int ;
+	safeair:locId "4691"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4693> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL ORCASITAS" ;
 	vcard:street-address "AVENIDA RAFAELA YBARRA" ;
-	vcard:postal-code "28026" ;
+	vcard:postal-code "28026"^^xsd:int ;
 	vcard:region "ZOFIO" ;
 	vcard:locality "USERA" ;
-	geo:lat "40.37558213858421" ;
-	geo:long "-3.71245854352948" ;
-	safeair:isClosestTo "28079056" ;
-	safeair:locId "4693" .
+	geo:lat "40.37558213858421"^^xsd:double ;
+	geo:long "-3.71245854352948"^^xsd:double ;
+	safeair:isClosestTo "28079056"^^xsd:int ;
+	safeair:locId "4693"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4690> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL ORCASUR" ;
 	vcard:street-address "CALLE MOREJA" ;
-	vcard:postal-code "28041" ;
+	vcard:postal-code "28041"^^xsd:int ;
 	vcard:region "ORCASUR" ;
 	vcard:locality "USERA" ;
-	geo:lat "40.3702199337385" ;
-	geo:long "-3.69946890060774" ;
-	safeair:isClosestTo "28079056" ;
-	safeair:locId "4690" .
+	geo:lat "40.3702199337385"^^xsd:double ;
+	geo:long "-3.69946890060774"^^xsd:double ;
+	safeair:isClosestTo "28079056"^^xsd:int ;
+	safeair:locId "4690"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4684794> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL PABELLN VILLA DE MADRID" ;
 	vcard:street-address "CALLE BREZOS" ;
-	vcard:postal-code "28042" ;
+	vcard:postal-code "28042"^^xsd:int ;
 	vcard:region "ALAMEDA DE OSUNA" ;
 	vcard:locality "BARAJAS" ;
-	geo:lat "40.4614570832495" ;
-	geo:long "-3.58910692917261" ;
-	safeair:isClosestTo "28079055" ;
-	safeair:locId "4684794" .
+	geo:lat "40.4614570832495"^^xsd:double ;
+	geo:long "-3.58910692917261"^^xsd:double ;
+	safeair:isClosestTo "28079055"^^xsd:int ;
+	safeair:locId "4684794"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4675> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL PALOMERAS" ;
 	vcard:street-address "CALLE TRANVIA DE ARGANDA" ;
-	vcard:postal-code "28031" ;
+	vcard:postal-code "28031"^^xsd:int ;
 	vcard:region "PALOMERAS SURESTE" ;
 	vcard:locality "PUENTE DE VALLECAS" ;
-	geo:lat "40.3826036223028" ;
-	geo:long "-3.63371518083724" ;
-	safeair:isClosestTo "28079040" ;
-	safeair:locId "4675" .
+	geo:lat "40.3826036223028"^^xsd:double ;
+	geo:long "-3.63371518083724"^^xsd:double ;
+	safeair:isClosestTo "28079040"^^xsd:int ;
+	safeair:locId "4675"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4622991> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL PEPU HERNNDEZ" ;
 	vcard:street-address "AVENIDA NIZA" ;
-	vcard:postal-code "28022" ;
+	vcard:postal-code "28022"^^xsd:int ;
 	vcard:region "ROSAS" ;
 	vcard:locality "SAN BLAS-CANILLEJAS" ;
-	geo:lat "40.427629273303104" ;
-	geo:long "-3.6063181769844705" ;
-	safeair:isClosestTo "28079016" ;
-	safeair:locId "4622991" .
+	geo:lat "40.427629273303104"^^xsd:double ;
+	geo:long "-3.6063181769844705"^^xsd:double ;
+	safeair:isClosestTo "28079016"^^xsd:int ;
+	safeair:locId "4622991"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/10630252> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL PEAGRANDE" ;
 	vcard:street-address "AVENIDA Monforte de Lemos" ;
-	vcard:postal-code "28029" ;
+	vcard:postal-code "28029"^^xsd:int ;
 	vcard:region "PEAGRANDE" ;
 	vcard:locality "FUENCARRAL-EL PARDO" ;
-	geo:lat "40.4406484386394" ;
-	geo:long "-3.7090534890274305" ;
-	safeair:isClosestTo "28079038" ;
-	safeair:locId "10630252" .
+	geo:lat "40.4406484386394"^^xsd:double ;
+	geo:long "-3.7090534890274305"^^xsd:double ;
+	safeair:isClosestTo "28079038"^^xsd:int ;
+	safeair:locId "10630252"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4727> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL PEUELAS" ;
 	vcard:street-address "CALLE ARGANDA" ;
-	vcard:postal-code "28005" ;
+	vcard:postal-code "28005"^^xsd:int ;
 	vcard:region "ACACIAS" ;
 	vcard:locality "ARGANZUELA" ;
-	geo:lat "40.3986553234066" ;
-	geo:long "-3.70495975984577" ;
-	safeair:isClosestTo "28079047" ;
-	safeair:locId "4727" .
+	geo:lat "40.3986553234066"^^xsd:double ;
+	geo:long "-3.70495975984577"^^xsd:double ;
+	safeair:isClosestTo "28079047"^^xsd:int ;
+	safeair:locId "4727"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4719> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL PLATA Y CASTAAR" ;
 	vcard:street-address "PASEO PLATA Y CASTAAR" ;
-	vcard:postal-code "28021" ;
+	vcard:postal-code "28021"^^xsd:int ;
 	vcard:region "SAN ANDRES" ;
 	vcard:locality "VILLAVERDE" ;
-	geo:lat "40.3499899734807" ;
-	geo:long "-3.71784130732028" ;
-	safeair:isClosestTo "28079017" ;
-	safeair:locId "4719" .
+	geo:lat "40.3499899734807"^^xsd:double ;
+	geo:long "-3.71784130732028"^^xsd:double ;
+	safeair:isClosestTo "28079017"^^xsd:int ;
+	safeair:locId "4719"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4718> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL PLAYA VICTORIA" ;
 	vcard:street-address "CALLE HIERBABUENA" ;
-	vcard:postal-code "28039" ;
+	vcard:postal-code "28039"^^xsd:int ;
 	vcard:region "BERRUGUETE" ;
 	vcard:locality "TETUAN" ;
-	geo:lat "40.459276347220396" ;
-	geo:long "-3.7021136988422496" ;
-	safeair:isClosestTo "28079050" ;
-	safeair:locId "4718" .
+	geo:lat "40.459276347220396"^^xsd:double ;
+	geo:long "-3.7021136988422496"^^xsd:double ;
+	safeair:isClosestTo "28079050"^^xsd:int ;
+	safeair:locId "4718"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4701> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL PRADILLO" ;
 	vcard:street-address "CALLE PRADILLO" ;
-	vcard:postal-code "28002" ;
+	vcard:postal-code "28002"^^xsd:int ;
 	vcard:region "CIUDAD JARDIN" ;
 	vcard:locality "CHAMARTIN" ;
-	geo:lat "40.4491062262673" ;
-	geo:long "-3.67161827700941" ;
-	safeair:isClosestTo "28079011" ;
-	safeair:locId "4701" .
+	geo:lat "40.4491062262673"^^xsd:double ;
+	geo:long "-3.67161827700941"^^xsd:double ;
+	safeair:isClosestTo "28079011"^^xsd:int ;
+	safeair:locId "4701"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4720> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL PUEBLO NUEVO" ;
 	vcard:street-address "CALLE FRANCISCO RIOJA" ;
-	vcard:postal-code "28017" ;
+	vcard:postal-code "28017"^^xsd:int ;
 	vcard:region "PUEBLO NUEVO" ;
 	vcard:locality "CIUDAD LINEAL" ;
-	geo:lat "40.4300324015862" ;
-	geo:long "-3.6385363548054803" ;
-	safeair:isClosestTo "28079016" ;
-	safeair:locId "4720" .
+	geo:lat "40.4300324015862"^^xsd:double ;
+	geo:long "-3.6385363548054803"^^xsd:double ;
+	safeair:isClosestTo "28079016"^^xsd:int ;
+	safeair:locId "4720"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4678> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL PUENTE DE VALLECAS" ;
 	vcard:street-address "CALLE PAYASO FOFO" ;
-	vcard:postal-code "28018" ;
+	vcard:postal-code "28018"^^xsd:int ;
 	vcard:region "PALOMERAS BAJAS" ;
 	vcard:locality "PUENTE DE VALLECAS" ;
-	geo:lat "40.3914619470786" ;
-	geo:long "-3.65986360297758" ;
-	safeair:isClosestTo "28079040" ;
-	safeair:locId "4678" .
+	geo:lat "40.3914619470786"^^xsd:double ;
+	geo:long "-3.65986360297758"^^xsd:double ;
+	safeair:isClosestTo "28079040"^^xsd:int ;
+	safeair:locId "4678"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/106242> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL RAL GONZLEZ" ;
 	vcard:street-address "CALLE BENIMAMET" ;
-	vcard:postal-code "28021" ;
+	vcard:postal-code "28021"^^xsd:int ;
 	vcard:region "SAN CRISTOBAL" ;
 	vcard:locality "VILLAVERDE" ;
-	geo:lat "40.346220026067" ;
-	geo:long "-3.68433772880636" ;
-	safeair:isClosestTo "28079017" ;
-	safeair:locId "106242" .
+	geo:lat "40.346220026067"^^xsd:double ;
+	geo:long "-3.68433772880636"^^xsd:double ;
+	safeair:isClosestTo "28079017"^^xsd:int ;
+	safeair:locId "106242"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4689> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL SAN BLAS" ;
 	vcard:street-address "CALLE ARCOS DE JALON" ;
-	vcard:postal-code "28037" ;
+	vcard:postal-code "28037"^^xsd:int ;
 	vcard:region "HELLIN" ;
 	vcard:locality "SAN BLAS-CANILLEJAS" ;
-	geo:lat "40.42881010701649" ;
-	geo:long "-3.6113273589762303" ;
-	safeair:isClosestTo "28079016" ;
-	safeair:locId "4689" .
+	geo:lat "40.42881010701649"^^xsd:double ;
+	geo:long "-3.6113273589762303"^^xsd:double ;
+	safeair:isClosestTo "28079016"^^xsd:int ;
+	safeair:locId "4689"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4686> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL SAN CRISTBAL" ;
 	vcard:street-address "PLAZA PINAZO" ;
-	vcard:postal-code "28021" ;
+	vcard:postal-code "28021"^^xsd:int ;
 	vcard:region "SAN CRISTOBAL" ;
 	vcard:locality "VILLAVERDE" ;
-	geo:lat "40.3426731709949" ;
-	geo:long "-3.69144873805088" ;
-	safeair:isClosestTo "28079017" ;
-	safeair:locId "4686" .
+	geo:lat "40.3426731709949"^^xsd:double ;
+	geo:long "-3.69144873805088"^^xsd:double ;
+	safeair:isClosestTo "28079017"^^xsd:int ;
+	safeair:locId "4686"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4692> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL SAN FERMN" ;
 	vcard:street-address "CALLE SAN MARIO" ;
-	vcard:postal-code "28041" ;
+	vcard:postal-code "28041"^^xsd:int ;
 	vcard:region "SAN FERMIN" ;
 	vcard:locality "USERA" ;
-	geo:lat "40.3753057742129" ;
-	geo:long "-3.6927010241442897" ;
-	safeair:isClosestTo "28079056" ;
-	safeair:locId "4692" .
+	geo:lat "40.3753057742129"^^xsd:double ;
+	geo:long "-3.6927010241442897"^^xsd:double ;
+	safeair:isClosestTo "28079056"^^xsd:int ;
+	safeair:locId "4692"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4679> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL SAN JUAN BAUTISTA" ;
 	vcard:street-address "CALLE TREVIANA" ;
-	vcard:postal-code "28043" ;
+	vcard:postal-code "28043"^^xsd:int ;
 	vcard:region "SAN JUAN BAUTISTA" ;
 	vcard:locality "CIUDAD LINEAL" ;
-	geo:lat "40.4486497631605" ;
-	geo:long "-3.65857117974668" ;
-	safeair:isClosestTo "28079011" ;
-	safeair:locId "4679" .
+	geo:lat "40.4486497631605"^^xsd:double ;
+	geo:long "-3.65857117974668"^^xsd:double ;
+	safeair:isClosestTo "28079011"^^xsd:int ;
+	safeair:locId "4679"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4706> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL SANTA ANA" ;
 	vcard:street-address "PASEO ALAMEDILLAS" ;
-	vcard:postal-code "28034" ;
+	vcard:postal-code "28034"^^xsd:int ;
 	vcard:region "VALVERDE" ;
 	vcard:locality "FUENCARRAL-EL PARDO" ;
-	geo:lat "40.4980946931544" ;
-	geo:long "-3.69635801019994" ;
-	safeair:isClosestTo "28079060" ;
-	safeair:locId "4706" .
+	geo:lat "40.4980946931544"^^xsd:double ;
+	geo:long "-3.69635801019994"^^xsd:double ;
+	safeair:isClosestTo "28079060"^^xsd:int ;
+	safeair:locId "4706"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/28525> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL TENIS CASA DE CAMPO" ;
 	vcard:street-address "CAMINO PRINCIPE" ;
-	vcard:postal-code "28011" ;
+	vcard:postal-code "28011"^^xsd:int ;
 	vcard:region "CASA DE CAMPO" ;
 	vcard:locality "MONCLOA-ARAVACA" ;
-	geo:lat "40.421436625700494" ;
-	geo:long "-3.73573962566477" ;
-	safeair:isClosestTo "28079024" ;
-	safeair:locId "28525" .
+	geo:lat "40.421436625700494"^^xsd:double ;
+	geo:long "-3.73573962566477"^^xsd:double ;
+	safeair:isClosestTo "28079024"^^xsd:int ;
+	safeair:locId "28525"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/120275> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL VALDEBERNARDO" ;
 	vcard:street-address "CALLE LADERA DE LOS ALMENDROS" ;
-	vcard:postal-code "28032" ;
+	vcard:postal-code "28032"^^xsd:int ;
 	vcard:region "CASCO H.VICALVARO" ;
 	vcard:locality "VICALVARO" ;
-	geo:lat "40.4041896105729" ;
-	geo:long "-3.62290114486319" ;
-	safeair:isClosestTo "28079036" ;
-	safeair:locId "120275" .
+	geo:lat "40.4041896105729"^^xsd:double ;
+	geo:long "-3.62290114486319"^^xsd:double ;
+	safeair:isClosestTo "28079036"^^xsd:int ;
+	safeair:locId "120275"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4677> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL VALLECAS" ;
 	vcard:street-address "CALLE ARROYO DEL OLIVAR" ;
-	vcard:postal-code "28018" ;
+	vcard:postal-code "28018"^^xsd:int ;
 	vcard:region "PALOMERAS BAJAS" ;
 	vcard:locality "PUENTE DE VALLECAS" ;
-	geo:lat "40.390368919782404" ;
-	geo:long "-3.65721368286077" ;
-	safeair:isClosestTo "28079040" ;
-	safeair:locId "4677" .
+	geo:lat "40.390368919782404"^^xsd:double ;
+	geo:long "-3.65721368286077"^^xsd:double ;
+	safeair:isClosestTo "28079040"^^xsd:int ;
+	safeair:locId "4677"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/7411340> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL VALLEHERMOSO" ;
 	vcard:street-address "AVENIDA FILIPINAS" ;
-	vcard:postal-code "28003" ;
+	vcard:postal-code "28003"^^xsd:int ;
 	vcard:region "VALLEHERMOSO" ;
 	vcard:locality "CHAMBERI" ;
-	geo:lat "40.4406484386394" ;
-	geo:long "-3.7090534890274305" ;
-	safeair:isClosestTo "28079038" ;
-	safeair:locId "7411340" .
+	geo:lat "40.4406484386394"^^xsd:double ;
+	geo:long "-3.7090534890274305"^^xsd:double ;
+	safeair:isClosestTo "28079038"^^xsd:int ;
+	safeair:locId "7411340"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4699> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL VICENTE DEL BOSQUE" ;
 	vcard:street-address "AVENIDA MONFORTE DE LEMOS" ;
-	vcard:postal-code "28029" ;
+	vcard:postal-code "28029"^^xsd:int ;
 	vcard:region "LA PAZ" ;
 	vcard:locality "FUENCARRAL-EL PARDO" ;
-	geo:lat "40.4789135943213" ;
-	geo:long "-3.69354065974728" ;
-	safeair:isClosestTo "28079039" ;
-	safeair:locId "4699" .
+	geo:lat "40.4789135943213"^^xsd:double ;
+	geo:long "-3.69354065974728"^^xsd:double ;
+	safeair:isClosestTo "28079039"^^xsd:int ;
+	safeair:locId "4699"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/4688> a safeair:SportPark ;
 	safeair:locName "CENTRO DEPORTIVO MUNICIPAL VICLVARO (MARGOT MOLES)" ;
 	vcard:street-address "PASEO POLIDEPORTIVO" ;
-	vcard:postal-code "28032" ;
+	vcard:postal-code "28032"^^xsd:int ;
 	vcard:region "AMBROZ" ;
 	vcard:locality "VICALVARO" ;
-	geo:lat "40.409140618584" ;
-	geo:long "-3.60326473285039" ;
-	safeair:isClosestTo "28079036" ;
-	safeair:locId "4688" .
+	geo:lat "40.409140618584"^^xsd:double ;
+	geo:long "-3.60326473285039"^^xsd:double ;
+	safeair:isClosestTo "28079036"^^xsd:int ;
+	safeair:locId "4688"^^xsd:int .
 
 <http://safeair.es/project/resources/SportPark/10520719> a safeair:SportPark ;
 	safeair:locName "SALA MUNICIPAL DE ESGRIMA" ;
 	vcard:street-address "AVENIDA FILIPINAS" ;
-	vcard:postal-code "28003" ;
+	vcard:postal-code "28003"^^xsd:int ;
 	vcard:region "VALLEHERMOSO" ;
 	vcard:locality "CHAMBERI" ;
-	geo:lat "40.440630566426" ;
-	geo:long "-3.7090297189969297" ;
-	safeair:isClosestTo "28079038" ;
-	safeair:locId "10520719" .
+	geo:lat "40.440630566426"^^xsd:double ;
+	geo:long "-3.7090297189969297"^^xsd:double ;
+	safeair:isClosestTo "28079038"^^xsd:int ;
+	safeair:locId "10520719"^^xsd:int .
