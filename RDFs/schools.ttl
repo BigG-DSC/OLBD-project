@@ -1,0 +1,625 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix safeair: <http://safeare.es/project/ontology/SafeAir#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+<http://safeair.es/project/resources/School/58241> a safeair:School ;
+	safeair:locId "58241" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL AGUA DULCE" ;
+	vcard:street-address "CALLE LEÑEROS 25" ;
+	vcard:postal-code "28039" ;
+	vcard:locality "BELLAS VISTAS" ;
+	vcard:region "TETUAN" ;
+	geo:lat "40.454060880244604" ;
+	geo:long "-3.709371361756636" ;
+	safeair:isClosestTo "28079038" .
+
+<http://safeair.es/project/resources/School/4549323> a safeair:School ;
+	safeair:locId "4549323" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL ALTAIR" ;
+	vcard:street-address "CALLE JOSE DE CADALSO 43" ;
+	vcard:postal-code "28044" ;
+	vcard:locality "LAS AGUILAS" ;
+	vcard:region "LATINA" ;
+	geo:lat "40.37813189249392" ;
+	geo:long "-3.768700549230208" ;
+	safeair:isClosestTo "28079018" .
+
+<http://safeair.es/project/resources/School/5299172> a safeair:School ;
+	safeair:locId "5299172" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL AMANECER" ;
+	vcard:street-address "CALLE TITANIO 7" ;
+	vcard:postal-code "28032" ;
+	vcard:locality "CASCO H.VICALVARO" ;
+	vcard:region "VICALVARO" ;
+	geo:lat "40.401989956003774" ;
+	geo:long "-3.6010443459563537" ;
+	safeair:isClosestTo "28079054" .
+
+<http://safeair.es/project/resources/School/5633312> a safeair:School ;
+	safeair:locId "5633312" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL ANA DE AUSTRIA" ;
+	vcard:street-address "CALLE ANA DE AUSTRIA 32" ;
+	vcard:postal-code "28050" ;
+	vcard:locality "VALDEFUENTES" ;
+	vcard:region "HORTALEZA" ;
+	geo:lat "40.495521538137815" ;
+	geo:long "-3.655736850911649" ;
+	safeair:isClosestTo "28079057" .
+
+<http://safeair.es/project/resources/School/4724002> a safeair:School ;
+	safeair:locId "4724002" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL CAMPANILLA" ;
+	vcard:street-address "CALLE AVILA 4" ;
+	vcard:postal-code "28020" ;
+	vcard:locality "CUATRO CAMINOS" ;
+	vcard:region "TETUAN" ;
+	geo:lat "40.452700492043" ;
+	geo:long "-3.701998076478461" ;
+	safeair:isClosestTo "28079038" .
+
+<http://safeair.es/project/resources/School/5252087> a safeair:School ;
+	safeair:locId "5252087" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL CIELO AZUL" ;
+	vcard:street-address "BULEVAR INDALECIO PRIETO 16" ;
+	vcard:postal-code "28032" ;
+	vcard:locality "CASCO H.VICALVARO" ;
+	vcard:region "VICALVARO" ;
+	geo:lat "40.40182039479394" ;
+	geo:long "-3.621194139414776" ;
+	safeair:isClosestTo "28079036" .
+
+<http://safeair.es/project/resources/School/5633339> a safeair:School ;
+	safeair:locId "5633339" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL DOÑA FRANCISQUITA" ;
+	vcard:street-address "CALLE CAMBADOS 1" ;
+	vcard:postal-code "28050" ;
+	vcard:locality "VALDEFUENTES" ;
+	vcard:region "HORTALEZA" ;
+	geo:lat "40.478681563472925" ;
+	geo:long "-3.6302312847478593" ;
+	safeair:isClosestTo "28079059" .
+
+<http://safeair.es/project/resources/School/28779> a safeair:School ;
+	safeair:locId "28779" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL ALBA" ;
+	vcard:street-address "CALLE TOLEDO 181" ;
+	vcard:postal-code "28005" ;
+	vcard:locality "ACACIAS" ;
+	vcard:region "ARGANZUELA" ;
+	geo:lat "40.4017650455756" ;
+	geo:long "-3.7135122763752992" ;
+	safeair:isClosestTo "28079018" .
+
+<http://safeair.es/project/resources/School/5632719> a safeair:School ;
+	safeair:locId "5632719" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL BARBERILLO DE LAVAPIÉS" ;
+	vcard:street-address "CALLE GRANITO 32" ;
+	vcard:postal-code "28045" ;
+	vcard:locality "DELICIAS" ;
+	vcard:region "ARGANZUELA" ;
+	geo:lat "40.393717565970434" ;
+	geo:long "-3.690156019819749" ;
+	safeair:isClosestTo "28079047" .
+
+<http://safeair.es/project/resources/School/5632789> a safeair:School ;
+	safeair:locId "5632789" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL BATEO" ;
+	vcard:street-address "CALLE PINOS DE OSUNA 3" ;
+	vcard:postal-code "28042" ;
+	vcard:locality "ALAMEDA DE OSUNA" ;
+	vcard:region "BARAJAS" ;
+	geo:lat "40.45115316018945" ;
+	geo:long "-3.5921656725702142" ;
+	safeair:isClosestTo "28079055" .
+
+<http://safeair.es/project/resources/School/172970> a safeair:School ;
+	safeair:locId "172970" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL BOSQUE" ;
+	vcard:street-address "CALLE DELICIAS 32" ;
+	vcard:postal-code "28045" ;
+	vcard:locality "PALOS DE MOGUER" ;
+	vcard:region "ARGANZUELA" ;
+	geo:lat "40.4043520221113" ;
+	geo:long "-3.6955442140662718" ;
+	safeair:isClosestTo "28079047" .
+
+<http://safeair.es/project/resources/School/5633412> a safeair:School ;
+	safeair:locId "5633412" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL CASERÍO" ;
+	vcard:street-address "CALLE MARIA TERESA ROBLEDO 3" ;
+	vcard:postal-code "28018" ;
+	vcard:locality "PALOMERAS BAJAS" ;
+	vcard:region "PUENTE DE VALLECAS" ;
+	geo:lat "40.387392664815394" ;
+	geo:long "-3.657785626545023" ;
+	safeair:isClosestTo "28079040" .
+
+<http://safeair.es/project/resources/School/100359> a safeair:School ;
+	safeair:locId "100359" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL DUENDE" ;
+	vcard:street-address "PLAZA DOS DE MAYO 2" ;
+	vcard:postal-code "28004" ;
+	vcard:locality "UNIVERSIDAD" ;
+	vcard:region "CENTRO" ;
+	geo:lat "40.4267928877555" ;
+	geo:long "-3.704581504983672" ;
+	safeair:isClosestTo "28079004" .
+
+<http://safeair.es/project/resources/School/58242> a safeair:School ;
+	safeair:locId "58242" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL LIRÓN" ;
+	vcard:street-address "CALLE PICO DE LOS ARTILLEROS 123" ;
+	vcard:postal-code "28030" ;
+	vcard:locality "FONTARRON" ;
+	vcard:region "MORATALAZ" ;
+	geo:lat "40.40154142411511" ;
+	geo:long "-3.642568350981219" ;
+	safeair:isClosestTo "28079036" .
+
+<http://safeair.es/project/resources/School/4552951> a safeair:School ;
+	safeair:locId "4552951" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL MANANTIAL" ;
+	vcard:street-address "CALLE CARLOS FUENTES 2" ;
+	vcard:postal-code "28047" ;
+	vcard:locality "LOS CARMENES" ;
+	vcard:region "LATINA" ;
+	geo:lat "40.40278783515925" ;
+	geo:long "-3.7441981544259706" ;
+	safeair:isClosestTo "28079018" .
+
+<http://safeair.es/project/resources/School/5981488> a safeair:School ;
+	safeair:locId "5981488" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL OLIVAR" ;
+	vcard:street-address "CALLE OLIVAR 48" ;
+	vcard:postal-code "28012" ;
+	vcard:locality "EMBAJADORES" ;
+	vcard:region "CENTRO" ;
+	geo:lat "40.40955901220526" ;
+	geo:long "-3.7015495991222993" ;
+	safeair:isClosestTo "28079035" .
+
+<http://safeair.es/project/resources/School/5072> a safeair:School ;
+	safeair:locId "5072" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL ROCÍO" ;
+	vcard:street-address "CARRETERA CARABANCHEL A VILLAVERDE 107" ;
+	vcard:postal-code "28041" ;
+	vcard:locality "SAN ANDRES" ;
+	vcard:region "VILLAVERDE" ;
+	geo:lat "40.350977588455294" ;
+	geo:long "-3.7066886127927594" ;
+	safeair:isClosestTo "28079017" .
+
+<http://safeair.es/project/resources/School/5039> a safeair:School ;
+	safeair:locId "5039" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL SOL" ;
+	vcard:street-address "CALLE ENRIQUE JARDIEL PONCELA 8" ;
+	vcard:postal-code "28016" ;
+	vcard:locality "NUEVA ESPAÑA" ;
+	vcard:region "CHAMARTIN" ;
+	geo:lat "40.46091554103502" ;
+	geo:long "-3.6703205125633485" ;
+	safeair:isClosestTo "28079011" .
+
+<http://safeair.es/project/resources/School/8226010> a safeair:School ;
+	safeair:locId "8226010" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL ESCUELAS DE SAN ANTÓN" ;
+	vcard:street-address "CALLE FARMACIA 13" ;
+	vcard:postal-code "28004" ;
+	vcard:locality "JUSTICIA" ;
+	vcard:region "CENTRO" ;
+	geo:lat "40.42378301276458" ;
+	geo:long "-3.6987856754744657" ;
+	safeair:isClosestTo "28079035" .
+
+<http://safeair.es/project/resources/School/5633199> a safeair:School ;
+	safeair:locId "5633199" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL FERNANDO EL CATÓLICO" ;
+	vcard:street-address "CALLE FERNANDO EL CATOLICO 16" ;
+	vcard:postal-code "28015" ;
+	vcard:locality "ARAPILES" ;
+	vcard:region "CHAMBERI" ;
+	geo:lat "40.43410368953045" ;
+	geo:long "-3.709739294334829" ;
+	safeair:isClosestTo "28079004" .
+
+<http://safeair.es/project/resources/School/5633259> a safeair:School ;
+	safeair:locId "5633259" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL GIGANTES Y CABEZUDOS" ;
+	vcard:street-address "CALLE RAFAEL BERGAMIN 28" ;
+	vcard:postal-code "28043" ;
+	vcard:locality "SAN JUAN BAUTISTA" ;
+	vcard:region "CIUDAD LINEAL" ;
+	geo:lat "40.450578924722464" ;
+	geo:long "-3.6599344009125048" ;
+	safeair:isClosestTo "28079011" .
+
+<http://safeair.es/project/resources/School/58239> a safeair:School ;
+	safeair:locId "58239" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL HIEDRA" ;
+	vcard:street-address "CALLE AMPOSTA 34" ;
+	vcard:postal-code "28037" ;
+	vcard:locality "ARCOS" ;
+	vcard:region "SAN BLAS-CANILLEJAS" ;
+	geo:lat "40.42289407876372" ;
+	geo:long "-3.619242528492244" ;
+	safeair:isClosestTo "28079016" .
+
+<http://safeair.es/project/resources/School/5633447> a safeair:School ;
+	safeair:locId "5633447" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA ALEGRÍA DE LA HUERTA" ;
+	vcard:street-address "CALLE HELSINKI 2" ;
+	vcard:postal-code "28022" ;
+	vcard:locality "ROSAS" ;
+	vcard:region "SAN BLAS-CANILLEJAS" ;
+	geo:lat "40.4244413057318" ;
+	geo:long "-3.6026351661579783" ;
+	safeair:isClosestTo "28079016" .
+
+<http://safeair.es/project/resources/School/4552960> a safeair:School ;
+	safeair:locId "4552960" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA BRISA" ;
+	vcard:street-address "AVENIDA ASTURIAS 72" ;
+	vcard:postal-code "28029" ;
+	vcard:locality "ALMENARA" ;
+	vcard:region "TETUAN" ;
+	geo:lat "40.47333501609979" ;
+	geo:long "-3.698367154592483" ;
+	safeair:isClosestTo "28079050" .
+
+<http://safeair.es/project/resources/School/5336> a safeair:School ;
+	safeair:locId "5336" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA CARACOLA" ;
+	vcard:street-address "CALLE BELORADO 1" ;
+	vcard:postal-code "28034" ;
+	vcard:locality "VALVERDE" ;
+	vcard:region "FUENCARRAL-EL PARDO" ;
+	geo:lat "40.48807363495185" ;
+	geo:long "-3.684820770712864" ;
+	safeair:isClosestTo "28079060" .
+
+<http://safeair.es/project/resources/School/5632722> a safeair:School ;
+	safeair:locId "5632722" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA CHULAPONA" ;
+	vcard:street-address "CALLE BAHIA DE PALMA 13" ;
+	vcard:postal-code "28042" ;
+	vcard:locality "CORRALEJOS" ;
+	vcard:region "BARAJAS" ;
+	geo:lat "40.4620032082231" ;
+	geo:long "-3.5915414506484757" ;
+	safeair:isClosestTo "28079055" .
+
+<http://safeair.es/project/resources/School/28783> a safeair:School ;
+	safeair:locId "28783" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA COLINA" ;
+	vcard:street-address "CALLE NUESTRA SEÑORA DE ARACELI 2" ;
+	vcard:postal-code "28042" ;
+	vcard:locality "CASCO H.BARAJAS" ;
+	vcard:region "BARAJAS" ;
+	geo:lat "40.4715901534766" ;
+	geo:long "-3.578814477331226" ;
+	safeair:isClosestTo "28079027" .
+
+<http://safeair.es/project/resources/School/84666> a safeair:School ;
+	safeair:locId "84666" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA CORNISA" ;
+	vcard:street-address "CALLE CRISTO DE LA VICTORIA 23" ;
+	vcard:postal-code "28026" ;
+	vcard:locality "ALMENDRALES" ;
+	vcard:region "USERA" ;
+	geo:lat "40.3811789921249" ;
+	geo:long "-3.701785238525908" ;
+	safeair:isClosestTo "28079056" .
+
+<http://safeair.es/project/resources/School/5633276> a safeair:School ;
+	safeair:locId "5633276" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA CORTE DE FARAÓN" ;
+	vcard:street-address "CALLE CHANTADA 41" ;
+	vcard:postal-code "28035" ;
+	vcard:locality "PEÑA GRANDE" ;
+	vcard:region "FUENCARRAL-EL PARDO" ;
+	geo:lat "40.47304239359628" ;
+	geo:long "-3.715280725332747" ;
+	safeair:isClosestTo "28079039" .
+
+<http://safeair.es/project/resources/School/5633332> a safeair:School ;
+	safeair:locId "5633332" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA GRAN VÍA" ;
+	vcard:street-address "CALLE SILVANO 99" ;
+	vcard:postal-code "28043" ;
+	vcard:locality "CANILLAS" ;
+	vcard:region "HORTALEZA" ;
+	geo:lat "40.46280275882352" ;
+	geo:long "-3.6344352214063727" ;
+	safeair:isClosestTo "28079059" .
+
+<http://safeair.es/project/resources/School/5073> a safeair:School ;
+	safeair:locId "5073" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA LUNA" ;
+	vcard:street-address "CALLE BENIMAMET 109" ;
+	vcard:postal-code "28021" ;
+	vcard:locality "SAN CRISTOBAL" ;
+	vcard:region "VILLAVERDE" ;
+	geo:lat "40.344340447262475" ;
+	geo:long "-3.6852960043242127" ;
+	safeair:isClosestTo "28079017" .
+
+<http://safeair.es/project/resources/School/5299025> a safeair:School ;
+	safeair:locId "5299025" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA OLIVA" ;
+	vcard:street-address "CALLE GAINZA 46" ;
+	vcard:postal-code "28041" ;
+	vcard:locality "ORCASITAS" ;
+	vcard:region "USERA" ;
+	geo:lat "40.36563722434557" ;
+	geo:long "-3.7151923280205694" ;
+	safeair:isClosestTo "28079017" .
+
+<http://safeair.es/project/resources/School/5341> a safeair:School ;
+	safeair:locId "5341" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA PALOMA" ;
+	vcard:street-address "CALLE TABERNILLAS 2" ;
+	vcard:postal-code "28005" ;
+	vcard:locality "PALACIO" ;
+	vcard:region "CENTRO" ;
+	geo:lat "40.411084519655795" ;
+	geo:long "-3.711383150975494" ;
+	safeair:isClosestTo "28079035" .
+
+<http://safeair.es/project/resources/School/5633158> a safeair:School ;
+	safeair:locId "5633158" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA PATRIA CHICA" ;
+	vcard:street-address "CALLE PATRIMONIO DE LA HUMANIDAD 31" ;
+	vcard:postal-code "28054" ;
+	vcard:locality "BUENAVISTA" ;
+	vcard:region "CARABANCHEL" ;
+	geo:lat "40.36168337750411" ;
+	geo:long "-3.7629430009334297" ;
+	safeair:isClosestTo "28079017" .
+
+<http://safeair.es/project/resources/School/5633600> a safeair:School ;
+	safeair:locId "5633600" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA REVOLTOSA" ;
+	vcard:street-address "CALLE JOSE ANTONIO REBOLLEDO Y PALMA 18" ;
+	vcard:postal-code "28051" ;
+	vcard:locality "CASCO H.VALLECAS" ;
+	vcard:region "VILLA DE VALLECAS" ;
+	geo:lat "40.36607876608522" ;
+	geo:long "-3.5889470728388453" ;
+	safeair:isClosestTo "28079054" .
+
+<http://safeair.es/project/resources/School/5633294> a safeair:School ;
+	safeair:locId "5633294" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA ROSA DEL AZAFRÁN" ;
+	vcard:street-address "CALLE CUEVA DE MONTESINOS 2" ;
+	vcard:postal-code "28034" ;
+	vcard:locality "VALVERDE" ;
+	vcard:region "FUENCARRAL-EL PARDO" ;
+	geo:lat "40.500503311712244" ;
+	geo:long "-3.68829881383211" ;
+	safeair:isClosestTo "28079060" .
+
+<http://safeair.es/project/resources/School/5633382> a safeair:School ;
+	safeair:locId "5633382" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA VERBENA DE LA PALOMA" ;
+	vcard:street-address "CALLE FUERTE DE NAVIDAD 17" ;
+	vcard:postal-code "28044" ;
+	vcard:locality "LAS AGUILAS" ;
+	vcard:region "LATINA" ;
+	geo:lat "40.380491665056326" ;
+	geo:long "-3.766076734697217" ;
+	safeair:isClosestTo "28079018" .
+
+<http://safeair.es/project/resources/School/5633456> a safeair:School ;
+	safeair:locId "5633456" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA DEL MANOJO DE ROSAS" ;
+	vcard:street-address "CALLE RAVENA 12" ;
+	vcard:postal-code "28032" ;
+	vcard:locality "ARCOS" ;
+	vcard:region "SAN BLAS-CANILLEJAS" ;
+	geo:lat "40.41827932953886" ;
+	geo:long "-3.6162651886015182" ;
+	safeair:isClosestTo "28079036" .
+
+<http://safeair.es/project/resources/School/5633393> a safeair:School ;
+	safeair:locId "5633393" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA DEL SOTO DEL PARRAL" ;
+	vcard:street-address "CALLE TROMPAS 19" ;
+	vcard:postal-code "28054" ;
+	vcard:locality "CUATRO VIENTOS" ;
+	vcard:region "LATINA" ;
+	geo:lat "40.37197319564591" ;
+	geo:long "-3.7681711768688495" ;
+	safeair:isClosestTo "28079018" .
+
+<http://safeair.es/project/resources/School/5298904> a safeair:School ;
+	safeair:locId "5298904" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LAS AMAPOLAS" ;
+	vcard:street-address "CALLE OBOLO 14" ;
+	vcard:postal-code "28054" ;
+	vcard:locality "BUENAVISTA" ;
+	vcard:region "CARABANCHEL" ;
+	geo:lat "40.37147813353422" ;
+	geo:long "-3.741886513170567" ;
+	safeair:isClosestTo "28079056" .
+
+<http://safeair.es/project/resources/School/5299104> a safeair:School ;
+	safeair:locId "5299104" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LAS AZALEAS" ;
+	vcard:street-address "CALLE PORTUGALETE 6" ;
+	vcard:postal-code "28017" ;
+	vcard:locality "PUEBLO NUEVO" ;
+	vcard:region "CIUDAD LINEAL" ;
+	geo:lat "40.42613036374425" ;
+	geo:long "-3.6354697765009885" ;
+	safeair:isClosestTo "28079016" .
+
+<http://safeair.es/project/resources/School/5633460> a safeair:School ;
+	safeair:locId "5633460" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LAS LEANDRAS" ;
+	vcard:street-address "CALLE DEYANIRA 2" ;
+	vcard:postal-code "28022" ;
+	vcard:locality "REJAS" ;
+	vcard:region "SAN BLAS-CANILLEJAS" ;
+	geo:lat "40.44319866421115" ;
+	geo:long "-3.5938292299686245" ;
+	safeair:isClosestTo "28079055" .
+
+<http://safeair.es/project/resources/School/5252132> a safeair:School ;
+	safeair:locId "5252132" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LAS MERCEDES" ;
+	vcard:street-address "CALLE SAMANIEGO 22" ;
+	vcard:postal-code "28022" ;
+	vcard:locality "REJAS" ;
+	vcard:region "SAN BLAS-CANILLEJAS" ;
+	geo:lat "40.44250107887545" ;
+	geo:long "-3.5804043676101007" ;
+	safeair:isClosestTo "28079055" .
+
+<http://safeair.es/project/resources/School/132987> a safeair:School ;
+	safeair:locId "132987" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LAS NUBES" ;
+	vcard:street-address "CALLE ANTONIO NEBRIJA 7" ;
+	vcard:postal-code "28007" ;
+	vcard:locality "PACIFICO" ;
+	vcard:region "RETIRO" ;
+	geo:lat "40.40365358728283" ;
+	geo:long "-3.6842590892111273" ;
+	safeair:isClosestTo "28079047" .
+
+<http://safeair.es/project/resources/School/132982> a safeair:School ;
+	safeair:locId "132982" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LAS VIÑAS" ;
+	vcard:street-address "CALLE ESTUDIO 6" ;
+	vcard:postal-code "28023" ;
+	vcard:locality "ARAVACA" ;
+	vcard:region "MONCLOA-ARAVACA" ;
+	geo:lat "40.460576198420775" ;
+	geo:long "-3.7857037462052063" ;
+	safeair:isClosestTo "28079024" .
+
+<http://safeair.es/project/resources/School/5633582> a safeair:School ;
+	safeair:locId "5633582" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LOS GAVILANES" ;
+	vcard:street-address "CALLE TIZIANO 7" ;
+	vcard:postal-code "28020" ;
+	vcard:locality "CUATRO CAMINOS" ;
+	vcard:region "TETUAN" ;
+	geo:lat "40.451085047790606" ;
+	geo:long "-3.702464776725833" ;
+	safeair:isClosestTo "28079038" .
+
+<http://safeair.es/project/resources/School/28784> a safeair:School ;
+	safeair:locId "28784" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LOS JUNCOS" ;
+	vcard:street-address "PLAZA JUVENTUD 7" ;
+	vcard:postal-code "28032" ;
+	vcard:locality "AMBROZ" ;
+	vcard:region "VICALVARO" ;
+	geo:lat "40.40912749404517" ;
+	geo:long "-3.605774962043424" ;
+	safeair:isClosestTo "28079036" .
+
+<http://safeair.es/project/resources/School/5340> a safeair:School ;
+	safeair:locId "5340" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LOS PINOS" ;
+	vcard:street-address "CALLE ROCAFORT 2" ;
+	vcard:postal-code "28021" ;
+	vcard:locality "SAN CRISTOBAL" ;
+	vcard:region "VILLAVERDE" ;
+	geo:lat "40.34123812234347" ;
+	geo:long "-3.6903744434659203" ;
+	safeair:isClosestTo "28079017" .
+
+<http://safeair.es/project/resources/School/5633604> a safeair:School ;
+	safeair:locId "5633604" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LOS SOBRINOS DEL CAPITAN GRANT" ;
+	vcard:street-address "AVENIDA LA GAVIA 22" ;
+	vcard:postal-code "28051" ;
+	vcard:locality "CASCO H.VALLECAS" ;
+	vcard:region "VILLA DE VALLECAS" ;
+	geo:lat "40.37360084784636" ;
+	geo:long "-3.6116173651956935" ;
+	safeair:isClosestTo "28079054" .
+
+<http://safeair.es/project/resources/School/187609> a safeair:School ;
+	safeair:locId "187609" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LUIS BELLO" ;
+	vcard:street-address "CALLE JUAN BAUTISTA DE TOLEDO 5" ;
+	vcard:postal-code "28002" ;
+	vcard:locality "PROSPERIDAD" ;
+	vcard:region "CHAMARTIN" ;
+	geo:lat "40.443633085040005" ;
+	geo:long "-3.6739692982111727" ;
+	safeair:isClosestTo "28079011" .
+
+<http://safeair.es/project/resources/School/5633425> a safeair:School ;
+	safeair:locId "5633425" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL LUISA FERNANDA" ;
+	vcard:street-address "CALLE COCHERON DE LA VILLA 29" ;
+	vcard:postal-code "28031" ;
+	vcard:locality "PALOMERAS SURESTE" ;
+	vcard:region "PUENTE DE VALLECAS" ;
+	geo:lat "40.38152351850743" ;
+	geo:long "-3.635992893537739" ;
+	safeair:isClosestTo "28079040" .
+
+<http://safeair.es/project/resources/School/5633596> a safeair:School ;
+	safeair:locId "5633596" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL MOLINOS DE VIENTO" ;
+	vcard:street-address "CAMINO FUENTE DE ARRIBA 4" ;
+	vcard:postal-code "28032" ;
+	vcard:locality "CASCO H.VICALVARO" ;
+	vcard:region "VICALVARO" ;
+	geo:lat "40.403213774633976" ;
+	geo:long "-3.609917274177793" ;
+	safeair:isClosestTo "28079036" .
+
+<http://safeair.es/project/resources/School/187607> a safeair:School ;
+	safeair:locId "187607" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL OSA MENOR" ;
+	vcard:street-address "CALLE MEJIA LEQUERICA 21" ;
+	vcard:postal-code "28004" ;
+	vcard:locality "JUSTICIA" ;
+	vcard:region "CENTRO" ;
+	geo:lat "40.4280399538175" ;
+	geo:long "-3.699501702258276" ;
+	safeair:isClosestTo "28079035" .
+
+<http://safeair.es/project/resources/School/88758> a safeair:School ;
+	safeair:locId "88758" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL RUÍZ JIMÉNEZ" ;
+	vcard:street-address "CALLE JOSE PICON 17" ;
+	vcard:postal-code "28028" ;
+	vcard:locality "GUINDALERA" ;
+	vcard:region "SALAMANCA" ;
+	geo:lat "40.435092812438825" ;
+	geo:long "-3.6723748741995066" ;
+	safeair:isClosestTo "28079048" .
+
+<http://safeair.es/project/resources/School/168220> a safeair:School ;
+	safeair:locId "168220" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL TARABILLA" ;
+	vcard:street-address "CALLE GANDHI 14" ;
+	vcard:postal-code "28017" ;
+	vcard:locality "PUEBLO NUEVO" ;
+	vcard:region "CIUDAD LINEAL" ;
+	geo:lat "40.42369169272075" ;
+	geo:long "-3.6349635101992215" ;
+	safeair:isClosestTo "28079016" .
+
+<http://safeair.es/project/resources/School/4552561> a safeair:School ;
+	safeair:locId "4552561" ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL VEOVEO" ;
+	vcard:street-address "CALLE CONDESA DE VENADITO 3" ;
+	vcard:postal-code "28027" ;
+	vcard:locality "SAN PASCUAL" ;
+	vcard:region "CIUDAD LINEAL" ;
+	geo:lat "40.44410961610912" ;
+	geo:long "-3.6553313008969353" ;
+	safeair:isClosestTo "28079016" .
