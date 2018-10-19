@@ -18,9 +18,13 @@
 <http://safeair.es/project/resources/vcard/58241> a vcard:VCard ;
 	vcard:street-address "CALLE LEÑEROS 25" ;
 	vcard:postal-code "28039"^^xsd:int ;
-	vcard:region "TETUAN" .
+	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
 <http://safeair.es/project/resources/School/58241> safeair:hasVCard <http://safeair.es/project/resources/vcard/58241> .
+
+<http://safeair.es/project/resources/District/TETUAN> rdfs:label "TETUAN" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1773540> .
 
 <http://safeair.es/project/resources/School/4549323> a safeair:School ;
 	safeair:locId "4549323"^^xsd:int ;
@@ -32,9 +36,13 @@
 <http://safeair.es/project/resources/vcard/4549323> a vcard:VCard ;
 	vcard:street-address "CALLE JOSE DE CADALSO 43" ;
 	vcard:postal-code "28044"^^xsd:int ;
-	vcard:region "LATINA" .
+	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
 <http://safeair.es/project/resources/School/4549323> safeair:hasVCard <http://safeair.es/project/resources/vcard/4549323> .
+
+<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
 <http://safeair.es/project/resources/School/5299172> a safeair:School ;
 	safeair:locId "5299172"^^xsd:int ;
@@ -46,23 +54,31 @@
 <http://safeair.es/project/resources/vcard/5299172> a vcard:VCard ;
 	vcard:street-address "CALLE TITANIO 7" ;
 	vcard:postal-code "28032"^^xsd:int ;
-	vcard:region "VICALVARO" .
+	vcard:region <http://safeair.es/project/resources/District/VICALVARO> .
 
 <http://safeair.es/project/resources/School/5299172> safeair:hasVCard <http://safeair.es/project/resources/vcard/5299172> .
 
-<http://safeair.es/project/resources/School/5633312> a safeair:School ;
-	safeair:locId "5633312"^^xsd:int ;
-	safeair:locName "ESCUELA INFANTIL MUNICIPAL ANA DE AUSTRIA" ;
-	geo:lat "40.495521538137815"^^xsd:double ;
+<http://safeair.es/project/resources/District/VICALVARO> a safeair:District ;
+	rdfs:label "VICALVARO" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q589403> .
+
+<http://safeair.es/project/resources/School/5633312> safeair:isClosestTo "28079057"^^xsd:int ;
 	geo:long "-3.655736850911649"^^xsd:double ;
-	safeair:isClosestTo "28079057"^^xsd:int .
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL ANA DE AUSTRIA" ;
+	a safeair:School ;
+	safeair:locId "5633312"^^xsd:int ;
+	geo:lat "40.495521538137815"^^xsd:double .
 
 <http://safeair.es/project/resources/vcard/5633312> a vcard:VCard ;
 	vcard:street-address "CALLE ANA DE AUSTRIA 32" ;
 	vcard:postal-code "28050"^^xsd:int ;
-	vcard:region "HORTALEZA" .
+	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
 <http://safeair.es/project/resources/School/5633312> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633312> .
+
+<http://safeair.es/project/resources/District/HORTALEZA> owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
+	a safeair:District ;
+	rdfs:label "HORTALEZA" .
 
 <http://safeair.es/project/resources/School/4724002> a safeair:School ;
 	safeair:locId "4724002"^^xsd:int ;
@@ -74,9 +90,13 @@
 <http://safeair.es/project/resources/vcard/4724002> a vcard:VCard ;
 	vcard:street-address "CALLE AVILA 4" ;
 	vcard:postal-code "28020"^^xsd:int ;
-	vcard:region "TETUAN" .
+	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
 <http://safeair.es/project/resources/School/4724002> safeair:hasVCard <http://safeair.es/project/resources/vcard/4724002> .
+
+<http://safeair.es/project/resources/District/TETUAN> rdfs:label "TETUAN" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1773540> .
 
 <http://safeair.es/project/resources/School/5252087> a safeair:School ;
 	safeair:locId "5252087"^^xsd:int ;
@@ -88,9 +108,13 @@
 <http://safeair.es/project/resources/vcard/5252087> a vcard:VCard ;
 	vcard:street-address "BULEVAR INDALECIO PRIETO 16" ;
 	vcard:postal-code "28032"^^xsd:int ;
-	vcard:region "VICALVARO" .
+	vcard:region <http://safeair.es/project/resources/District/VICALVARO> .
 
 <http://safeair.es/project/resources/School/5252087> safeair:hasVCard <http://safeair.es/project/resources/vcard/5252087> .
+
+<http://safeair.es/project/resources/District/VICALVARO> rdfs:label "VICALVARO" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q589403> .
 
 <http://safeair.es/project/resources/School/5633339> a safeair:School ;
 	safeair:locId "5633339"^^xsd:int ;
@@ -102,9 +126,13 @@
 <http://safeair.es/project/resources/vcard/5633339> a vcard:VCard ;
 	vcard:street-address "CALLE CAMBADOS 1" ;
 	vcard:postal-code "28050"^^xsd:int ;
-	vcard:region "HORTALEZA" .
+	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
 <http://safeair.es/project/resources/School/5633339> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633339> .
+
+<http://safeair.es/project/resources/District/HORTALEZA> rdfs:label "HORTALEZA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/School/28779> a safeair:School ;
 	safeair:locId "28779"^^xsd:int ;
@@ -116,9 +144,13 @@
 <http://safeair.es/project/resources/vcard/28779> a vcard:VCard ;
 	vcard:street-address "CALLE TOLEDO 181" ;
 	vcard:postal-code "28005"^^xsd:int ;
-	vcard:region "ARGANZUELA" .
+	vcard:region <http://safeair.es/project/resources/District/ARGANZUELA> .
 
 <http://safeair.es/project/resources/School/28779> safeair:hasVCard <http://safeair.es/project/resources/vcard/28779> .
+
+<http://safeair.es/project/resources/District/ARGANZUELA> owl:sameAs <https://www.wikidata.org/wiki/Q2000929> ;
+	rdfs:label "ARGANZUELA" ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/School/5632719> a safeair:School ;
 	safeair:locId "5632719"^^xsd:int ;
@@ -130,9 +162,13 @@
 <http://safeair.es/project/resources/vcard/5632719> a vcard:VCard ;
 	vcard:street-address "CALLE GRANITO 32" ;
 	vcard:postal-code "28045"^^xsd:int ;
-	vcard:region "ARGANZUELA" .
+	vcard:region <http://safeair.es/project/resources/District/ARGANZUELA> .
 
 <http://safeair.es/project/resources/School/5632719> safeair:hasVCard <http://safeair.es/project/resources/vcard/5632719> .
+
+<http://safeair.es/project/resources/District/ARGANZUELA> rdfs:label "ARGANZUELA" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2000929> .
 
 <http://safeair.es/project/resources/School/5632789> a safeair:School ;
 	safeair:locId "5632789"^^xsd:int ;
@@ -144,9 +180,13 @@
 <http://safeair.es/project/resources/vcard/5632789> a vcard:VCard ;
 	vcard:street-address "CALLE PINOS DE OSUNA 3" ;
 	vcard:postal-code "28042"^^xsd:int ;
-	vcard:region "BARAJAS" .
+	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
 <http://safeair.es/project/resources/School/5632789> safeair:hasVCard <http://safeair.es/project/resources/vcard/5632789> .
+
+<http://safeair.es/project/resources/District/BARAJAS> rdfs:label "BARAJAS" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q807230> .
 
 <http://safeair.es/project/resources/School/172970> a safeair:School ;
 	safeair:locId "172970"^^xsd:int ;
@@ -158,9 +198,13 @@
 <http://safeair.es/project/resources/vcard/172970> a vcard:VCard ;
 	vcard:street-address "CALLE DELICIAS 32" ;
 	vcard:postal-code "28045"^^xsd:int ;
-	vcard:region "ARGANZUELA" .
+	vcard:region <http://safeair.es/project/resources/District/ARGANZUELA> .
 
 <http://safeair.es/project/resources/School/172970> safeair:hasVCard <http://safeair.es/project/resources/vcard/172970> .
+
+<http://safeair.es/project/resources/District/ARGANZUELA> a safeair:District ;
+	rdfs:label "ARGANZUELA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2000929> .
 
 <http://safeair.es/project/resources/School/5633412> a safeair:School ;
 	safeair:locId "5633412"^^xsd:int ;
@@ -172,9 +216,13 @@
 <http://safeair.es/project/resources/vcard/5633412> a vcard:VCard ;
 	vcard:street-address "CALLE MARIA TERESA ROBLEDO 3" ;
 	vcard:postal-code "28018"^^xsd:int ;
-	vcard:region "PUENTE DE VALLECAS" .
+	vcard:region <http://safeair.es/project/resources/District%2FPUENTE+DE+VALLECAS> .
 
 <http://safeair.es/project/resources/School/5633412> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633412> .
+
+<http://safeair.es/project/resources/District%2FPUENTE+DE+VALLECAS> a safeair:District ;
+	rdfs:label "PUENTE DE VALLECAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> .
 
 <http://safeair.es/project/resources/School/100359> a safeair:School ;
 	safeair:locId "100359"^^xsd:int ;
@@ -186,9 +234,13 @@
 <http://safeair.es/project/resources/vcard/100359> a vcard:VCard ;
 	vcard:street-address "PLAZA DOS DE MAYO 2" ;
 	vcard:postal-code "28004"^^xsd:int ;
-	vcard:region "CENTRO" .
+	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
 <http://safeair.es/project/resources/School/100359> safeair:hasVCard <http://safeair.es/project/resources/vcard/100359> .
+
+<http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
+	rdfs:label "CENTRO" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
 
 <http://safeair.es/project/resources/School/58242> a safeair:School ;
 	safeair:locId "58242"^^xsd:int ;
@@ -200,9 +252,13 @@
 <http://safeair.es/project/resources/vcard/58242> a vcard:VCard ;
 	vcard:street-address "CALLE PICO DE LOS ARTILLEROS 123" ;
 	vcard:postal-code "28030"^^xsd:int ;
-	vcard:region "MORATALAZ" .
+	vcard:region <http://safeair.es/project/resources/District/MORATALAZ> .
 
 <http://safeair.es/project/resources/School/58242> safeair:hasVCard <http://safeair.es/project/resources/vcard/58242> .
+
+<http://safeair.es/project/resources/District/MORATALAZ> a safeair:District ;
+	rdfs:label "MORATALAZ" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2076109> .
 
 <http://safeair.es/project/resources/School/4552951> a safeair:School ;
 	safeair:locId "4552951"^^xsd:int ;
@@ -214,9 +270,13 @@
 <http://safeair.es/project/resources/vcard/4552951> a vcard:VCard ;
 	vcard:street-address "CALLE CARLOS FUENTES 2" ;
 	vcard:postal-code "28047"^^xsd:int ;
-	vcard:region "LATINA" .
+	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
 <http://safeair.es/project/resources/School/4552951> safeair:hasVCard <http://safeair.es/project/resources/vcard/4552951> .
+
+<http://safeair.es/project/resources/District/LATINA> a safeair:District ;
+	rdfs:label "LATINA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
 <http://safeair.es/project/resources/School/5981488> a safeair:School ;
 	safeair:locId "5981488"^^xsd:int ;
@@ -228,23 +288,34 @@
 <http://safeair.es/project/resources/vcard/5981488> a vcard:VCard ;
 	vcard:street-address "CALLE OLIVAR 48" ;
 	vcard:postal-code "28012"^^xsd:int ;
-	vcard:region "CENTRO" .
+	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
 <http://safeair.es/project/resources/School/5981488> safeair:hasVCard <http://safeair.es/project/resources/vcard/5981488> .
 
-<http://safeair.es/project/resources/School/5072> a safeair:School ;
-	safeair:locId "5072"^^xsd:int ;
-	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL ROCÍO" ;
-	geo:lat "40.350977588455294"^^xsd:double ;
-	geo:long "-3.7066886127927594"^^xsd:double ;
-	safeair:isClosestTo "28079017"^^xsd:int .
+<http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
+	rdfs:label "CENTRO" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
+
+<http://safeair.es/project/resources/vcard/5072> vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
+
+<http://safeair.es/project/resources/School/5072> geo:long "-3.7066886127927594"^^xsd:double .
+
+<http://safeair.es/project/resources/vcard/5072> vcard:postal-code "28041"^^xsd:int .
+
+<http://safeair.es/project/resources/School/5072> safeair:isClosestTo "28079017"^^xsd:int .
 
 <http://safeair.es/project/resources/vcard/5072> a vcard:VCard ;
-	vcard:street-address "CARRETERA CARABANCHEL A VILLAVERDE 107" ;
-	vcard:postal-code "28041"^^xsd:int ;
-	vcard:region "VILLAVERDE" .
+	vcard:street-address "CARRETERA CARABANCHEL A VILLAVERDE 107" .
 
-<http://safeair.es/project/resources/School/5072> safeair:hasVCard <http://safeair.es/project/resources/vcard/5072> .
+<http://safeair.es/project/resources/School/5072> geo:lat "40.350977588455294"^^xsd:double ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL EL ROCÍO" ;
+	safeair:locId "5072"^^xsd:int ;
+	a safeair:School ;
+	safeair:hasVCard <http://safeair.es/project/resources/vcard/5072> .
+
+<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/School/5039> a safeair:School ;
 	safeair:locId "5039"^^xsd:int ;
@@ -256,9 +327,13 @@
 <http://safeair.es/project/resources/vcard/5039> a vcard:VCard ;
 	vcard:street-address "CALLE ENRIQUE JARDIEL PONCELA 8" ;
 	vcard:postal-code "28016"^^xsd:int ;
-	vcard:region "CHAMARTIN" .
+	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
 <http://safeair.es/project/resources/School/5039> safeair:hasVCard <http://safeair.es/project/resources/vcard/5039> .
+
+<http://safeair.es/project/resources/District/CHAMARTIN> a safeair:District ;
+	rdfs:label "CHAMARTIN" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> .
 
 <http://safeair.es/project/resources/School/8226010> a safeair:School ;
 	safeair:locId "8226010"^^xsd:int ;
@@ -270,23 +345,31 @@
 <http://safeair.es/project/resources/vcard/8226010> a vcard:VCard ;
 	vcard:street-address "CALLE FARMACIA 13" ;
 	vcard:postal-code "28004"^^xsd:int ;
-	vcard:region "CENTRO" .
+	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
 <http://safeair.es/project/resources/School/8226010> safeair:hasVCard <http://safeair.es/project/resources/vcard/8226010> .
 
-<http://safeair.es/project/resources/School/5633199> a safeair:School ;
-	safeair:locId "5633199"^^xsd:int ;
+<http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
+	rdfs:label "CENTRO" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
+
+<http://safeair.es/project/resources/School/5633199> geo:lat "40.43410368953045"^^xsd:double ;
 	safeair:locName "ESCUELA INFANTIL MUNICIPAL FERNANDO EL CATÓLICO" ;
-	geo:lat "40.43410368953045"^^xsd:double ;
+	a safeair:School ;
+	safeair:locId "5633199"^^xsd:int ;
 	geo:long "-3.709739294334829"^^xsd:double ;
 	safeair:isClosestTo "28079004"^^xsd:int .
 
 <http://safeair.es/project/resources/vcard/5633199> a vcard:VCard ;
 	vcard:street-address "CALLE FERNANDO EL CATOLICO 16" ;
 	vcard:postal-code "28015"^^xsd:int ;
-	vcard:region "CHAMBERI" .
+	vcard:region <http://safeair.es/project/resources/District/CHAMBERI> .
 
 <http://safeair.es/project/resources/School/5633199> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633199> .
+
+<http://safeair.es/project/resources/District/CHAMBERI> a safeair:District ;
+	rdfs:label "CHAMBERI" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763370> .
 
 <http://safeair.es/project/resources/School/5633259> a safeair:School ;
 	safeair:locId "5633259"^^xsd:int ;
@@ -298,23 +381,31 @@
 <http://safeair.es/project/resources/vcard/5633259> a vcard:VCard ;
 	vcard:street-address "CALLE RAFAEL BERGAMIN 28" ;
 	vcard:postal-code "28043"^^xsd:int ;
-	vcard:region "CIUDAD LINEAL" .
+	vcard:region <http://safeair.es/project/resources/District%2FCIUDAD+LINEAL> .
 
 <http://safeair.es/project/resources/School/5633259> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633259> .
 
-<http://safeair.es/project/resources/School/58239> a safeair:School ;
-	safeair:locId "58239"^^xsd:int ;
-	safeair:locName "ESCUELA INFANTIL MUNICIPAL HIEDRA" ;
+<http://safeair.es/project/resources/District%2FCIUDAD+LINEAL> a safeair:District ;
+	rdfs:label "CIUDAD LINEAL" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> .
+
+<http://safeair.es/project/resources/School/58239> safeair:locId "58239"^^xsd:int ;
 	geo:lat "40.42289407876372"^^xsd:double ;
+	safeair:locName "ESCUELA INFANTIL MUNICIPAL HIEDRA" ;
+	a safeair:School ;
 	geo:long "-3.619242528492244"^^xsd:double ;
 	safeair:isClosestTo "28079016"^^xsd:int .
 
 <http://safeair.es/project/resources/vcard/58239> a vcard:VCard ;
 	vcard:street-address "CALLE AMPOSTA 34" ;
 	vcard:postal-code "28037"^^xsd:int ;
-	vcard:region "SAN BLAS-CANILLEJAS" .
+	vcard:region <http://safeair.es/project/resources/District%2FSAN+BLAS-CANILLEJAS> .
 
 <http://safeair.es/project/resources/School/58239> safeair:hasVCard <http://safeair.es/project/resources/vcard/58239> .
+
+<http://safeair.es/project/resources/District%2FSAN+BLAS-CANILLEJAS> a safeair:District ;
+	rdfs:label "SAN BLAS-CANILLEJAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
 
 <http://safeair.es/project/resources/School/5633447> a safeair:School ;
 	safeair:locId "5633447"^^xsd:int ;
@@ -326,9 +417,13 @@
 <http://safeair.es/project/resources/vcard/5633447> a vcard:VCard ;
 	vcard:street-address "CALLE HELSINKI 2" ;
 	vcard:postal-code "28022"^^xsd:int ;
-	vcard:region "SAN BLAS-CANILLEJAS" .
+	vcard:region <http://safeair.es/project/resources/District%2FSAN+BLAS-CANILLEJAS> .
 
 <http://safeair.es/project/resources/School/5633447> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633447> .
+
+<http://safeair.es/project/resources/District%2FSAN+BLAS-CANILLEJAS> a safeair:District ;
+	rdfs:label "SAN BLAS-CANILLEJAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
 
 <http://safeair.es/project/resources/School/4552960> a safeair:School ;
 	safeair:locId "4552960"^^xsd:int ;
@@ -340,9 +435,13 @@
 <http://safeair.es/project/resources/vcard/4552960> a vcard:VCard ;
 	vcard:street-address "AVENIDA ASTURIAS 72" ;
 	vcard:postal-code "28029"^^xsd:int ;
-	vcard:region "TETUAN" .
+	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
 <http://safeair.es/project/resources/School/4552960> safeair:hasVCard <http://safeair.es/project/resources/vcard/4552960> .
+
+<http://safeair.es/project/resources/District/TETUAN> a safeair:District ;
+	rdfs:label "TETUAN" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1773540> .
 
 <http://safeair.es/project/resources/School/5336> a safeair:School ;
 	safeair:locId "5336"^^xsd:int ;
@@ -354,9 +453,13 @@
 <http://safeair.es/project/resources/vcard/5336> a vcard:VCard ;
 	vcard:street-address "CALLE BELORADO 1" ;
 	vcard:postal-code "28034"^^xsd:int ;
-	vcard:region "FUENCARRAL-EL PARDO" .
+	vcard:region <http://safeair.es/project/resources/District%2FFUENCARRAL-EL+PARDO> .
 
 <http://safeair.es/project/resources/School/5336> safeair:hasVCard <http://safeair.es/project/resources/vcard/5336> .
+
+<http://safeair.es/project/resources/District%2FFUENCARRAL-EL+PARDO> a safeair:District ;
+	rdfs:label "FUENCARRAL-EL PARDO" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
 
 <http://safeair.es/project/resources/School/5632722> a safeair:School ;
 	safeair:locId "5632722"^^xsd:int ;
@@ -368,9 +471,13 @@
 <http://safeair.es/project/resources/vcard/5632722> a vcard:VCard ;
 	vcard:street-address "CALLE BAHIA DE PALMA 13" ;
 	vcard:postal-code "28042"^^xsd:int ;
-	vcard:region "BARAJAS" .
+	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
 <http://safeair.es/project/resources/School/5632722> safeair:hasVCard <http://safeair.es/project/resources/vcard/5632722> .
+
+<http://safeair.es/project/resources/District/BARAJAS> rdfs:label "BARAJAS" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q807230> .
 
 <http://safeair.es/project/resources/School/28783> a safeair:School ;
 	safeair:locId "28783"^^xsd:int ;
@@ -382,9 +489,13 @@
 <http://safeair.es/project/resources/vcard/28783> a vcard:VCard ;
 	vcard:street-address "CALLE NUESTRA SEÑORA DE ARACELI 2" ;
 	vcard:postal-code "28042"^^xsd:int ;
-	vcard:region "BARAJAS" .
+	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
 <http://safeair.es/project/resources/School/28783> safeair:hasVCard <http://safeair.es/project/resources/vcard/28783> .
+
+<http://safeair.es/project/resources/District/BARAJAS> a safeair:District ;
+	rdfs:label "BARAJAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q807230> .
 
 <http://safeair.es/project/resources/School/84666> a safeair:School ;
 	safeair:locId "84666"^^xsd:int ;
@@ -396,9 +507,13 @@
 <http://safeair.es/project/resources/vcard/84666> a vcard:VCard ;
 	vcard:street-address "CALLE CRISTO DE LA VICTORIA 23" ;
 	vcard:postal-code "28026"^^xsd:int ;
-	vcard:region "USERA" .
+	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
 <http://safeair.es/project/resources/School/84666> safeair:hasVCard <http://safeair.es/project/resources/vcard/84666> .
+
+<http://safeair.es/project/resources/District/USERA> a safeair:District ;
+	rdfs:label "USERA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q953368> .
 
 <http://safeair.es/project/resources/School/5633276> a safeair:School ;
 	safeair:locId "5633276"^^xsd:int ;
@@ -410,23 +525,31 @@
 <http://safeair.es/project/resources/vcard/5633276> a vcard:VCard ;
 	vcard:street-address "CALLE CHANTADA 41" ;
 	vcard:postal-code "28035"^^xsd:int ;
-	vcard:region "FUENCARRAL-EL PARDO" .
+	vcard:region <http://safeair.es/project/resources/District%2FFUENCARRAL-EL+PARDO> .
 
 <http://safeair.es/project/resources/School/5633276> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633276> .
 
-<http://safeair.es/project/resources/School/5633332> a safeair:School ;
-	safeair:locId "5633332"^^xsd:int ;
+<http://safeair.es/project/resources/District%2FFUENCARRAL-EL+PARDO> rdfs:label "FUENCARRAL-EL PARDO" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
+
+<http://safeair.es/project/resources/School/5633332> safeair:locId "5633332"^^xsd:int ;
 	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA GRAN VÍA" ;
 	geo:lat "40.46280275882352"^^xsd:double ;
+	a safeair:School ;
 	geo:long "-3.6344352214063727"^^xsd:double ;
 	safeair:isClosestTo "28079059"^^xsd:int .
 
 <http://safeair.es/project/resources/vcard/5633332> a vcard:VCard ;
 	vcard:street-address "CALLE SILVANO 99" ;
 	vcard:postal-code "28043"^^xsd:int ;
-	vcard:region "HORTALEZA" .
+	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
 <http://safeair.es/project/resources/School/5633332> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633332> .
+
+<http://safeair.es/project/resources/District/HORTALEZA> a safeair:District ;
+	rdfs:label "HORTALEZA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> .
 
 <http://safeair.es/project/resources/School/5073> a safeair:School ;
 	safeair:locId "5073"^^xsd:int ;
@@ -438,9 +561,13 @@
 <http://safeair.es/project/resources/vcard/5073> a vcard:VCard ;
 	vcard:street-address "CALLE BENIMAMET 109" ;
 	vcard:postal-code "28021"^^xsd:int ;
-	vcard:region "VILLAVERDE" .
+	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
 <http://safeair.es/project/resources/School/5073> safeair:hasVCard <http://safeair.es/project/resources/vcard/5073> .
+
+<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/School/5299025> a safeair:School ;
 	safeair:locId "5299025"^^xsd:int ;
@@ -452,9 +579,13 @@
 <http://safeair.es/project/resources/vcard/5299025> a vcard:VCard ;
 	vcard:street-address "CALLE GAINZA 46" ;
 	vcard:postal-code "28041"^^xsd:int ;
-	vcard:region "USERA" .
+	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
 <http://safeair.es/project/resources/School/5299025> safeair:hasVCard <http://safeair.es/project/resources/vcard/5299025> .
+
+<http://safeair.es/project/resources/District/USERA> a safeair:District ;
+	rdfs:label "USERA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q953368> .
 
 <http://safeair.es/project/resources/School/5341> a safeair:School ;
 	safeair:locId "5341"^^xsd:int ;
@@ -466,9 +597,13 @@
 <http://safeair.es/project/resources/vcard/5341> a vcard:VCard ;
 	vcard:street-address "CALLE TABERNILLAS 2" ;
 	vcard:postal-code "28005"^^xsd:int ;
-	vcard:region "CENTRO" .
+	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
 <http://safeair.es/project/resources/School/5341> safeair:hasVCard <http://safeair.es/project/resources/vcard/5341> .
+
+<http://safeair.es/project/resources/District/CENTRO> rdfs:label "CENTRO" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
 
 <http://safeair.es/project/resources/School/5633158> a safeair:School ;
 	safeair:locId "5633158"^^xsd:int ;
@@ -480,9 +615,13 @@
 <http://safeair.es/project/resources/vcard/5633158> a vcard:VCard ;
 	vcard:street-address "CALLE PATRIMONIO DE LA HUMANIDAD 31" ;
 	vcard:postal-code "28054"^^xsd:int ;
-	vcard:region "CARABANCHEL" .
+	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
 <http://safeair.es/project/resources/School/5633158> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633158> .
+
+<http://safeair.es/project/resources/District/CARABANCHEL> a safeair:District ;
+	rdfs:label "CARABANCHEL" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
 
 <http://safeair.es/project/resources/School/5633600> a safeair:School ;
 	safeair:locId "5633600"^^xsd:int ;
@@ -494,9 +633,13 @@
 <http://safeair.es/project/resources/vcard/5633600> a vcard:VCard ;
 	vcard:street-address "CALLE JOSE ANTONIO REBOLLEDO Y PALMA 18" ;
 	vcard:postal-code "28051"^^xsd:int ;
-	vcard:region "VILLA DE VALLECAS" .
+	vcard:region <http://safeair.es/project/resources/District%2FVILLA+DE+VALLECAS> .
 
 <http://safeair.es/project/resources/School/5633600> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633600> .
+
+<http://safeair.es/project/resources/District%2FVILLA+DE+VALLECAS> a safeair:District ;
+	rdfs:label "VILLA DE VALLECAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1947988> .
 
 <http://safeair.es/project/resources/School/5633294> a safeair:School ;
 	safeair:locId "5633294"^^xsd:int ;
@@ -508,9 +651,13 @@
 <http://safeair.es/project/resources/vcard/5633294> a vcard:VCard ;
 	vcard:street-address "CALLE CUEVA DE MONTESINOS 2" ;
 	vcard:postal-code "28034"^^xsd:int ;
-	vcard:region "FUENCARRAL-EL PARDO" .
+	vcard:region <http://safeair.es/project/resources/District%2FFUENCARRAL-EL+PARDO> .
 
 <http://safeair.es/project/resources/School/5633294> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633294> .
+
+<http://safeair.es/project/resources/District%2FFUENCARRAL-EL+PARDO> a safeair:District ;
+	rdfs:label "FUENCARRAL-EL PARDO" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
 
 <http://safeair.es/project/resources/School/5633382> a safeair:School ;
 	safeair:locId "5633382"^^xsd:int ;
@@ -522,9 +669,13 @@
 <http://safeair.es/project/resources/vcard/5633382> a vcard:VCard ;
 	vcard:street-address "CALLE FUERTE DE NAVIDAD 17" ;
 	vcard:postal-code "28044"^^xsd:int ;
-	vcard:region "LATINA" .
+	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
 <http://safeair.es/project/resources/School/5633382> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633382> .
+
+<http://safeair.es/project/resources/District/LATINA> a safeair:District ;
+	rdfs:label "LATINA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
 <http://safeair.es/project/resources/School/5633456> a safeair:School ;
 	safeair:locId "5633456"^^xsd:int ;
@@ -536,23 +687,31 @@
 <http://safeair.es/project/resources/vcard/5633456> a vcard:VCard ;
 	vcard:street-address "CALLE RAVENA 12" ;
 	vcard:postal-code "28032"^^xsd:int ;
-	vcard:region "SAN BLAS-CANILLEJAS" .
+	vcard:region <http://safeair.es/project/resources/District%2FSAN+BLAS-CANILLEJAS> .
 
 <http://safeair.es/project/resources/School/5633456> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633456> .
 
-<http://safeair.es/project/resources/School/5633393> a safeair:School ;
-	safeair:locId "5633393"^^xsd:int ;
-	safeair:locName "ESCUELA INFANTIL MUNICIPAL LA DEL SOTO DEL PARRAL" ;
-	geo:lat "40.37197319564591"^^xsd:double ;
+<http://safeair.es/project/resources/District%2FSAN+BLAS-CANILLEJAS> a safeair:District ;
+	rdfs:label "SAN BLAS-CANILLEJAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
+
+<http://safeair.es/project/resources/School/5633393> safeair:locName "ESCUELA INFANTIL MUNICIPAL LA DEL SOTO DEL PARRAL" ;
 	geo:long "-3.7681711768688495"^^xsd:double ;
+	geo:lat "40.37197319564591"^^xsd:double ;
+	a safeair:School ;
+	safeair:locId "5633393"^^xsd:int ;
 	safeair:isClosestTo "28079018"^^xsd:int .
 
 <http://safeair.es/project/resources/vcard/5633393> a vcard:VCard ;
 	vcard:street-address "CALLE TROMPAS 19" ;
 	vcard:postal-code "28054"^^xsd:int ;
-	vcard:region "LATINA" .
+	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
 <http://safeair.es/project/resources/School/5633393> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633393> .
+
+<http://safeair.es/project/resources/District/LATINA> a safeair:District ;
+	rdfs:label "LATINA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
 <http://safeair.es/project/resources/School/5298904> a safeair:School ;
 	safeair:locId "5298904"^^xsd:int ;
@@ -564,13 +723,17 @@
 <http://safeair.es/project/resources/vcard/5298904> a vcard:VCard ;
 	vcard:street-address "CALLE OBOLO 14" ;
 	vcard:postal-code "28054"^^xsd:int ;
-	vcard:region "CARABANCHEL" .
+	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
 <http://safeair.es/project/resources/School/5298904> safeair:hasVCard <http://safeair.es/project/resources/vcard/5298904> .
 
-<http://safeair.es/project/resources/School/5299104> a safeair:School ;
-	safeair:locId "5299104"^^xsd:int ;
+<http://safeair.es/project/resources/District/CARABANCHEL> rdfs:label "CARABANCHEL" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
+
+<http://safeair.es/project/resources/School/5299104> safeair:locId "5299104"^^xsd:int ;
 	safeair:locName "ESCUELA INFANTIL MUNICIPAL LAS AZALEAS" ;
+	a safeair:School ;
 	geo:lat "40.42613036374425"^^xsd:double ;
 	geo:long "-3.6354697765009885"^^xsd:double ;
 	safeair:isClosestTo "28079016"^^xsd:int .
@@ -578,13 +741,17 @@
 <http://safeair.es/project/resources/vcard/5299104> a vcard:VCard ;
 	vcard:street-address "CALLE PORTUGALETE 6" ;
 	vcard:postal-code "28017"^^xsd:int ;
-	vcard:region "CIUDAD LINEAL" .
+	vcard:region <http://safeair.es/project/resources/District%2FCIUDAD+LINEAL> .
 
 <http://safeair.es/project/resources/School/5299104> safeair:hasVCard <http://safeair.es/project/resources/vcard/5299104> .
 
-<http://safeair.es/project/resources/School/5633460> a safeair:School ;
-	safeair:locId "5633460"^^xsd:int ;
+<http://safeair.es/project/resources/District%2FCIUDAD+LINEAL> a safeair:District ;
+	rdfs:label "CIUDAD LINEAL" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> .
+
+<http://safeair.es/project/resources/School/5633460> safeair:locId "5633460"^^xsd:int ;
 	safeair:locName "ESCUELA INFANTIL MUNICIPAL LAS LEANDRAS" ;
+	a safeair:School ;
 	geo:lat "40.44319866421115"^^xsd:double ;
 	geo:long "-3.5938292299686245"^^xsd:double ;
 	safeair:isClosestTo "28079055"^^xsd:int .
@@ -592,9 +759,13 @@
 <http://safeair.es/project/resources/vcard/5633460> a vcard:VCard ;
 	vcard:street-address "CALLE DEYANIRA 2" ;
 	vcard:postal-code "28022"^^xsd:int ;
-	vcard:region "SAN BLAS-CANILLEJAS" .
+	vcard:region <http://safeair.es/project/resources/District%2FSAN+BLAS-CANILLEJAS> .
 
 <http://safeair.es/project/resources/School/5633460> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633460> .
+
+<http://safeair.es/project/resources/District%2FSAN+BLAS-CANILLEJAS> a safeair:District ;
+	rdfs:label "SAN BLAS-CANILLEJAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
 
 <http://safeair.es/project/resources/School/5252132> a safeair:School ;
 	safeair:locId "5252132"^^xsd:int ;
@@ -606,9 +777,13 @@
 <http://safeair.es/project/resources/vcard/5252132> a vcard:VCard ;
 	vcard:street-address "CALLE SAMANIEGO 22" ;
 	vcard:postal-code "28022"^^xsd:int ;
-	vcard:region "SAN BLAS-CANILLEJAS" .
+	vcard:region <http://safeair.es/project/resources/District%2FSAN+BLAS-CANILLEJAS> .
 
 <http://safeair.es/project/resources/School/5252132> safeair:hasVCard <http://safeair.es/project/resources/vcard/5252132> .
+
+<http://safeair.es/project/resources/District%2FSAN+BLAS-CANILLEJAS> a safeair:District ;
+	rdfs:label "SAN BLAS-CANILLEJAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
 
 <http://safeair.es/project/resources/School/132987> a safeair:School ;
 	safeair:locId "132987"^^xsd:int ;
@@ -620,9 +795,13 @@
 <http://safeair.es/project/resources/vcard/132987> a vcard:VCard ;
 	vcard:street-address "CALLE ANTONIO NEBRIJA 7" ;
 	vcard:postal-code "28007"^^xsd:int ;
-	vcard:region "RETIRO" .
+	vcard:region <http://safeair.es/project/resources/District/RETIRO> .
 
 <http://safeair.es/project/resources/School/132987> safeair:hasVCard <http://safeair.es/project/resources/vcard/132987> .
+
+<http://safeair.es/project/resources/District/RETIRO> owl:sameAs <https://www.wikidata.org/wiki/Q2002296> ;
+	a safeair:District ;
+	rdfs:label "RETIRO" .
 
 <http://safeair.es/project/resources/School/132982> a safeair:School ;
 	safeair:locId "132982"^^xsd:int ;
@@ -634,9 +813,13 @@
 <http://safeair.es/project/resources/vcard/132982> a vcard:VCard ;
 	vcard:street-address "CALLE ESTUDIO 6" ;
 	vcard:postal-code "28023"^^xsd:int ;
-	vcard:region "MONCLOA-ARAVACA" .
+	vcard:region <http://safeair.es/project/resources/District/MONCLOA-ARAVACA> .
 
 <http://safeair.es/project/resources/School/132982> safeair:hasVCard <http://safeair.es/project/resources/vcard/132982> .
+
+<http://safeair.es/project/resources/District/MONCLOA-ARAVACA> rdfs:label "MONCLOA-ARAVACA" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2017682> .
 
 <http://safeair.es/project/resources/School/5633582> a safeair:School ;
 	safeair:locId "5633582"^^xsd:int ;
@@ -648,9 +831,13 @@
 <http://safeair.es/project/resources/vcard/5633582> a vcard:VCard ;
 	vcard:street-address "CALLE TIZIANO 7" ;
 	vcard:postal-code "28020"^^xsd:int ;
-	vcard:region "TETUAN" .
+	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
 <http://safeair.es/project/resources/School/5633582> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633582> .
+
+<http://safeair.es/project/resources/District/TETUAN> owl:sameAs <https://www.wikidata.org/wiki/Q1773540> ;
+	a safeair:District ;
+	rdfs:label "TETUAN" .
 
 <http://safeair.es/project/resources/School/28784> a safeair:School ;
 	safeair:locId "28784"^^xsd:int ;
@@ -662,9 +849,13 @@
 <http://safeair.es/project/resources/vcard/28784> a vcard:VCard ;
 	vcard:street-address "PLAZA JUVENTUD 7" ;
 	vcard:postal-code "28032"^^xsd:int ;
-	vcard:region "VICALVARO" .
+	vcard:region <http://safeair.es/project/resources/District/VICALVARO> .
 
 <http://safeair.es/project/resources/School/28784> safeair:hasVCard <http://safeair.es/project/resources/vcard/28784> .
+
+<http://safeair.es/project/resources/District/VICALVARO> a safeair:District ;
+	rdfs:label "VICALVARO" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q589403> .
 
 <http://safeair.es/project/resources/School/5340> a safeair:School ;
 	safeair:locId "5340"^^xsd:int ;
@@ -676,9 +867,13 @@
 <http://safeair.es/project/resources/vcard/5340> a vcard:VCard ;
 	vcard:street-address "CALLE ROCAFORT 2" ;
 	vcard:postal-code "28021"^^xsd:int ;
-	vcard:region "VILLAVERDE" .
+	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
 <http://safeair.es/project/resources/School/5340> safeair:hasVCard <http://safeair.es/project/resources/vcard/5340> .
+
+<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/School/5633604> a safeair:School ;
 	safeair:locId "5633604"^^xsd:int ;
@@ -690,13 +885,17 @@
 <http://safeair.es/project/resources/vcard/5633604> a vcard:VCard ;
 	vcard:street-address "AVENIDA LA GAVIA 22" ;
 	vcard:postal-code "28051"^^xsd:int ;
-	vcard:region "VILLA DE VALLECAS" .
+	vcard:region <http://safeair.es/project/resources/District%2FVILLA+DE+VALLECAS> .
 
 <http://safeair.es/project/resources/School/5633604> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633604> .
 
+<http://safeair.es/project/resources/District%2FVILLA+DE+VALLECAS> a safeair:District ;
+	rdfs:label "VILLA DE VALLECAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1947988> .
+
 <http://safeair.es/project/resources/School/187609> a safeair:School ;
-	safeair:locId "187609"^^xsd:int ;
 	safeair:locName "ESCUELA INFANTIL MUNICIPAL LUIS BELLO" ;
+	safeair:locId "187609"^^xsd:int ;
 	geo:lat "40.443633085040005"^^xsd:double ;
 	geo:long "-3.6739692982111727"^^xsd:double ;
 	safeair:isClosestTo "28079011"^^xsd:int .
@@ -704,9 +903,13 @@
 <http://safeair.es/project/resources/vcard/187609> a vcard:VCard ;
 	vcard:street-address "CALLE JUAN BAUTISTA DE TOLEDO 5" ;
 	vcard:postal-code "28002"^^xsd:int ;
-	vcard:region "CHAMARTIN" .
+	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
 <http://safeair.es/project/resources/School/187609> safeair:hasVCard <http://safeair.es/project/resources/vcard/187609> .
+
+<http://safeair.es/project/resources/District/CHAMARTIN> a safeair:District ;
+	rdfs:label "CHAMARTIN" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> .
 
 <http://safeair.es/project/resources/School/5633425> a safeair:School ;
 	safeair:locId "5633425"^^xsd:int ;
@@ -718,12 +921,16 @@
 <http://safeair.es/project/resources/vcard/5633425> a vcard:VCard ;
 	vcard:street-address "CALLE COCHERON DE LA VILLA 29" ;
 	vcard:postal-code "28031"^^xsd:int ;
-	vcard:region "PUENTE DE VALLECAS" .
+	vcard:region <http://safeair.es/project/resources/District%2FPUENTE+DE+VALLECAS> .
 
 <http://safeair.es/project/resources/School/5633425> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633425> .
 
-<http://safeair.es/project/resources/School/5633596> a safeair:School ;
-	safeair:locId "5633596"^^xsd:int ;
+<http://safeair.es/project/resources/District%2FPUENTE+DE+VALLECAS> a safeair:District ;
+	rdfs:label "PUENTE DE VALLECAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> .
+
+<http://safeair.es/project/resources/School/5633596> safeair:locId "5633596"^^xsd:int ;
+	a safeair:School ;
 	safeair:locName "ESCUELA INFANTIL MUNICIPAL MOLINOS DE VIENTO" ;
 	geo:lat "40.403213774633976"^^xsd:double ;
 	geo:long "-3.609917274177793"^^xsd:double ;
@@ -732,9 +939,13 @@
 <http://safeair.es/project/resources/vcard/5633596> a vcard:VCard ;
 	vcard:street-address "CAMINO FUENTE DE ARRIBA 4" ;
 	vcard:postal-code "28032"^^xsd:int ;
-	vcard:region "VICALVARO" .
+	vcard:region <http://safeair.es/project/resources/District/VICALVARO> .
 
 <http://safeair.es/project/resources/School/5633596> safeair:hasVCard <http://safeair.es/project/resources/vcard/5633596> .
+
+<http://safeair.es/project/resources/District/VICALVARO> rdfs:label "VICALVARO" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q589403> .
 
 <http://safeair.es/project/resources/School/187607> a safeair:School ;
 	safeair:locId "187607"^^xsd:int ;
@@ -746,9 +957,13 @@
 <http://safeair.es/project/resources/vcard/187607> a vcard:VCard ;
 	vcard:street-address "CALLE MEJIA LEQUERICA 21" ;
 	vcard:postal-code "28004"^^xsd:int ;
-	vcard:region "CENTRO" .
+	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
 <http://safeair.es/project/resources/School/187607> safeair:hasVCard <http://safeair.es/project/resources/vcard/187607> .
+
+<http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
+	rdfs:label "CENTRO" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
 
 <http://safeair.es/project/resources/School/88758> a safeair:School ;
 	safeair:locId "88758"^^xsd:int ;
@@ -760,9 +975,13 @@
 <http://safeair.es/project/resources/vcard/88758> a vcard:VCard ;
 	vcard:street-address "CALLE JOSE PICON 17" ;
 	vcard:postal-code "28028"^^xsd:int ;
-	vcard:region "SALAMANCA" .
+	vcard:region <http://safeair.es/project/resources/District/SALAMANCA> .
 
 <http://safeair.es/project/resources/School/88758> safeair:hasVCard <http://safeair.es/project/resources/vcard/88758> .
+
+<http://safeair.es/project/resources/District/SALAMANCA> a safeair:District ;
+	rdfs:label "SALAMANCA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1773521> .
 
 <http://safeair.es/project/resources/School/168220> a safeair:School ;
 	safeair:locId "168220"^^xsd:int ;
@@ -774,13 +993,17 @@
 <http://safeair.es/project/resources/vcard/168220> a vcard:VCard ;
 	vcard:street-address "CALLE GANDHI 14" ;
 	vcard:postal-code "28017"^^xsd:int ;
-	vcard:region "CIUDAD LINEAL" .
+	vcard:region <http://safeair.es/project/resources/District%2FCIUDAD+LINEAL> .
 
 <http://safeair.es/project/resources/School/168220> safeair:hasVCard <http://safeair.es/project/resources/vcard/168220> .
 
-<http://safeair.es/project/resources/School/4552561> a safeair:School ;
+<http://safeair.es/project/resources/District%2FCIUDAD+LINEAL> a safeair:District ;
+	rdfs:label "CIUDAD LINEAL" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> .
+
+<http://safeair.es/project/resources/School/4552561> safeair:locName "ESCUELA INFANTIL MUNICIPAL VEOVEO" ;
+	a safeair:School ;
 	safeair:locId "4552561"^^xsd:int ;
-	safeair:locName "ESCUELA INFANTIL MUNICIPAL VEOVEO" ;
 	geo:lat "40.44410961610912"^^xsd:double ;
 	geo:long "-3.6553313008969353"^^xsd:double ;
 	safeair:isClosestTo "28079016"^^xsd:int .
@@ -788,6 +1011,10 @@
 <http://safeair.es/project/resources/vcard/4552561> a vcard:VCard ;
 	vcard:street-address "CALLE CONDESA DE VENADITO 3" ;
 	vcard:postal-code "28027"^^xsd:int ;
-	vcard:region "CIUDAD LINEAL" .
+	vcard:region <http://safeair.es/project/resources/District%2FCIUDAD+LINEAL> .
 
 <http://safeair.es/project/resources/School/4552561> safeair:hasVCard <http://safeair.es/project/resources/vcard/4552561> .
+
+<http://safeair.es/project/resources/District%2FCIUDAD+LINEAL> a safeair:District ;
+	rdfs:label "CIUDAD LINEAL" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> .
