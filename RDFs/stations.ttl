@@ -1,0 +1,273 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix safeair: <http://safeare.es/project/ontology/SafeAir#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+<http://safeair.es/project/resources/Station/28079004> a safeair:Station ;
+	safeair:locId "station-28079004" ;
+	safeair:locName "Pza. de España" .
+
+<http://safeair.es/project/resources/Station/vcard/28079004> a vcard:VCard ;
+	vcard:street-address "Plaza de España" .
+
+<http://safeair.es/project/resources/Station/28079004> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079004> ;
+	geo:long "-3.712247222222224"^^xsd:double ;
+	geo:lat "40.423852777777775" .
+
+<http://safeair.es/project/resources/Station/28079008> a safeair:Station ;
+	safeair:locId "station-28079008" ;
+	safeair:locName "Escuelas Aguirre" .
+
+<http://safeair.es/project/resources/Station/vcard/28079008> a vcard:VCard ;
+	vcard:street-address "Entre C/ Alcalá y C/ O’ Donell " .
+
+<http://safeair.es/project/resources/Station/28079008> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079008> ;
+	geo:long "-3.682319444444445"^^xsd:double ;
+	geo:lat "40.42156388888888" .
+
+<http://safeair.es/project/resources/Station/28079011> a safeair:Station ;
+	safeair:locId "station-28079011" ;
+	safeair:locName "Avda. Ramón y Cajal" .
+
+<http://safeair.es/project/resources/Station/vcard/28079011> a vcard:VCard ;
+	vcard:street-address "Avda. Ramón y Cajal  esq. C/ Príncipe de Vergara" .
+
+<http://safeair.es/project/resources/Station/28079011> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079011> ;
+	geo:long "-3.6773555555555553"^^xsd:double ;
+	geo:lat "40.451475" .
+
+<http://safeair.es/project/resources/Station/28079016> a safeair:Station ;
+	safeair:locId "station-28079016" ;
+	safeair:locName "Arturo Soria" .
+
+<http://safeair.es/project/resources/Station/vcard/28079016> a vcard:VCard ;
+	vcard:street-address "C/ Arturo Soria  esq. C/  Vizconde de los Asilos " .
+
+<http://safeair.es/project/resources/Station/28079016> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079016> ;
+	geo:long "-3.6392333333333333"^^xsd:double ;
+	geo:lat "40.44004722222222" .
+
+<http://safeair.es/project/resources/Station/28079017> a safeair:Station ;
+	safeair:locId "station-28079017" ;
+	safeair:locName "Villaverde" .
+
+<http://safeair.es/project/resources/Station/vcard/28079017> a vcard:VCard ;
+	vcard:street-address "C/. Juan Peñalver" .
+
+<http://safeair.es/project/resources/Station/28079017> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079017> ;
+	geo:long "-3.713322222222221"^^xsd:double ;
+	geo:lat "40.347138888888885" .
+
+<http://safeair.es/project/resources/Station/28079018> a safeair:Station ;
+	safeair:locId "station-28079018" ;
+	safeair:locName "Farolillo" .
+
+<http://safeair.es/project/resources/Station/vcard/28079018> a vcard:VCard ;
+	vcard:street-address "Calle Farolillo - C/Ervigio" .
+
+<http://safeair.es/project/resources/Station/28079018> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079018> ;
+	geo:long "-3.7318527777777777"^^xsd:double ;
+	geo:lat "40.39478055555556" .
+
+<http://safeair.es/project/resources/Station/28079024> a safeair:Station ;
+	safeair:locId "station-28079024" ;
+	safeair:locName "Casa de Campo" .
+
+<http://safeair.es/project/resources/Station/vcard/28079024> a vcard:VCard ;
+	vcard:street-address "Casa de Campo  (Terminal del Teleférico)" .
+
+<http://safeair.es/project/resources/Station/28079024> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079024> ;
+	geo:long "-3.7473472222222224"^^xsd:double ;
+	geo:lat "40.41935555555556" .
+
+<http://safeair.es/project/resources/Station/28079027> a safeair:Station ;
+	safeair:locId "station-28079027" ;
+	safeair:locName "Barajas Pueblo" .
+
+<http://safeair.es/project/resources/Station/vcard/28079027> a vcard:VCard ;
+	vcard:street-address "C/. Júpiter, 21 (Barajas) " .
+
+<http://safeair.es/project/resources/Station/28079027> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079027> ;
+	geo:long "-3.580030555555555"^^xsd:double ;
+	geo:lat "40.47692777777778" .
+
+<http://safeair.es/project/resources/Station/28079035> a safeair:Station ;
+	safeair:locId "station-28079035" ;
+	safeair:locName "Pza. del Carmen" .
+
+<http://safeair.es/project/resources/Station/vcard/28079035> a vcard:VCard ;
+	vcard:street-address "Plaza del Carmen esq. Tres Cruces. " .
+
+<http://safeair.es/project/resources/Station/28079035> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079035> ;
+	geo:long "-3.7031722222222223"^^xsd:double ;
+	geo:lat "40.41920833333333" .
+
+<http://safeair.es/project/resources/Station/28079036> a safeair:Station ;
+	safeair:locId "station-28079036" ;
+	safeair:locName "Moratalaz" .
+
+<http://safeair.es/project/resources/Station/vcard/28079036> a vcard:VCard ;
+	vcard:street-address "Avd. Moratalaz  esq. Camino de los Vinateros" .
+
+<http://safeair.es/project/resources/Station/28079036> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079036> ;
+	geo:long "-3.6453055555555554"^^xsd:double ;
+	geo:lat "40.40794722222222" .
+
+<http://safeair.es/project/resources/Station/28079038> a safeair:Station ;
+	safeair:locId "station-28079038" ;
+	safeair:locName "Cuatro Caminos" .
+
+<http://safeair.es/project/resources/Station/vcard/28079038> a vcard:VCard ;
+	vcard:street-address "Avda. Pablo Iglesias esq. C/ Marqués de Lema" .
+
+<http://safeair.es/project/resources/Station/28079038> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079038> ;
+	geo:long "-3.7071277777777785"^^xsd:double ;
+	geo:lat "40.44554444444445" .
+
+<http://safeair.es/project/resources/Station/28079039> a safeair:Station ;
+	safeair:locId "station-28079039" ;
+	safeair:locName "Barrio del Pilar" .
+
+<http://safeair.es/project/resources/Station/vcard/28079039> a vcard:VCard ;
+	vcard:street-address "Avd. Betanzos esq. C/  Monforte de Lemos " .
+
+<http://safeair.es/project/resources/Station/28079039> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079039> ;
+	geo:long "-3.7115416666666654"^^xsd:double ;
+	geo:lat "40.47822777777778" .
+
+<http://safeair.es/project/resources/Station/28079040> a safeair:Station ;
+	safeair:locId "station-28079040" ;
+	safeair:locName "Vallecas" .
+
+<http://safeair.es/project/resources/Station/vcard/28079040> a vcard:VCard ;
+	vcard:street-address "C/ Arroyo del Olivar  esq. C/  Río Grande. " .
+
+<http://safeair.es/project/resources/Station/28079040> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079040> ;
+	geo:long "-3.6515222222222223"^^xsd:double ;
+	geo:lat "40.38815277777777" .
+
+<http://safeair.es/project/resources/Station/28079047> a safeair:Station ;
+	safeair:locId "station-28079047" ;
+	safeair:locName "Mendez Alvaro" .
+
+<http://safeair.es/project/resources/Station/vcard/28079047> a vcard:VCard ;
+	vcard:street-address "C/ Juan de Mariana / Pza. Amanecer Mendez Alvaro" .
+
+<http://safeair.es/project/resources/Station/28079047> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079047> ;
+	geo:long "-3.686825"^^xsd:double ;
+	geo:lat "40.398113888888886" .
+
+<http://safeair.es/project/resources/Station/28079048> a safeair:Station ;
+	safeair:locId "station-28079048" ;
+	safeair:locName "Castellana" .
+
+<http://safeair.es/project/resources/Station/vcard/28079048> a vcard:VCard ;
+	vcard:street-address "C/ Jose Gutierrez Abascal" .
+
+<http://safeair.es/project/resources/Station/28079048> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079048> ;
+	geo:long "-3.690366666666667"^^xsd:double ;
+	geo:lat "40.43989722222222" .
+
+<http://safeair.es/project/resources/Station/28079049> a safeair:Station ;
+	safeair:locId "station-28079049" ;
+	safeair:locName "Parque del Retiro" .
+
+<http://safeair.es/project/resources/Station/vcard/28079049> a vcard:VCard ;
+	vcard:street-address "Paseo Venezuela- Casa de Vacas" .
+
+<http://safeair.es/project/resources/Station/28079049> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079049> ;
+	geo:long "-3.682583333333333"^^xsd:double ;
+	geo:lat "40.414444444444435" .
+
+<http://safeair.es/project/resources/Station/28079050> a safeair:Station ;
+	safeair:locId "station-28079050" ;
+	safeair:locName "Plaza Castilla" .
+
+<http://safeair.es/project/resources/Station/vcard/28079050> a vcard:VCard ;
+	vcard:street-address "Plaza Castilla (Canal)" .
+
+<http://safeair.es/project/resources/Station/28079050> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079050> ;
+	geo:long "-3.688769444444445"^^xsd:double ;
+	geo:lat "40.46557222222223" .
+
+<http://safeair.es/project/resources/Station/28079054> a safeair:Station ;
+	safeair:locId "station-28079054" ;
+	safeair:locName "Ensanche de Vallecas" .
+
+<http://safeair.es/project/resources/Station/vcard/28079054> a vcard:VCard ;
+	vcard:street-address "Avda La Gavia / Avda. Las Suertes" .
+
+<http://safeair.es/project/resources/Station/28079054> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079054> ;
+	geo:long "-3.612116666666666"^^xsd:double ;
+	geo:lat "40.372933333333336" .
+
+<http://safeair.es/project/resources/Station/28079055> a safeair:Station ;
+	safeair:locId "station-28079055" ;
+	safeair:locName "Urb. Embajada" .
+
+<http://safeair.es/project/resources/Station/vcard/28079055> a vcard:VCard ;
+	vcard:street-address "C/ Riaño (Barajas) " .
+
+<http://safeair.es/project/resources/Station/28079055> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079055> ;
+	geo:long "-3.5807472222222216"^^xsd:double ;
+	geo:lat "40.46253055555556" .
+
+<http://safeair.es/project/resources/Station/28079056> a safeair:Station ;
+	safeair:locId "station-28079056" ;
+	safeair:locName "Pza. Fernández Ladreda" .
+
+<http://safeair.es/project/resources/Station/vcard/28079056> a vcard:VCard ;
+	vcard:street-address " Pza. Fernández Ladreda - Avda. Oporto" .
+
+<http://safeair.es/project/resources/Station/28079056> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079056> ;
+	geo:long "-3.7187277777777785"^^xsd:double ;
+	geo:lat "40.38496388888889" .
+
+<http://safeair.es/project/resources/Station/28079057> a safeair:Station ;
+	safeair:locId "station-28079057" ;
+	safeair:locName "Sanchinarro" .
+
+<http://safeair.es/project/resources/Station/vcard/28079057> a vcard:VCard ;
+	vcard:street-address "C/ Princesa de Eboli esq C/ Maria Tudor" .
+
+<http://safeair.es/project/resources/Station/28079057> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079057> ;
+	geo:long "-3.6605027777777774"^^xsd:double ;
+	geo:lat "40.49420833333333" .
+
+<http://safeair.es/project/resources/Station/28079058> a safeair:Station ;
+	safeair:locId "station-28079058" ;
+	safeair:locName "El Pardo" .
+
+<http://safeair.es/project/resources/Station/vcard/28079058> a vcard:VCard ;
+	vcard:street-address "Avda. La Guardia" .
+
+<http://safeair.es/project/resources/Station/28079058> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079058> ;
+	geo:long "-3.774611111111111"^^xsd:double ;
+	geo:lat "40.51805833333333" .
+
+<http://safeair.es/project/resources/Station/28079059> a safeair:Station ;
+	safeair:locId "station-28079059" ;
+	safeair:locName "Juan Carlos I" .
+
+<http://safeair.es/project/resources/Station/vcard/28079059> a vcard:VCard ;
+	vcard:street-address "Parque Juan Carlos I (frente oficinas mantenimiento)" .
+
+<http://safeair.es/project/resources/Station/28079059> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079059> ;
+	geo:long "-3.6090722222222222"^^xsd:double ;
+	geo:lat "40.46525000000001" .
+
+<http://safeair.es/project/resources/Station/28079060> a safeair:Station ;
+	safeair:locId "station-28079060" ;
+	safeair:locName "Tres Olivos" .
+
+<http://safeair.es/project/resources/Station/vcard/28079060> a vcard:VCard ;
+	vcard:street-address "Plaza Tres Olivos " .
+
+<http://safeair.es/project/resources/Station/28079060> safeair:hasVCard <http://safeair.es/project/resources/Station/vcard/28079060> ;
+	geo:long "-3.6897611111111113"^^xsd:double ;
+	geo:lat "40.50058888888889" .
