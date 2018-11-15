@@ -24,6 +24,9 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+
   </head>
 
   <body id="page-top">
@@ -227,14 +230,14 @@
       </div>
     </section>
 
-    <!--
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h2 class="mb-4">Try our product!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="#">Download Now!</a>
+
+    <section class="bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Try our map!</h2>
+        <div id='map' style='width: 1000px; height: 500px;'></div>
       </div>
     </section>
-  -->
+
 
     <section id="team">
       <div class="container">
@@ -279,6 +282,16 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnbWVpc3RlciIsImEiOiJjam9qMG82NXUwMDh5M3FvOXpscndzMnc0In0.h1EaT7zfQ179dTjcnzIKlw';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/bigmeister/cjoj2q1eq01ow2so6f4gig0gx',
+            center: [-3.7034, 40.4168], // starting position [lng, lat]
+            zoom: 5 // starting zoom
+        });
+    </script>
 
   </body>
 
