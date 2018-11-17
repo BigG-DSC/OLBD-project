@@ -44,10 +44,13 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#values">Safety Values</a>
+              <a class="nav-link js-scroll-trigger" href="#visualization">Demo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#data">Data Sources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#values">Safety Values</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -81,58 +84,38 @@
             <h2 class="section-heading text-white">Don't Breath too much here!</h2>
             <hr class="light my-4">
             <p class="text-faded mb-4">Ever wondered how poluted the area you are living in is? Well ask this qeustion again for your children... or for you (grand-)parents. Air polution yields a health related problems to these groups of people. Lack of information on this issue results in more health risks.</p><p class="text-faded mb-4"><b>SafeAir</b> solves this problem for you! We give you useful and interactive infographics on air polution throughout the city of Madrid. Combining this with geo-locations of primary schools, children playgrounds or elderly homes will give you all the insights you need to protect your deerest from exposure to high polution!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#visualization">Get Started!</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="values">
+    <section id="visualization">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Our Core Values</h2>
+            <h2 class="section-heading">Try our Map</h2>
             <hr class="my-4">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-check-square text-primary mb-3 sr-icon-1"></i>
-              <h3 class="mb-3">Safety</h3>
-              <p class="text-muted mb-0">Be sure about the polution in your area!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-link text-primary mb-3 sr-icon-2"></i>
-              <h3 class="mb-3">Link Data</h3>
-              <p class="text-muted mb-0">Linking different data sources for more power.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-smile text-primary mb-3 sr-icon-3"></i>
-              <h3 class="mb-3">Interactivity</h3>
-              <p class="text-muted mb-0">Interact with the product and check your location.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-history text-primary mb-3 sr-icon-4"></i>
-              <h3 class="mb-3">Historic</h3>
-              <p class="text-muted mb-0">Data usage over time to make accurate predictions.</p>
-            </div>
-          </div>
+          <div id='map3' style='width: 1140px; height: 500px;'></div>
         </div>
       </div>
     </section>
 
-    <section class="p-0" id="data">
-      <div class="container-fluid p-0">
+    <section class="bg-primary" id="data">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center text-white">
+            <h2 class="section-heading">Data Sources</h2>
+            <hr class="my-4" style="border-color: white;">
+          </div>
+        </div>
+      </div>
+      <div class="container">
         <div class="row no-gutters">
           <div class="col-lg-4 col-sm-6" style="height:250px">
             <a class="portfolio-box" target="_blank" href="https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=f3c0f7d512273410VgnVCM2000000c205a0aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default">
@@ -230,41 +213,72 @@
       </div>
     </section>
 
-
-    <section class="bg-primary">
+    <section id="values">
       <div class="container">
-        <h2 class="text-center text-white">Try our map!</h2>
-        <div id='map' style='width: 1000px; height: 500px;'></div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Our Core Values</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-check-square text-primary mb-3 sr-icon-1"></i>
+              <h3 class="mb-3">Safety</h3>
+              <p class="text-muted mb-0">Be sure about the polution in your area!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-link text-primary mb-3 sr-icon-2"></i>
+              <h3 class="mb-3">Link Data</h3>
+              <p class="text-muted mb-0">Linking different data sources for more power.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-smile text-primary mb-3 sr-icon-3"></i>
+              <h3 class="mb-3">Interactivity</h3>
+              <p class="text-muted mb-0">Interact with the product and check your location.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fas fa-4x fa-history text-primary mb-3 sr-icon-4"></i>
+              <h3 class="mb-3">Historic</h3>
+              <p class="text-muted mb-0">Data usage over time to make accurate predictions.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-
-    <section id="team">
+    <section class="bg-primary" id="team">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
+          <div class="col-lg-8 mx-auto text-center text-white">
             <h2 class="section-heading">Let us know what you think!</h2>
-            <hr class="my-4">
+            <hr class="my-4" style="border-color: white;">
             <p class="mb-5">Feedback, additions or just general questions? Feel free to reach out to us!</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-sm-6 ml-auto text-center">
+          <div class="col-lg-4 col-sm-6 ml-auto text-center text-white">
             <i class="fas fa-camera fa-3x mb-3 sr-contact-1"></i>
             <p>Boy Raaijmakers</p>
           </div>
-          <div class="col-lg-3 col-sm-6 ml-auto text-center">
-            <i class="fas fa-camera fa-3x mb-3 sr-contact-2"></i>
+          <div class="col-lg-4 col-sm-6 ml-auto text-center text-white">
+            <i class="fas fa-camera fa-3x mb-3 sr-contact-1"></i>
             <p>Gioele Bigini</p>
           </div>
-          <div class="col-lg-3 col-sm-6 ml-auto text-center">
-            <i class="fas fa-phone fa-3x mb-3 sr-contact-2"></i>
-            <p>123-456-6789</p>
-          </div>
-          <div class="col-lg-3 col-sm-6 mr-auto text-center">
-            <i class="fas fa-envelope fa-3x mb-3 sr-contact-1"></i>
+          <div class="col-lg-4 col-sm-6 mr-auto text-center text-white">
+            <i class="fas fa-camera fa-3x mb-3 sr-contact-1"></i>
             <p>
-              <a href="#">info@safeair.es</a>
+              <a style="border-color: white;">info@safeair.es</a>
             </p>
           </div>
         </div>
@@ -286,7 +300,7 @@
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnbWVpc3RlciIsImEiOiJjam9qMG82NXUwMDh5M3FvOXpscndzMnc0In0.h1EaT7zfQ179dTjcnzIKlw';
         var map = new mapboxgl.Map({
-            container: 'map',
+            container: 'map3',
             style: 'mapbox://styles/bigmeister/cjokjgwjc0old2rqshpbrkz1q',
             center: [-3.7034, 40.4750], // starting position [lng, lat]
             zoom: 9.6 // starting zoom
