@@ -7,6 +7,221 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
+<http://safeair.es/project/resources/MONCLOAARAVACA> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2017682> ;
+	rdfs:label "MONCLOA ARAVACA" .
+
+<http://safeair.es/project/resources/28079004> geo:long "-3.712247222222224" ;
+	a safeair:Station ;
+	geo:lat "40.423852777777775" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/MONCLOAARAVACA> .
+
+<http://safeair.es/project/resources/SALAMANCA> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1773521> ;
+	rdfs:label "SALAMANCA" .
+
+<http://safeair.es/project/resources/28079008> geo:lat "40.42156388888888" ;
+	a safeair:Station ;
+	geo:long "-3.682319444444445" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/SALAMANCA> .
+
+<http://safeair.es/project/resources/CHAMARTIN> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> ;
+	rdfs:label "CHAMARTIN" .
+
+<http://safeair.es/project/resources/28079011> a safeair:Station ;
+	geo:lat "40.451475" ;
+	geo:long "-3.6773555555555553" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/CHAMARTIN> .
+
+<http://safeair.es/project/resources/CIUDADLINEAL> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> ;
+	rdfs:label "CIUDAD LINEAL" .
+
+<http://safeair.es/project/resources/28079016> geo:lat "40.44004722222222" ;
+	a safeair:Station ;
+	geo:long "-3.6392333333333333" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/CIUDADLINEAL> .
+
+<http://safeair.es/project/resources/VILLAVERDE> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q919536> ;
+	rdfs:label "VILLAVERDE" .
+
+<http://safeair.es/project/resources/28079017> geo:lat "40.347138888888885" ;
+	a safeair:Station ;
+	geo:long "-3.713322222222221" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/VILLAVERDE> .
+
+<http://safeair.es/project/resources/CARABANCHEL> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
+	rdfs:label "CARABANCHEL" .
+
+<http://safeair.es/project/resources/28079018> geo:lat "40.39478055555556" ;
+	a safeair:Station ;
+	geo:long "-3.7318527777777777" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/CARABANCHEL> .
+
+<http://safeair.es/project/resources/MONCLOAARAVACA> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2017682> ;
+	rdfs:label "MONCLOA ARAVACA" .
+
+<http://safeair.es/project/resources/28079024> a safeair:Station ;
+	geo:lat "40.41935555555556" ;
+	geo:long "-3.7473472222222224" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/MONCLOAARAVACA> .
+
+<http://safeair.es/project/resources/BARAJAS> owl:sameAs <https://www.wikidata.org/wiki/Q807230> ;
+	a safeair:District ;
+	rdfs:label "BARAJAS" .
+
+<http://safeair.es/project/resources/28079027> a safeair:Station ;
+	geo:lat "40.47692777777778" ;
+	geo:long "-3.580030555555555" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/BARAJAS> .
+
+<http://safeair.es/project/resources/CENTRO> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> ;
+	rdfs:label "CENTRO" .
+
+<http://safeair.es/project/resources/28079035> a safeair:Station ;
+	geo:lat "40.41920833333333" ;
+	geo:long "-3.7031722222222223" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/CENTRO> .
+
+<http://safeair.es/project/resources/MORATALAZ> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2076109> ;
+	rdfs:label "MORATALAZ" .
+
+<http://safeair.es/project/resources/28079036> a safeair:Station ;
+	geo:lat "40.40794722222222" ;
+	geo:long "-3.6453055555555554" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/MORATALAZ> .
+
+<http://safeair.es/project/resources/CHAMBERI> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763370> ;
+	rdfs:label "CHAMBERI" .
+
+<http://safeair.es/project/resources/28079038> safeair:hasDistrict <http://safeair.es/project/resources/CHAMBERI> ;
+	a safeair:Station ;
+	geo:lat "40.44554444444445" ;
+	geo:long "-3.7071277777777785" .
+
+<http://safeair.es/project/resources/FUENCARRALELPARDO> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
+	rdfs:label "FUENCARRAL EL PARDO" .
+
+<http://safeair.es/project/resources/28079039> geo:long "-3.7115416666666654" ;
+	a safeair:Station ;
+	geo:lat "40.47822777777778" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/FUENCARRALELPARDO> .
+
+<http://safeair.es/project/resources/PUENTEDEVALLECAS> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> ;
+	rdfs:label "PUENTE DE VALLECAS" .
+
+<http://safeair.es/project/resources/28079040> a safeair:Station ;
+	geo:long "-3.6515222222222223" ;
+	geo:lat "40.38815277777777" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/PUENTEDEVALLECAS> .
+
+<http://safeair.es/project/resources/ARGANZUELA> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2000929> ;
+	rdfs:label "ARGANZUELA" .
+
+<http://safeair.es/project/resources/28079047> a safeair:Station ;
+	geo:lat "40.398113888888886" ;
+	geo:long "-3.686825" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/ARGANZUELA> .
+
+<http://safeair.es/project/resources/CHAMARTIN> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> ;
+	rdfs:label "CHAMARTIN" .
+
+<http://safeair.es/project/resources/28079048> a safeair:Station ;
+	geo:lat "40.43989722222222" ;
+	geo:long "-3.690366666666667" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/CHAMARTIN> .
+
+<http://safeair.es/project/resources/RETIRO> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2002296> ;
+	rdfs:label "RETIRO" .
+
+<http://safeair.es/project/resources/28079049> a safeair:Station ;
+	geo:lat "40.414444444444435" ;
+	geo:long "-3.682583333333333" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/RETIRO> .
+
+<http://safeair.es/project/resources/CHAMARTIN> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> ;
+	rdfs:label "CHAMARTIN" .
+
+<http://safeair.es/project/resources/28079050> a safeair:Station ;
+	geo:lat "40.46557222222223" ;
+	geo:long "-3.688769444444445" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/CHAMARTIN> .
+
+<http://safeair.es/project/resources/VILLADEVALLECAS> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1947988> ;
+	rdfs:label "VILLA DE VALLECAS" .
+
+<http://safeair.es/project/resources/28079054> a safeair:Station ;
+	geo:lat "40.372933333333336" ;
+	geo:long "-3.612116666666666" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/VILLADEVALLECAS> .
+
+<http://safeair.es/project/resources/BARAJAS> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q807230> ;
+	rdfs:label "BARAJAS" .
+
+<http://safeair.es/project/resources/28079055> a safeair:Station ;
+	geo:long "-3.5807472222222216" ;
+	geo:lat "40.46253055555556" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/BARAJAS> .
+
+<http://safeair.es/project/resources/CARABANCHEL> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
+	rdfs:label "CARABANCHEL" .
+
+<http://safeair.es/project/resources/28079056> a safeair:Station ;
+	geo:lat "40.38496388888889" ;
+	geo:long "-3.7187277777777785" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/CARABANCHEL> .
+
+<http://safeair.es/project/resources/HORTALEZA> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
+	rdfs:label "HORTALEZA" .
+
+<http://safeair.es/project/resources/28079057> safeair:hasDistrict <http://safeair.es/project/resources/HORTALEZA> ;
+	a safeair:Station ;
+	geo:lat "40.49420833333333" ;
+	geo:long "-3.6605027777777774" .
+
+<http://safeair.es/project/resources/FUENCARRALELPARDO> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
+	rdfs:label "FUENCARRAL EL PARDO" .
+
+<http://safeair.es/project/resources/28079058> a safeair:Station ;
+	safeair:hasDistrict <http://safeair.es/project/resources/FUENCARRALELPARDO> ;
+	geo:lat "40.51805833333333" ;
+	geo:long "-3.774611111111111" .
+
+<http://safeair.es/project/resources/BARAJAS> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q807230> ;
+	rdfs:label "BARAJAS" .
+
+<http://safeair.es/project/resources/28079059> a safeair:Station ;
+	geo:lat "40.46525000000001" ;
+	geo:long "-3.6090722222222222" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/BARAJAS> .
+
+<http://safeair.es/project/resources/FUENCARRALELPARDO> owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
+	a safeair:District ;
+	rdfs:label "FUENCARRAL EL PARDO" .
+
+<http://safeair.es/project/resources/28079060> a safeair:Station ;
+	geo:lat "40.50058888888889" ;
+	geo:long "-3.6897611111111113" ;
+	safeair:hasDistrict <http://safeair.es/project/resources/FUENCARRALELPARDO> .
 
 <http://safeair.es/project/resources/Station/28079040> safeair:hasMeasurement <http://safeair.es/project/resources/Measurement/28079040_201707> , <http://safeair.es/project/resources/Measurement/28079040_201706> , <http://safeair.es/project/resources/Measurement/28079040_201705> , <http://safeair.es/project/resources/Measurement/28079040_201712> , <http://safeair.es/project/resources/Measurement/28079040_201711> , <http://safeair.es/project/resources/Measurement/28079040_201709> , <http://safeair.es/project/resources/Measurement/28079040_201708> , <http://safeair.es/project/resources/Measurement/28079040_201704> , <http://safeair.es/project/resources/Measurement/28079040_201701> , <http://safeair.es/project/resources/Measurement/28079040_201710> , <http://safeair.es/project/resources/Measurement/28079040_201703> , <http://safeair.es/project/resources/Measurement/28079040_201702> .
 
