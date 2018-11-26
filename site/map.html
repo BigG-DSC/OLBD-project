@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SafeAir</title>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+    #map-menu {
+        background: #fff;
+        position: relative;
+        z-index: 1;
+        border-radius: 3px;
+        width: 120px;
+        border: 1px solid rgba(0,0,0,0.4);
+        font-family: 'Open Sans', sans-serif;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #map-menu a {
+        font-size: 13px;
+        color: #404040;
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        text-align: center;
+    }
+
+    #map-menu p {
+        font-size: 13px;
+        color: #404040;
+        margin: 0;
+        padding: 2px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    #map-menu a:last-child {
+        border: none;
+    }
+
+    #map-menu a:hover {
+        background-color: #f8f8f8;
+        color: #404040;
+    }
+
+    #map-menu a.active {
+        background-color: #3887be;
+        color: #ffffff;
+    }
+
+    #map-menu a.active:hover {
+        background: #3074a4;
+    }
+</style>
+
+  </head>
+
+  <body id="page-top">
+    <nav id="map-menu">
+      <p>Filter layers</p>
+    </nav>
+    <div id='map3' style='position:absolute; top:0; bottom:0; width:100%; left:0; right:0;'></div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+    <script src="districts.js"></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnbWVpc3RlciIsImEiOiJjam9qMG82NXUwMDh5M3FvOXpscndzMnc0In0.h1EaT7zfQ179dTjcnzIKlw';
+        var map = new mapboxgl.Map({
+            container: 'map3',
+            style: 'mapbox://styles/bigmeister/cjokjgwjc0old2rqshpbrkz1q',
+            center: [-3.7034, 40.4750], // starting position [lng, lat]
+            zoom: 9.6 // starting zoom
+        });
+
+        map.addControl(new mapboxgl.FullscreenControl());
+
+        function sparqlQuery(query, baseURL, format) {
+          if(!format)
+            format="application/json";
+          var params={
+            "query": query
+          };
+          
+          var querypart="";
+          for(var k in params) {
+            querypart+=k+"="+encodeURIComponent(params[k])+"&";
+          }
+          var queryURL=baseURL + '?' + querypart;
+          if (window.XMLHttpRequest) {
+            xmlhttp=new XMLHttpRequest();
+          }
+          else {
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+          }
+          xmlhttp.open("GET",queryURL,false);
+          xmlhttp.send();
+          return xmlhttp.responseText;
+        }
+
+        function getSpatialThingData(type) {
+          var query = `
+            PREFIX safeair: <http://safeare.es/project/ontology/SafeAir#> 
+            PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+            SELECT ?object ?name ?lat ?lon
+            WHERE { 
+              ?object a safeair:` + type + `; 
+                      safeair:locName ?name;
+                      geo:lat ?lat;
+                      geo:long ?lon.
+            }`;
+
+          var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
+          things = data.split("\n").slice(1);
+
+          thingGeoJsonFeatures = []
+
+          for (i in things) {
+              thing = things[i].split(",");
+
+              thingGeoJsonFeatures.push(
+                  { 
+                      type: 'Feature', 
+                      properties: { 
+                          ID: thing[0],
+                          Name: thing[1]
+                      }, 
+                      geometry: { 
+                          type: 'Point', 
+                          coordinates: [parseFloat(thing[3]), parseFloat(thing[2])] 
+                      } 
+                  }
+              );
+          }
+
+          var thingsGeoJson = {
+              type: 'FeatureCollection',
+              features: thingGeoJsonFeatures
+          };
+
+          return(thingsGeoJson);
+        }
+
+        function highliteDistrict(object="none") {
+
+          var name = "";
+
+          if (object != "none") {
+            var query = `
+              PREFIX safeair: <http://safeare.es/project/ontology/SafeAir#>
+              PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+              SELECT ?district
+              WHERE {
+                  ?object safeair:locName "` + object + `";
+                          safeair:hasVCard ?vcard.
+                  ?vcard a vcard:VCard;
+                         vcard:region ?district.
+              }
+            `;
+
+            var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
+            name = data.split("\n")[1].split("/")[6].trim();
+
+            map.setPaintProperty(name, 'fill-opacity', 0.75);
+          }
+
+          districts.features.forEach(function(district) {
+            var disname = district.properties.URI.split("/")[6].trim(); 
+            if(name !== disname) {
+              map.setPaintProperty(disname, 'fill-opacity', 0.25);
+            }
+          });
+        }
+
+        function getMeasurements(object) {
+          var query = `
+            PREFIX safeair: <http://safeare.es/project/ontology/SafeAir#> 
+            SELECT ?object ?meas
+            WHERE { 
+                ?object safeair:locName "` + object + `";
+                       safeair:isClosestTo ?station.
+                ?station safeair:hasMeasurement ?meas.
+            } LIMIT 100
+          `;
+
+          var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
+          things = data.split("\n").slice(1);
+
+          console.log(things);
+        }
+        
+        map.on('load', function() {
+          
+          districts.features.forEach(function(district) {
+
+              var name = district.properties.URI.split("/")[6]; 
+
+              map.addLayer({
+                  id: name,
+                  type: 'fill',
+                  source: {
+                      type: 'geojson',
+                      data: district
+                  },
+                  paint: {
+                      'fill-color': '#088',
+                      'fill-opacity': 0.25
+                  }
+              });
+          });
+
+          var things = getSpatialThingData("School");
+          map.addLayer({
+              id: 'School',
+              type: 'symbol',
+              source: {
+                  type: 'geojson',
+                  data: things
+              },
+              layout: {
+                  'icon-image': 'college-15',
+                  'icon-allow-overlap': false
+              },
+              paint: { }
+          });
+
+          //var things = getSpatialThingData("ElderlyRegion");
+          /*map.addLayer({
+              id: 'ElderlyRegion',
+              type: 'symbol',
+              source: {
+                  type: 'geojson',
+                  data: things
+              },
+              layout: {
+                  'icon-image': 'scooter-15',
+                  'icon-allow-overlap': false
+              },
+              paint: { }
+          });*/
+
+          var things = getSpatialThingData("SportPark");
+          map.addLayer({
+              id: 'SportPark',
+              type: 'symbol',
+              source: {
+                  type: 'geojson',
+                  data: things
+              },
+              layout: {
+                  'icon-image': 'golf-15',
+                  'icon-allow-overlap': false
+              },
+              paint: { }
+          });
+
+          map.on('click', function(e) {
+
+                var selObj = map.queryRenderedFeatures(e.point, {
+                    layers: ['School', 'SportPark']
+                });
+
+                if (selObj.length > 0) {
+                    var object = selObj[0];
+                    var name = object.properties.Name;
+
+                    highliteDistrict(name);
+                    //getMeasurements(name);
+
+                    new mapboxgl.Popup()
+                        .setLngLat([e.lngLat.lng, e.lngLat.lat])
+                        .setHTML(name)
+                        .addTo(map);
+
+                } else {
+                    highliteDistrict();
+                }
+              });
+
+          // Change the cursor to a pointer when the mouse is over the places layer.
+          map.on('mouseenter', 'School', function () {
+              map.getCanvas().style.cursor = 'pointer';
+          });
+
+          // Change it back to a pointer when it leaves.
+          map.on('mouseleave', 'School', function () {
+              map.getCanvas().style.cursor = '';
+          });
+
+          // Change the cursor to a pointer when the mouse is over the places layer.
+          map.on('mouseenter', 'SportPark', function () {
+              map.getCanvas().style.cursor = 'pointer';
+          });
+
+          // Change it back to a pointer when it leaves.
+          map.on('mouseleave', 'SportPark', function () {
+              map.getCanvas().style.cursor = '';
+          });
+
+        });
+
+    </script>
+
+    <script>
+      var toggleableLayerIds = [ 'School', 'SportPark' ];
+
+      for (var i = 0; i < toggleableLayerIds.length; i++) {
+          var id = toggleableLayerIds[i];
+
+          var link = document.createElement('a');
+          link.href = '#';
+          link.className = 'active';
+          link.textContent = id;
+
+          link.onclick = function (e) {
+              var clickedLayer = this.textContent;
+              e.preventDefault();
+              e.stopPropagation();
+
+              var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+
+              if (visibility === 'visible') {
+                  map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+                  this.className = '';
+              } else {
+                  this.className = 'active';
+                  map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+              }
+          };
+
+          var layers = document.getElementById('map-menu');
+          layers.appendChild(link);
+      }
+    </script>
+
+  </body>
+
+</html>
