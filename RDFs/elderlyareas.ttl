@@ -1,10 +1,11 @@
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
-@prefix safeair: <http://safeare.es/project/ontology/safeair#> .
+@prefix safeair: <http://safeare.es/project/ontology/SafeAir#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
 
 <http://safeair.es/project/resources/ElderlyRegion/3485> a safeair:ElderlyRegion ;
 	safeair:locId "3485"^^xsd:int ;
@@ -16,15 +17,16 @@
 	vcard:street-address "CALLE CANARIAS 17" ;
 	vcard:region <http://safeair.es/project/resources/District/ARGANZUELA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3485> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3485> .
+<http://safeair.es/project/resources/ElderlyRegion/3485> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3485> ;
+	safeair:locName "3485" .
 
-<http://safeair.es/project/resources/District/ARGANZUELA> rdfs:label "ARGANZUELA" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2000929> .
+<http://safeair.es/project/resources/District/ARGANZUELA> owl:sameAs <https://www.wikidata.org/wiki/Q2000929> ;
+	rdfs:label "ARGANZUELA" ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/9969> a safeair:ElderlyRegion ;
-	geo:lat "40.402437"^^xsd:double ;
 	safeair:locId "9969"^^xsd:int ;
+	geo:lat "40.402437"^^xsd:double ;
 	geo:long "-3.707992"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079047> .
 
@@ -32,11 +34,12 @@
 	vcard:street-address "CALLE GASOMETRO 32" ;
 	vcard:region <http://safeair.es/project/resources/District/ARGANZUELA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9969> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9969> .
+<http://safeair.es/project/resources/ElderlyRegion/9969> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9969> ;
+	safeair:locName "9969" .
 
-<http://safeair.es/project/resources/District/ARGANZUELA> owl:sameAs <https://www.wikidata.org/wiki/Q2000929> ;
+<http://safeair.es/project/resources/District/ARGANZUELA> a safeair:District ;
 	rdfs:label "ARGANZUELA" ;
-	a safeair:District .
+	owl:sameAs <https://www.wikidata.org/wiki/Q2000929> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9972> a safeair:ElderlyRegion ;
 	safeair:locId "9972"^^xsd:int ;
@@ -48,15 +51,16 @@
 	vcard:street-address "RONDA SEGOVIA 48" ;
 	vcard:region <http://safeair.es/project/resources/District/ARGANZUELA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9972> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9972> .
+<http://safeair.es/project/resources/ElderlyRegion/9972> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9972> ;
+	safeair:locName "9972" .
 
 <http://safeair.es/project/resources/District/ARGANZUELA> a safeair:District ;
 	rdfs:label "ARGANZUELA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2000929> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12215> a safeair:ElderlyRegion ;
+<http://safeair.es/project/resources/ElderlyRegion/12215> geo:lat "40.39705"^^xsd:double ;
+	a safeair:ElderlyRegion ;
 	safeair:locId "12215"^^xsd:int ;
-	geo:lat "40.39705"^^xsd:double ;
 	geo:long "-3.67765"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079047> .
 
@@ -64,11 +68,12 @@
 	vcard:street-address "CALLE TEJO 5" ;
 	vcard:region <http://safeair.es/project/resources/District/ARGANZUELA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12215> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12215> .
+<http://safeair.es/project/resources/ElderlyRegion/12215> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12215> ;
+	safeair:locName "12215" .
 
-<http://safeair.es/project/resources/District/ARGANZUELA> a safeair:District ;
+<http://safeair.es/project/resources/District/ARGANZUELA> owl:sameAs <https://www.wikidata.org/wiki/Q2000929> ;
 	rdfs:label "ARGANZUELA" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2000929> .
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/12883> a safeair:ElderlyRegion ;
 	safeair:locId "12883"^^xsd:int ;
@@ -80,10 +85,11 @@
 	vcard:street-address "CALLE PUERTO DE BEJAR 3" ;
 	vcard:region <http://safeair.es/project/resources/District/ARGANZUELA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12883> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12883> .
+<http://safeair.es/project/resources/ElderlyRegion/12883> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12883> ;
+	safeair:locName "12883" .
 
-<http://safeair.es/project/resources/District/ARGANZUELA> a safeair:District ;
-	rdfs:label "ARGANZUELA" ;
+<http://safeair.es/project/resources/District/ARGANZUELA> rdfs:label "ARGANZUELA" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2000929> .
 
 <http://safeair.es/project/resources/ElderlyRegion/12828> a safeair:ElderlyRegion ;
@@ -96,7 +102,8 @@
 	vcard:street-address "CALLE PARROCO EUSEBIO CUENCA 13" ;
 	vcard:region <http://safeair.es/project/resources/District/ARGANZUELA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12828> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12828> .
+<http://safeair.es/project/resources/ElderlyRegion/12828> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12828> ;
+	safeair:locName "12828" .
 
 <http://safeair.es/project/resources/District/ARGANZUELA> rdfs:label "ARGANZUELA" ;
 	a safeair:District ;
@@ -112,14 +119,15 @@
 	vcard:street-address "PASEO JUAN ANTONIO VALLEJO-NAJERA BOTAS 15" ;
 	vcard:region <http://safeair.es/project/resources/District/ARGANZUELA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12914> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12914> .
+<http://safeair.es/project/resources/ElderlyRegion/12914> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12914> ;
+	safeair:locName "12914" .
 
-<http://safeair.es/project/resources/District/ARGANZUELA> a safeair:District ;
-	rdfs:label "ARGANZUELA" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2000929> .
+<http://safeair.es/project/resources/District/ARGANZUELA> rdfs:label "ARGANZUELA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2000929> ;
+	a safeair:District .
 
-<http://safeair.es/project/resources/ElderlyRegion/13102> safeair:locId "13102"^^xsd:int ;
-	a safeair:ElderlyRegion ;
+<http://safeair.es/project/resources/ElderlyRegion/13102> a safeair:ElderlyRegion ;
+	safeair:locId "13102"^^xsd:int ;
 	geo:lat "40.467467"^^xsd:double ;
 	geo:long "-3.5931339999999996"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079055> .
@@ -128,7 +136,8 @@
 	vcard:street-address "CALLE BAHIA DE SANTA POLA 56" ;
 	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13102> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13102> .
+<http://safeair.es/project/resources/ElderlyRegion/13102> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13102> ;
+	safeair:locName "13102" .
 
 <http://safeair.es/project/resources/District/BARAJAS> rdfs:label "BARAJAS" ;
 	a safeair:District ;
@@ -144,7 +153,8 @@
 	vcard:street-address "CALLE BERGANTIN 26" ;
 	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13229> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13229> .
+<http://safeair.es/project/resources/ElderlyRegion/13229> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13229> ;
+	safeair:locName "13229" .
 
 <http://safeair.es/project/resources/District/BARAJAS> rdfs:label "BARAJAS" ;
 	a safeair:District ;
@@ -160,11 +170,12 @@
 	vcard:street-address "CALLE ACUARIO 27" ;
 	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/7505> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7505> .
+<http://safeair.es/project/resources/ElderlyRegion/7505> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7505> ;
+	safeair:locName "7505" .
 
 <http://safeair.es/project/resources/District/BARAJAS> rdfs:label "BARAJAS" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q807230> .
+	owl:sameAs <https://www.wikidata.org/wiki/Q807230> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/11035> a safeair:ElderlyRegion ;
 	safeair:locId "11035"^^xsd:int ;
@@ -176,7 +187,8 @@
 	vcard:street-address "CALLE NORAY 3" ;
 	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11035> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11035> .
+<http://safeair.es/project/resources/ElderlyRegion/11035> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11035> ;
+	safeair:locName "11035" .
 
 <http://safeair.es/project/resources/District/BARAJAS> a safeair:District ;
 	rdfs:label "BARAJAS" ;
@@ -192,10 +204,11 @@
 	vcard:street-address "CALLE PRADOLUENGO 123" ;
 	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11023> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11023> .
+<http://safeair.es/project/resources/ElderlyRegion/11023> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11023> ;
+	safeair:locName "11023" .
 
-<http://safeair.es/project/resources/District/BARAJAS> rdfs:label "BARAJAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/BARAJAS> a safeair:District ;
+	rdfs:label "BARAJAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q807230> .
 
 <http://safeair.es/project/resources/ElderlyRegion/4873> a safeair:ElderlyRegion ;
@@ -208,7 +221,8 @@
 	vcard:street-address "CALLE AYERBE 12" ;
 	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4873> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4873> .
+<http://safeair.es/project/resources/ElderlyRegion/4873> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4873> ;
+	safeair:locName "4873" .
 
 <http://safeair.es/project/resources/District/BARAJAS> rdfs:label "BARAJAS" ;
 	a safeair:District ;
@@ -224,14 +238,15 @@
 	vcard:street-address "CALLE ALAS 2" ;
 	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/7256> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7256> .
+<http://safeair.es/project/resources/ElderlyRegion/7256> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7256> ;
+	safeair:locName "7256" .
 
-<http://safeair.es/project/resources/District/BARAJAS> rdfs:label "BARAJAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/BARAJAS> a safeair:District ;
+	rdfs:label "BARAJAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q807230> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9952> safeair:locId "9952"^^xsd:int ;
-	a safeair:ElderlyRegion ;
+<http://safeair.es/project/resources/ElderlyRegion/9952> a safeair:ElderlyRegion ;
+	safeair:locId "9952"^^xsd:int ;
 	geo:lat "40.465949"^^xsd:double ;
 	geo:long "-3.589778"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079055> .
@@ -240,7 +255,8 @@
 	vcard:street-address "CALLE BAHIA DE SANTOA 6" ;
 	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9952> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9952> .
+<http://safeair.es/project/resources/ElderlyRegion/9952> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9952> ;
+	safeair:locName "9952" .
 
 <http://safeair.es/project/resources/District/BARAJAS> a safeair:District ;
 	rdfs:label "BARAJAS" ;
@@ -256,10 +272,11 @@
 	vcard:street-address "CALLE CARABELA 7" ;
 	vcard:region <http://safeair.es/project/resources/District/BARAJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4825> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4825> .
+<http://safeair.es/project/resources/ElderlyRegion/4825> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4825> ;
+	safeair:locName "4825" .
 
-<http://safeair.es/project/resources/District/BARAJAS> rdfs:label "BARAJAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/BARAJAS> a safeair:District ;
+	rdfs:label "BARAJAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q807230> .
 
 <http://safeair.es/project/resources/ElderlyRegion/13065> a safeair:ElderlyRegion ;
@@ -272,11 +289,12 @@
 	vcard:street-address "PLAZA SAN VICENTE DE PAUL 5" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13065> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13065> .
+<http://safeair.es/project/resources/ElderlyRegion/13065> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13065> ;
+	safeair:locName "13065" .
 
-<http://safeair.es/project/resources/District/CARABANCHEL> owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
+<http://safeair.es/project/resources/District/CARABANCHEL> a safeair:District ;
 	rdfs:label "CARABANCHEL" ;
-	a safeair:District .
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
 
 <http://safeair.es/project/resources/ElderlyRegion/8101> a safeair:ElderlyRegion ;
 	safeair:locId "8101"^^xsd:int ;
@@ -288,14 +306,15 @@
 	vcard:street-address "CALLE ANTONIO DE LEYVA 35" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8101> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8101> .
+<http://safeair.es/project/resources/ElderlyRegion/8101> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8101> ;
+	safeair:locName "8101" .
 
 <http://safeair.es/project/resources/District/CARABANCHEL> a safeair:District ;
 	rdfs:label "CARABANCHEL" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9863> safeair:locId "9863"^^xsd:int ;
-	a safeair:ElderlyRegion ;
+<http://safeair.es/project/resources/ElderlyRegion/9863> a safeair:ElderlyRegion ;
+	safeair:locId "9863"^^xsd:int ;
 	geo:lat "40.392487"^^xsd:double ;
 	geo:long "-3.740672"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079018> .
@@ -304,11 +323,12 @@
 	vcard:street-address "AVENIDA NUESTRA SEORA DE VALVANERA 117" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9863> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9863> .
+<http://safeair.es/project/resources/ElderlyRegion/9863> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9863> ;
+	safeair:locName "9863" .
 
-<http://safeair.es/project/resources/District/CARABANCHEL> owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
-	rdfs:label "CARABANCHEL" ;
-	a safeair:District .
+<http://safeair.es/project/resources/District/CARABANCHEL> rdfs:label "CARABANCHEL" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
 
 <http://safeair.es/project/resources/ElderlyRegion/3613> a safeair:ElderlyRegion ;
 	safeair:locId "3613"^^xsd:int ;
@@ -320,10 +340,11 @@
 	vcard:street-address "CALLE PORTALEGRE 73" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3613> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3613> .
+<http://safeair.es/project/resources/ElderlyRegion/3613> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3613> ;
+	safeair:locName "3613" .
 
-<http://safeair.es/project/resources/District/CARABANCHEL> a safeair:District ;
-	rdfs:label "CARABANCHEL" ;
+<http://safeair.es/project/resources/District/CARABANCHEL> rdfs:label "CARABANCHEL" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
 
 <http://safeair.es/project/resources/ElderlyRegion/10079> a safeair:ElderlyRegion ;
@@ -336,27 +357,29 @@
 	vcard:street-address "PLAZA CANTORIA 1" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10079> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10079> .
+<http://safeair.es/project/resources/ElderlyRegion/10079> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10079> ;
+	safeair:locName "10079" .
 
-<http://safeair.es/project/resources/District/CARABANCHEL> a safeair:District ;
+<http://safeair.es/project/resources/District/CARABANCHEL> owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
 	rdfs:label "CARABANCHEL" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
+	a safeair:District .
 
-<http://safeair.es/project/resources/ElderlyRegion/2950> geo:lat "40.382744"^^xsd:double ;
-	geo:long "-3.742658"^^xsd:double ;
+<http://safeair.es/project/resources/ElderlyRegion/2950> a safeair:ElderlyRegion ;
 	safeair:locId "2950"^^xsd:int ;
-	a safeair:ElderlyRegion ;
+	geo:lat "40.382744"^^xsd:double ;
+	geo:long "-3.742658"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079018> .
 
 <http://safeair.es/project/resources/vcard/elderlyareas/2950> a vcard:VCard ;
 	vcard:street-address "CALLE NUESTRA SEORA DE LA LUZ 9" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/2950> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2950> .
+<http://safeair.es/project/resources/ElderlyRegion/2950> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2950> ;
+	safeair:locName "2950" .
 
 <http://safeair.es/project/resources/District/CARABANCHEL> a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
-	rdfs:label "CARABANCHEL" .
+	rdfs:label "CARABANCHEL" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
 
 <http://safeair.es/project/resources/ElderlyRegion/4217> a safeair:ElderlyRegion ;
 	safeair:locId "4217"^^xsd:int ;
@@ -368,7 +391,8 @@
 	vcard:street-address "CALLE GENERAL RICARDOS 126" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4217> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4217> .
+<http://safeair.es/project/resources/ElderlyRegion/4217> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4217> ;
+	safeair:locName "4217" .
 
 <http://safeair.es/project/resources/District/CARABANCHEL> rdfs:label "CARABANCHEL" ;
 	a safeair:District ;
@@ -384,11 +408,12 @@
 	vcard:street-address "CALLE GENERAL RICARDOS 155" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11028> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11028> .
+<http://safeair.es/project/resources/ElderlyRegion/11028> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11028> ;
+	safeair:locName "11028" .
 
-<http://safeair.es/project/resources/District/CARABANCHEL> rdfs:label "CARABANCHEL" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
+<http://safeair.es/project/resources/District/CARABANCHEL> owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
+	rdfs:label "CARABANCHEL" ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/2868> a safeair:ElderlyRegion ;
 	safeair:locId "2868"^^xsd:int ;
@@ -400,11 +425,12 @@
 	vcard:street-address "CALLE PARQUE EUGENIA DE MONTIJO 1" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/2868> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2868> .
+<http://safeair.es/project/resources/ElderlyRegion/2868> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2868> ;
+	safeair:locName "2868" .
 
-<http://safeair.es/project/resources/District/CARABANCHEL> rdfs:label "CARABANCHEL" ;
+<http://safeair.es/project/resources/District/CARABANCHEL> owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
 	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
+	rdfs:label "CARABANCHEL" .
 
 <http://safeair.es/project/resources/ElderlyRegion/2892> a safeair:ElderlyRegion ;
 	safeair:locId "2892"^^xsd:int ;
@@ -416,7 +442,8 @@
 	vcard:street-address "CALLE PARQUE EUGENIA DE MONTIJO 42" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/2892> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2892> .
+<http://safeair.es/project/resources/ElderlyRegion/2892> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2892> ;
+	safeair:locName "2892" .
 
 <http://safeair.es/project/resources/District/CARABANCHEL> a safeair:District ;
 	rdfs:label "CARABANCHEL" ;
@@ -432,15 +459,16 @@
 	vcard:street-address "CALLE MONSEOR OSCAR ROMERO 77" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/2925> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2925> .
+<http://safeair.es/project/resources/ElderlyRegion/2925> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2925> ;
+	safeair:locName "2925" .
 
-<http://safeair.es/project/resources/District/CARABANCHEL> a safeair:District ;
-	rdfs:label "CARABANCHEL" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
+<http://safeair.es/project/resources/District/CARABANCHEL> rdfs:label "CARABANCHEL" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
+	a safeair:District .
 
-<http://safeair.es/project/resources/ElderlyRegion/4090> geo:lat "40.382536"^^xsd:double ;
-	a safeair:ElderlyRegion ;
+<http://safeair.es/project/resources/ElderlyRegion/4090> a safeair:ElderlyRegion ;
 	safeair:locId "4090"^^xsd:int ;
+	geo:lat "40.382536"^^xsd:double ;
 	geo:long "-3.720394"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079056> .
 
@@ -448,11 +476,12 @@
 	vcard:street-address "CALLE VIA LUSITANA 1" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4090> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4090> .
+<http://safeair.es/project/resources/ElderlyRegion/4090> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4090> ;
+	safeair:locName "4090" .
 
-<http://safeair.es/project/resources/District/CARABANCHEL> owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
+<http://safeair.es/project/resources/District/CARABANCHEL> rdfs:label "CARABANCHEL" ;
 	a safeair:District ;
-	rdfs:label "CARABANCHEL" .
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
 
 <http://safeair.es/project/resources/ElderlyRegion/8254> a safeair:ElderlyRegion ;
 	safeair:locId "8254"^^xsd:int ;
@@ -464,11 +493,12 @@
 	vcard:street-address "CALLE VIA LUSITANA 19" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8254> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8254> .
+<http://safeair.es/project/resources/ElderlyRegion/8254> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8254> ;
+	safeair:locName "8254" .
 
-<http://safeair.es/project/resources/District/CARABANCHEL> rdfs:label "CARABANCHEL" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
+<http://safeair.es/project/resources/District/CARABANCHEL> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
+	rdfs:label "CARABANCHEL" .
 
 <http://safeair.es/project/resources/ElderlyRegion/4198> a safeair:ElderlyRegion ;
 	safeair:locId "4198"^^xsd:int ;
@@ -480,11 +510,12 @@
 	vcard:street-address "CALLE CARONTE 16" ;
 	vcard:region <http://safeair.es/project/resources/District/CARABANCHEL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4198> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4198> .
+<http://safeair.es/project/resources/ElderlyRegion/4198> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4198> ;
+	safeair:locName "4198" .
 
 <http://safeair.es/project/resources/District/CARABANCHEL> rdfs:label "CARABANCHEL" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> .
+	owl:sameAs <https://www.wikidata.org/wiki/Q1001991> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/13193> a safeair:ElderlyRegion ;
 	safeair:locId "13193"^^xsd:int ;
@@ -496,7 +527,8 @@
 	vcard:street-address "CALLE MARQUES DE LA ENSENADA 1" ;
 	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13193> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13193> .
+<http://safeair.es/project/resources/ElderlyRegion/13193> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13193> ;
+	safeair:locName "13193" .
 
 <http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
 	rdfs:label "CENTRO" ;
@@ -512,10 +544,11 @@
 	vcard:street-address "CUESTA SANTO DOMINGO 22" ;
 	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5619> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5619> .
+<http://safeair.es/project/resources/ElderlyRegion/5619> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5619> ;
+	safeair:locName "5619" .
 
-<http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
-	rdfs:label "CENTRO" ;
+<http://safeair.es/project/resources/District/CENTRO> rdfs:label "CENTRO" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
 
 <http://safeair.es/project/resources/ElderlyRegion/5629> a safeair:ElderlyRegion ;
@@ -528,14 +561,15 @@
 	vcard:street-address "PLAZA SANTA MARIA SOLEDAD TORRES ACOSTA 1" ;
 	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5629> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5629> .
+<http://safeair.es/project/resources/ElderlyRegion/5629> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5629> ;
+	safeair:locName "5629" .
 
 <http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
 	rdfs:label "CENTRO" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5567> safeair:locId "5567"^^xsd:int ;
-	a safeair:ElderlyRegion ;
+<http://safeair.es/project/resources/ElderlyRegion/5567> a safeair:ElderlyRegion ;
+	safeair:locId "5567"^^xsd:int ;
 	geo:lat "40.407288"^^xsd:double ;
 	geo:long "-3.7107099999999997"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079035> .
@@ -544,11 +578,12 @@
 	vcard:street-address "GLORIETA PUERTA DE TOLEDO 1" ;
 	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5567> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5567> .
+<http://safeair.es/project/resources/ElderlyRegion/5567> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5567> ;
+	safeair:locName "5567" .
 
-<http://safeair.es/project/resources/District/CENTRO> rdfs:label "CENTRO" ;
+<http://safeair.es/project/resources/District/CENTRO> owl:sameAs <https://www.wikidata.org/wiki/Q1763376> ;
 	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
+	rdfs:label "CENTRO" .
 
 <http://safeair.es/project/resources/ElderlyRegion/5544> a safeair:ElderlyRegion ;
 	safeair:locId "5544"^^xsd:int ;
@@ -560,11 +595,12 @@
 	vcard:street-address "CALLE EMBAJADORES 66" ;
 	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5544> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5544> .
+<http://safeair.es/project/resources/ElderlyRegion/5544> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5544> ;
+	safeair:locName "5544" .
 
-<http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
-	rdfs:label "CENTRO" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
+<http://safeair.es/project/resources/District/CENTRO> owl:sameAs <https://www.wikidata.org/wiki/Q1763376> ;
+	a safeair:District ;
+	rdfs:label "CENTRO" .
 
 <http://safeair.es/project/resources/ElderlyRegion/7341> a safeair:ElderlyRegion ;
 	safeair:locId "7341"^^xsd:int ;
@@ -576,7 +612,8 @@
 	vcard:street-address "PLAZA SANTA BARBARA 7" ;
 	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/7341> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7341> .
+<http://safeair.es/project/resources/ElderlyRegion/7341> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7341> ;
+	safeair:locName "7341" .
 
 <http://safeair.es/project/resources/District/CENTRO> rdfs:label "CENTRO" ;
 	a safeair:District ;
@@ -592,11 +629,12 @@
 	vcard:street-address "PLAZA SANTA BARBARA 8" ;
 	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10126> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10126> .
+<http://safeair.es/project/resources/ElderlyRegion/10126> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10126> ;
+	safeair:locName "10126" .
 
-<http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
-	rdfs:label "CENTRO" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
+<http://safeair.es/project/resources/District/CENTRO> rdfs:label "CENTRO" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/5608> a safeair:ElderlyRegion ;
 	safeair:locId "5608"^^xsd:int ;
@@ -608,10 +646,11 @@
 	vcard:street-address "PLAZA COMENDADORAS 9" ;
 	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5608> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5608> .
+<http://safeair.es/project/resources/ElderlyRegion/5608> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5608> ;
+	safeair:locName "5608" .
 
-<http://safeair.es/project/resources/District/CENTRO> rdfs:label "CENTRO" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
+	rdfs:label "CENTRO" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1763376> .
 
 <http://safeair.es/project/resources/ElderlyRegion/12983> a safeair:ElderlyRegion ;
@@ -624,7 +663,8 @@
 	vcard:street-address "CALLE SEGOVIA 30" ;
 	vcard:region <http://safeair.es/project/resources/District/CENTRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12983> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12983> .
+<http://safeair.es/project/resources/ElderlyRegion/12983> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12983> ;
+	safeair:locName "12983" .
 
 <http://safeair.es/project/resources/District/CENTRO> a safeair:District ;
 	rdfs:label "CENTRO" ;
@@ -640,26 +680,28 @@
 	vcard:street-address "CALLE VICTOR DE LA SERNA 25" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12834> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12834> .
+<http://safeair.es/project/resources/ElderlyRegion/12834> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12834> ;
+	safeair:locName "12834" .
 
-<http://safeair.es/project/resources/District/CHAMARTIN> a safeair:District ;
+<http://safeair.es/project/resources/District/CHAMARTIN> owl:sameAs <https://www.wikidata.org/wiki/Q1766348> ;
 	rdfs:label "CHAMARTIN" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> .
+	a safeair:District .
 
-<http://safeair.es/project/resources/ElderlyRegion/12910> safeair:locId "12910"^^xsd:int ;
+<http://safeair.es/project/resources/ElderlyRegion/12910> a safeair:ElderlyRegion ;
+	safeair:locId "12910"^^xsd:int ;
 	geo:lat "40.478305"^^xsd:double ;
 	geo:long "-3.685125"^^xsd:double ;
-	a safeair:ElderlyRegion ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079050> .
 
 <http://safeair.es/project/resources/vcard/elderlyareas/12910> a vcard:VCard ;
 	vcard:street-address "PLAZA ANDRES MANJON 7" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12910> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12910> .
+<http://safeair.es/project/resources/ElderlyRegion/12910> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12910> ;
+	safeair:locName "12910" .
 
-<http://safeair.es/project/resources/District/CHAMARTIN> a safeair:District ;
-	rdfs:label "CHAMARTIN" ;
+<http://safeair.es/project/resources/District/CHAMARTIN> rdfs:label "CHAMARTIN" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> .
 
 <http://safeair.es/project/resources/ElderlyRegion/13199> a safeair:ElderlyRegion ;
@@ -672,7 +714,8 @@
 	vcard:street-address "CALLE PUENTEAREAS 20" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13199> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13199> .
+<http://safeair.es/project/resources/ElderlyRegion/13199> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13199> ;
+	safeair:locName "13199" .
 
 <http://safeair.es/project/resources/District/CHAMARTIN> a safeair:District ;
 	rdfs:label "CHAMARTIN" ;
@@ -688,10 +731,11 @@
 	vcard:street-address "CALLE PECHUAN 1" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13259> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13259> .
+<http://safeair.es/project/resources/ElderlyRegion/13259> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13259> ;
+	safeair:locName "13259" .
 
-<http://safeair.es/project/resources/District/CHAMARTIN> a safeair:District ;
-	rdfs:label "CHAMARTIN" ;
+<http://safeair.es/project/resources/District/CHAMARTIN> rdfs:label "CHAMARTIN" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9148> a safeair:ElderlyRegion ;
@@ -704,7 +748,8 @@
 	vcard:street-address "CALLE SANTA RITA 1" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9148> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9148> .
+<http://safeair.es/project/resources/ElderlyRegion/9148> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9148> ;
+	safeair:locName "9148" .
 
 <http://safeair.es/project/resources/District/CHAMARTIN> a safeair:District ;
 	rdfs:label "CHAMARTIN" ;
@@ -720,11 +765,12 @@
 	vcard:street-address "CALLE PADRE CLARET 38" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10541> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10541> .
+<http://safeair.es/project/resources/ElderlyRegion/10541> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10541> ;
+	safeair:locName "10541" .
 
-<http://safeair.es/project/resources/District/CHAMARTIN> a safeair:District ;
-	rdfs:label "CHAMARTIN" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> .
+<http://safeair.es/project/resources/District/CHAMARTIN> rdfs:label "CHAMARTIN" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/11026> a safeair:ElderlyRegion ;
 	safeair:locId "11026"^^xsd:int ;
@@ -736,11 +782,12 @@
 	vcard:street-address "CALLE VINAROZ 29" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11026> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11026> .
+<http://safeair.es/project/resources/ElderlyRegion/11026> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11026> ;
+	safeair:locName "11026" .
 
-<http://safeair.es/project/resources/District/CHAMARTIN> rdfs:label "CHAMARTIN" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> .
+<http://safeair.es/project/resources/District/CHAMARTIN> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> ;
+	rdfs:label "CHAMARTIN" .
 
 <http://safeair.es/project/resources/ElderlyRegion/3212> a safeair:ElderlyRegion ;
 	safeair:locId "3212"^^xsd:int ;
@@ -752,10 +799,11 @@
 	vcard:street-address "CALLE DOCTOR MARCO CORERA 2" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3212> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3212> .
+<http://safeair.es/project/resources/ElderlyRegion/3212> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3212> ;
+	safeair:locName "3212" .
 
-<http://safeair.es/project/resources/District/CHAMARTIN> rdfs:label "CHAMARTIN" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/CHAMARTIN> a safeair:District ;
+	rdfs:label "CHAMARTIN" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1766348> .
 
 <http://safeair.es/project/resources/ElderlyRegion/6938> a safeair:ElderlyRegion ;
@@ -768,7 +816,8 @@
 	vcard:street-address "PASEO CASTELLANA 300" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMARTIN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6938> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6938> .
+<http://safeair.es/project/resources/ElderlyRegion/6938> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6938> ;
+	safeair:locName "6938" .
 
 <http://safeair.es/project/resources/District/CHAMARTIN> rdfs:label "CHAMARTIN" ;
 	a safeair:District ;
@@ -784,7 +833,8 @@
 	vcard:street-address "CALLE RODRIGUEZ SAN PEDRO 3" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMBERI> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13057> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13057> .
+<http://safeair.es/project/resources/ElderlyRegion/13057> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13057> ;
+	safeair:locName "13057" .
 
 <http://safeair.es/project/resources/District/CHAMBERI> a safeair:District ;
 	rdfs:label "CHAMBERI" ;
@@ -800,14 +850,15 @@
 	vcard:street-address "CALLE RAIMUNDO FERNANDEZ VILLAVERDE 28" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMBERI> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3596> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3596> .
+<http://safeair.es/project/resources/ElderlyRegion/3596> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3596> ;
+	safeair:locName "3596" .
 
 <http://safeair.es/project/resources/District/CHAMBERI> a safeair:District ;
 	rdfs:label "CHAMBERI" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1763370> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3991> a safeair:ElderlyRegion ;
-	safeair:locId "3991"^^xsd:int ;
+<http://safeair.es/project/resources/ElderlyRegion/3991> safeair:locId "3991"^^xsd:int ;
+	a safeair:ElderlyRegion ;
 	geo:lat "40.438962"^^xsd:double ;
 	geo:long "-3.7049220000000003"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079038> .
@@ -816,11 +867,12 @@
 	vcard:street-address "CALLE BRAVO MURILLO 49" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMBERI> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3991> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3991> .
+<http://safeair.es/project/resources/ElderlyRegion/3991> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3991> ;
+	safeair:locName "3991" .
 
-<http://safeair.es/project/resources/District/CHAMBERI> a safeair:District ;
-	rdfs:label "CHAMBERI" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763370> .
+<http://safeair.es/project/resources/District/CHAMBERI> rdfs:label "CHAMBERI" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763370> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/5603> a safeair:ElderlyRegion ;
 	safeair:locId "5603"^^xsd:int ;
@@ -832,11 +884,12 @@
 	vcard:street-address "CALLE BLASCO DE GARAY 38" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMBERI> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5603> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5603> .
+<http://safeair.es/project/resources/ElderlyRegion/5603> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5603> ;
+	safeair:locName "5603" .
 
-<http://safeair.es/project/resources/District/CHAMBERI> a safeair:District ;
+<http://safeair.es/project/resources/District/CHAMBERI> owl:sameAs <https://www.wikidata.org/wiki/Q1763370> ;
 	rdfs:label "CHAMBERI" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763370> .
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/3905> a safeair:ElderlyRegion ;
 	safeair:locId "3905"^^xsd:int ;
@@ -848,11 +901,12 @@
 	vcard:street-address "PLAZA OLAVIDE 17" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMBERI> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3905> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3905> .
+<http://safeair.es/project/resources/ElderlyRegion/3905> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3905> ;
+	safeair:locName "3905" .
 
-<http://safeair.es/project/resources/District/CHAMBERI> a safeair:District ;
+<http://safeair.es/project/resources/District/CHAMBERI> owl:sameAs <https://www.wikidata.org/wiki/Q1763370> ;
 	rdfs:label "CHAMBERI" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763370> .
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/12216> a safeair:ElderlyRegion ;
 	safeair:locId "12216"^^xsd:int ;
@@ -864,11 +918,12 @@
 	vcard:street-address "CALLE DOMENICO SCARLATTI 2" ;
 	vcard:region <http://safeair.es/project/resources/District/CHAMBERI> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12216> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12216> .
+<http://safeair.es/project/resources/ElderlyRegion/12216> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12216> ;
+	safeair:locName "12216" .
 
-<http://safeair.es/project/resources/District/CHAMBERI> a safeair:District ;
-	rdfs:label "CHAMBERI" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763370> .
+<http://safeair.es/project/resources/District/CHAMBERI> rdfs:label "CHAMBERI" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763370> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/13190> a safeair:ElderlyRegion ;
 	safeair:locId "13190"^^xsd:int ;
@@ -880,7 +935,8 @@
 	vcard:street-address "CALLE EZEQUIEL SOLANA 41" ;
 	vcard:region <http://safeair.es/project/resources/District/CIUDADLINEAL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13190> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13190> .
+<http://safeair.es/project/resources/ElderlyRegion/13190> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13190> ;
+	safeair:locName "13190" .
 
 <http://safeair.es/project/resources/District/CIUDADLINEAL> a safeair:District ;
 	rdfs:label "CIUDADLINEAL" ;
@@ -896,11 +952,12 @@
 	vcard:street-address "CALLE MISTERIOS 13" ;
 	vcard:region <http://safeair.es/project/resources/District/CIUDADLINEAL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13256> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13256> .
+<http://safeair.es/project/resources/ElderlyRegion/13256> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13256> ;
+	safeair:locName "13256" .
 
-<http://safeair.es/project/resources/District/CIUDADLINEAL> a safeair:District ;
-	rdfs:label "CIUDADLINEAL" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> .
+<http://safeair.es/project/resources/District/CIUDADLINEAL> rdfs:label "CIUDADLINEAL" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/13257> a safeair:ElderlyRegion ;
 	safeair:locId "13257"^^xsd:int ;
@@ -912,14 +969,15 @@
 	vcard:street-address "CALLE JAZMIN 3" ;
 	vcard:region <http://safeair.es/project/resources/District/CIUDADLINEAL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13257> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13257> .
+<http://safeair.es/project/resources/ElderlyRegion/13257> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13257> ;
+	safeair:locName "13257" .
 
-<http://safeair.es/project/resources/District/CIUDADLINEAL> a safeair:District ;
+<http://safeair.es/project/resources/District/CIUDADLINEAL> owl:sameAs <https://www.wikidata.org/wiki/Q1763694> ;
 	rdfs:label "CIUDADLINEAL" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> .
+	a safeair:District .
 
-<http://safeair.es/project/resources/ElderlyRegion/8228> a safeair:ElderlyRegion ;
-	safeair:locId "8228"^^xsd:int ;
+<http://safeair.es/project/resources/ElderlyRegion/8228> safeair:locId "8228"^^xsd:int ;
+	a safeair:ElderlyRegion ;
 	geo:lat "40.435646999999996"^^xsd:double ;
 	geo:long "-3.6382190000000003"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079016> .
@@ -928,11 +986,12 @@
 	vcard:street-address "CALLE DOCTOR CIRAJAS 1" ;
 	vcard:region <http://safeair.es/project/resources/District/CIUDADLINEAL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8228> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8228> .
+<http://safeair.es/project/resources/ElderlyRegion/8228> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8228> ;
+	safeair:locName "8228" .
 
-<http://safeair.es/project/resources/District/CIUDADLINEAL> a safeair:District ;
+<http://safeair.es/project/resources/District/CIUDADLINEAL> owl:sameAs <https://www.wikidata.org/wiki/Q1763694> ;
 	rdfs:label "CIUDADLINEAL" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> .
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/3318> a safeair:ElderlyRegion ;
 	safeair:locId "3318"^^xsd:int ;
@@ -944,11 +1003,12 @@
 	vcard:street-address "CALLE JOSE DEL HIERRO 3" ;
 	vcard:region <http://safeair.es/project/resources/District/CIUDADLINEAL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3318> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3318> .
+<http://safeair.es/project/resources/ElderlyRegion/3318> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3318> ;
+	safeair:locName "3318" .
 
-<http://safeair.es/project/resources/District/CIUDADLINEAL> a safeair:District ;
-	rdfs:label "CIUDADLINEAL" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> .
+<http://safeair.es/project/resources/District/CIUDADLINEAL> owl:sameAs <https://www.wikidata.org/wiki/Q1763694> ;
+	a safeair:District ;
+	rdfs:label "CIUDADLINEAL" .
 
 <http://safeair.es/project/resources/ElderlyRegion/5902> a safeair:ElderlyRegion ;
 	safeair:locId "5902"^^xsd:int ;
@@ -960,7 +1020,8 @@
 	vcard:street-address "AVENIDA MARQUES DE CORBERA 4" ;
 	vcard:region <http://safeair.es/project/resources/District/CIUDADLINEAL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5902> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5902> .
+<http://safeair.es/project/resources/ElderlyRegion/5902> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5902> ;
+	safeair:locName "5902" .
 
 <http://safeair.es/project/resources/District/CIUDADLINEAL> a safeair:District ;
 	rdfs:label "CIUDADLINEAL" ;
@@ -976,27 +1037,29 @@
 	vcard:street-address "CALLE SAN BALDOMERO 16" ;
 	vcard:region <http://safeair.es/project/resources/District/CIUDADLINEAL> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12214> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12214> .
+<http://safeair.es/project/resources/ElderlyRegion/12214> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12214> ;
+	safeair:locName "12214" .
 
-<http://safeair.es/project/resources/District/CIUDADLINEAL> owl:sameAs <https://www.wikidata.org/wiki/Q1763694> ;
-	rdfs:label "CIUDADLINEAL" ;
+<http://safeair.es/project/resources/District/CIUDADLINEAL> rdfs:label "CIUDADLINEAL" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1763694> ;
 	a safeair:District .
 
-<http://safeair.es/project/resources/ElderlyRegion/11024> geo:lat "40.479481"^^xsd:double ;
-	a safeair:ElderlyRegion ;
-	geo:long "-3.710376"^^xsd:double ;
+<http://safeair.es/project/resources/ElderlyRegion/11024> a safeair:ElderlyRegion ;
 	safeair:locId "11024"^^xsd:int ;
+	geo:lat "40.479481"^^xsd:double ;
+	geo:long "-3.710376"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079039> .
 
 <http://safeair.es/project/resources/vcard/elderlyareas/11024> a vcard:VCard ;
 	vcard:street-address "PASEO VAGUADA 13" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11024> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11024> .
+<http://safeair.es/project/resources/ElderlyRegion/11024> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11024> ;
+	safeair:locName "11024" .
 
-<http://safeair.es/project/resources/District/FUENCARRALELPARDO> rdfs:label "FUENCARRALELPARDO" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
+<http://safeair.es/project/resources/District/FUENCARRALELPARDO> owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
+	rdfs:label "FUENCARRALELPARDO" ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/13060> a safeair:ElderlyRegion ;
 	safeair:locId "13060"^^xsd:int ;
@@ -1008,7 +1071,8 @@
 	vcard:street-address "PLAZA TRES OLIVOS 26" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13060> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13060> .
+<http://safeair.es/project/resources/ElderlyRegion/13060> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13060> ;
+	safeair:locName "13060" .
 
 <http://safeair.es/project/resources/District/FUENCARRALELPARDO> owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
 	a safeair:District ;
@@ -1024,11 +1088,12 @@
 	vcard:street-address "CALLE ANTONIO LOPEZ AGUADO 3" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13186> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13186> .
+<http://safeair.es/project/resources/ElderlyRegion/13186> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13186> ;
+	safeair:locName "13186" .
 
-<http://safeair.es/project/resources/District/FUENCARRALELPARDO> a safeair:District ;
-	rdfs:label "FUENCARRALELPARDO" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
+<http://safeair.es/project/resources/District/FUENCARRALELPARDO> owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
+	a safeair:District ;
+	rdfs:label "FUENCARRALELPARDO" .
 
 <http://safeair.es/project/resources/ElderlyRegion/13187> a safeair:ElderlyRegion ;
 	safeair:locId "13187"^^xsd:int ;
@@ -1040,11 +1105,12 @@
 	vcard:street-address "CALLE FERMIN CABALLERO 17" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13187> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13187> .
+<http://safeair.es/project/resources/ElderlyRegion/13187> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13187> ;
+	safeair:locName "13187" .
 
 <http://safeair.es/project/resources/District/FUENCARRALELPARDO> a safeair:District ;
-	rdfs:label "FUENCARRALELPARDO" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
+	owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
+	rdfs:label "FUENCARRALELPARDO" .
 
 <http://safeair.es/project/resources/ElderlyRegion/2651> a safeair:ElderlyRegion ;
 	safeair:locId "2651"^^xsd:int ;
@@ -1056,7 +1122,8 @@
 	vcard:street-address "PLAZA FONSAGRADA 6" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/2651> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2651> .
+<http://safeair.es/project/resources/ElderlyRegion/2651> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2651> ;
+	safeair:locName "2651" .
 
 <http://safeair.es/project/resources/District/FUENCARRALELPARDO> a safeair:District ;
 	rdfs:label "FUENCARRALELPARDO" ;
@@ -1072,11 +1139,12 @@
 	vcard:street-address "CALLE MADERUELO 15" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8104> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8104> .
+<http://safeair.es/project/resources/ElderlyRegion/8104> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8104> ;
+	safeair:locName "8104" .
 
-<http://safeair.es/project/resources/District/FUENCARRALELPARDO> rdfs:label "FUENCARRALELPARDO" ;
+<http://safeair.es/project/resources/District/FUENCARRALELPARDO> owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
 	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
+	rdfs:label "FUENCARRALELPARDO" .
 
 <http://safeair.es/project/resources/ElderlyRegion/4502> a safeair:ElderlyRegion ;
 	safeair:locId "4502"^^xsd:int ;
@@ -1088,11 +1156,12 @@
 	vcard:street-address "CALLE FRESNEDILLAS 12" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4502> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4502> .
+<http://safeair.es/project/resources/ElderlyRegion/4502> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4502> ;
+	safeair:locName "4502" .
 
-<http://safeair.es/project/resources/District/FUENCARRALELPARDO> rdfs:label "FUENCARRALELPARDO" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
+<http://safeair.es/project/resources/District/FUENCARRALELPARDO> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
+	rdfs:label "FUENCARRALELPARDO" .
 
 <http://safeair.es/project/resources/ElderlyRegion/10034> a safeair:ElderlyRegion ;
 	safeair:locId "10034"^^xsd:int ;
@@ -1104,7 +1173,8 @@
 	vcard:street-address "CALLE GABRIELA MISTRAL 12" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10034> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10034> .
+<http://safeair.es/project/resources/ElderlyRegion/10034> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10034> ;
+	safeair:locName "10034" .
 
 <http://safeair.es/project/resources/District/FUENCARRALELPARDO> a safeair:District ;
 	rdfs:label "FUENCARRALELPARDO" ;
@@ -1120,26 +1190,28 @@
 	vcard:street-address "CALLE MIRADOR DE LA REINA 137" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6279> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6279> .
+<http://safeair.es/project/resources/ElderlyRegion/6279> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6279> ;
+	safeair:locName "6279" .
 
-<http://safeair.es/project/resources/District/FUENCARRALELPARDO> rdfs:label "FUENCARRALELPARDO" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/FUENCARRALELPARDO> a safeair:District ;
+	rdfs:label "FUENCARRALELPARDO" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5144> a safeair:ElderlyRegion ;
+<http://safeair.es/project/resources/ElderlyRegion/5144> safeair:isClosestTo <http://safeair.es/project/resources/Station/28079039> ;
 	safeair:locId "5144"^^xsd:int ;
 	geo:lat "40.494593"^^xsd:double ;
 	geo:long "-3.723349"^^xsd:double ;
-	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079039> .
+	a safeair:ElderlyRegion .
 
 <http://safeair.es/project/resources/vcard/elderlyareas/5144> a vcard:VCard ;
 	vcard:street-address "CALLE MARIA DE MAEZTU 120" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5144> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5144> .
+<http://safeair.es/project/resources/ElderlyRegion/5144> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5144> ;
+	safeair:locName "5144" .
 
-<http://safeair.es/project/resources/District/FUENCARRALELPARDO> a safeair:District ;
-	rdfs:label "FUENCARRALELPARDO" ;
+<http://safeair.es/project/resources/District/FUENCARRALELPARDO> rdfs:label "FUENCARRALELPARDO" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
 
 <http://safeair.es/project/resources/ElderlyRegion/11031> a safeair:ElderlyRegion ;
@@ -1152,11 +1224,12 @@
 	vcard:street-address "CALLE MANUEL ALONSO 8" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11031> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11031> .
+<http://safeair.es/project/resources/ElderlyRegion/11031> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11031> ;
+	safeair:locName "11031" .
 
-<http://safeair.es/project/resources/District/FUENCARRALELPARDO> a safeair:District ;
-	rdfs:label "FUENCARRALELPARDO" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
+<http://safeair.es/project/resources/District/FUENCARRALELPARDO> rdfs:label "FUENCARRALELPARDO" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/12672> a safeair:ElderlyRegion ;
 	safeair:locId "12672"^^xsd:int ;
@@ -1168,11 +1241,12 @@
 	vcard:street-address "CALLE GARITA 2" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12672> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12672> .
+<http://safeair.es/project/resources/ElderlyRegion/12672> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12672> ;
+	safeair:locName "12672" .
 
-<http://safeair.es/project/resources/District/FUENCARRALELPARDO> rdfs:label "FUENCARRALELPARDO" ;
+<http://safeair.es/project/resources/District/FUENCARRALELPARDO> owl:sameAs <https://www.wikidata.org/wiki/Q656196> ;
 	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
+	rdfs:label "FUENCARRALELPARDO" .
 
 <http://safeair.es/project/resources/ElderlyRegion/12651> a safeair:ElderlyRegion ;
 	safeair:locId "12651"^^xsd:int ;
@@ -1184,14 +1258,15 @@
 	vcard:street-address "CALLE SAN MODESTO 3" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12651> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12651> .
+<http://safeair.es/project/resources/ElderlyRegion/12651> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12651> ;
+	safeair:locName "12651" .
 
-<http://safeair.es/project/resources/District/FUENCARRALELPARDO> rdfs:label "FUENCARRALELPARDO" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/FUENCARRALELPARDO> a safeair:District ;
+	rdfs:label "FUENCARRALELPARDO" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13055> a safeair:ElderlyRegion ;
-	safeair:locId "13055"^^xsd:int ;
+<http://safeair.es/project/resources/ElderlyRegion/13055> safeair:locId "13055"^^xsd:int ;
+	a safeair:ElderlyRegion ;
 	geo:lat "40.474086"^^xsd:double ;
 	geo:long "-3.726043"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079039> .
@@ -1200,10 +1275,11 @@
 	vcard:street-address "CALLE JOAQUIN LORENZO 33" ;
 	vcard:region <http://safeair.es/project/resources/District/FUENCARRALELPARDO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13055> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13055> .
+<http://safeair.es/project/resources/ElderlyRegion/13055> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13055> ;
+	safeair:locName "13055" .
 
-<http://safeair.es/project/resources/District/FUENCARRALELPARDO> rdfs:label "FUENCARRALELPARDO" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/FUENCARRALELPARDO> a safeair:District ;
+	rdfs:label "FUENCARRALELPARDO" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q656196> .
 
 <http://safeair.es/project/resources/ElderlyRegion/13067> a safeair:ElderlyRegion ;
@@ -1216,7 +1292,8 @@
 	vcard:street-address "CALLE OA 10" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13067> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13067> .
+<http://safeair.es/project/resources/ElderlyRegion/13067> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13067> ;
+	safeair:locName "13067" .
 
 <http://safeair.es/project/resources/District/HORTALEZA> a safeair:District ;
 	rdfs:label "HORTALEZA" ;
@@ -1232,11 +1309,12 @@
 	vcard:street-address "CALLE DOA GUIOMAR 2" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13068> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13068> .
+<http://safeair.es/project/resources/ElderlyRegion/13068> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13068> ;
+	safeair:locName "13068" .
 
-<http://safeair.es/project/resources/District/HORTALEZA> a safeair:District ;
-	rdfs:label "HORTALEZA" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> .
+<http://safeair.es/project/resources/District/HORTALEZA> rdfs:label "HORTALEZA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/6697> a safeair:ElderlyRegion ;
 	safeair:locId "6697"^^xsd:int ;
@@ -1248,11 +1326,12 @@
 	vcard:street-address "CALLE BACARES 22" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6697> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6697> .
+<http://safeair.es/project/resources/ElderlyRegion/6697> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6697> ;
+	safeair:locName "6697" .
 
-<http://safeair.es/project/resources/District/HORTALEZA> rdfs:label "HORTALEZA" ;
+<http://safeair.es/project/resources/District/HORTALEZA> owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
 	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> .
+	rdfs:label "HORTALEZA" .
 
 <http://safeair.es/project/resources/ElderlyRegion/6905> a safeair:ElderlyRegion ;
 	safeair:locId "6905"^^xsd:int ;
@@ -1264,11 +1343,12 @@
 	vcard:street-address "CALLE MAR ADRIATICO 7" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6905> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6905> .
+<http://safeair.es/project/resources/ElderlyRegion/6905> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6905> ;
+	safeair:locName "6905" .
 
-<http://safeair.es/project/resources/District/HORTALEZA> rdfs:label "HORTALEZA" ;
+<http://safeair.es/project/resources/District/HORTALEZA> owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
 	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> .
+	rdfs:label "HORTALEZA" .
 
 <http://safeair.es/project/resources/ElderlyRegion/9826> a safeair:ElderlyRegion ;
 	safeair:locId "9826"^^xsd:int ;
@@ -1280,11 +1360,12 @@
 	vcard:street-address "CALLE ANDORRA 28" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9826> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9826> .
+<http://safeair.es/project/resources/ElderlyRegion/9826> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9826> ;
+	safeair:locName "9826" .
 
-<http://safeair.es/project/resources/District/HORTALEZA> a safeair:District ;
+<http://safeair.es/project/resources/District/HORTALEZA> owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
 	rdfs:label "HORTALEZA" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> .
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/9833> a safeair:ElderlyRegion ;
 	safeair:locId "9833"^^xsd:int ;
@@ -1296,11 +1377,12 @@
 	vcard:street-address "CALLE MIGUEL RIESCO 16" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9833> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9833> .
+<http://safeair.es/project/resources/ElderlyRegion/9833> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9833> ;
+	safeair:locName "9833" .
 
-<http://safeair.es/project/resources/District/HORTALEZA> rdfs:label "HORTALEZA" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> .
+<http://safeair.es/project/resources/District/HORTALEZA> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
+	rdfs:label "HORTALEZA" .
 
 <http://safeair.es/project/resources/ElderlyRegion/9839> a safeair:ElderlyRegion ;
 	safeair:locId "9839"^^xsd:int ;
@@ -1312,14 +1394,15 @@
 	vcard:street-address "CALLE ACONCAGUA 4" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9839> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9839> .
+<http://safeair.es/project/resources/ElderlyRegion/9839> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9839> ;
+	safeair:locName "9839" .
 
-<http://safeair.es/project/resources/District/HORTALEZA> owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/HORTALEZA> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
 	rdfs:label "HORTALEZA" .
 
-<http://safeair.es/project/resources/ElderlyRegion/9844> a safeair:ElderlyRegion ;
-	safeair:locId "9844"^^xsd:int ;
+<http://safeair.es/project/resources/ElderlyRegion/9844> safeair:locId "9844"^^xsd:int ;
+	a safeair:ElderlyRegion ;
 	geo:lat "40.475215999999996"^^xsd:double ;
 	geo:long "-3.645489"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079057> .
@@ -1328,11 +1411,12 @@
 	vcard:street-address "CALLE MAR DE LAS ANTILLAS 8" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9844> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9844> .
+<http://safeair.es/project/resources/ElderlyRegion/9844> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9844> ;
+	safeair:locName "9844" .
 
 <http://safeair.es/project/resources/District/HORTALEZA> rdfs:label "HORTALEZA" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> .
+	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/5689> a safeair:ElderlyRegion ;
 	safeair:locId "5689"^^xsd:int ;
@@ -1344,11 +1428,12 @@
 	vcard:street-address "CALLE FRANCISCO UMBRAL 41" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5689> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5689> .
+<http://safeair.es/project/resources/ElderlyRegion/5689> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5689> ;
+	safeair:locName "5689" .
 
-<http://safeair.es/project/resources/District/HORTALEZA> owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
-	rdfs:label "HORTALEZA" ;
-	a safeair:District .
+<http://safeair.es/project/resources/District/HORTALEZA> rdfs:label "HORTALEZA" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9850> a safeair:ElderlyRegion ;
 	safeair:locId "9850"^^xsd:int ;
@@ -1360,15 +1445,16 @@
 	vcard:street-address "CALLE MORERUELA 45" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9850> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9850> .
+<http://safeair.es/project/resources/ElderlyRegion/9850> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9850> ;
+	safeair:locName "9850" .
 
-<http://safeair.es/project/resources/District/HORTALEZA> a safeair:District ;
-	rdfs:label "HORTALEZA" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> .
+<http://safeair.es/project/resources/District/HORTALEZA> owl:sameAs <https://www.wikidata.org/wiki/Q1928529> ;
+	a safeair:District ;
+	rdfs:label "HORTALEZA" .
 
 <http://safeair.es/project/resources/ElderlyRegion/6703> a safeair:ElderlyRegion ;
-	safeair:locId "6703"^^xsd:int ;
 	geo:lat "40.472248"^^xsd:double ;
+	safeair:locId "6703"^^xsd:int ;
 	geo:long "-3.663554"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079050> .
 
@@ -1376,10 +1462,11 @@
 	vcard:street-address "CALLE JULIO DANVILA 15" ;
 	vcard:region <http://safeair.es/project/resources/District/HORTALEZA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6703> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6703> .
+<http://safeair.es/project/resources/ElderlyRegion/6703> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6703> ;
+	safeair:locName "6703" .
 
-<http://safeair.es/project/resources/District/HORTALEZA> a safeair:District ;
-	rdfs:label "HORTALEZA" ;
+<http://safeair.es/project/resources/District/HORTALEZA> rdfs:label "HORTALEZA" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1928529> .
 
 <http://safeair.es/project/resources/ElderlyRegion/10035> a safeair:ElderlyRegion ;
@@ -1392,10 +1479,11 @@
 	vcard:street-address "AVENIDA PADRE PIQUER 23" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10035> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10035> .
+<http://safeair.es/project/resources/ElderlyRegion/10035> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10035> ;
+	safeair:locName "10035" .
 
-<http://safeair.es/project/resources/District/LATINA> a safeair:District ;
-	rdfs:label "LATINA" ;
+<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
 <http://safeair.es/project/resources/ElderlyRegion/13063> a safeair:ElderlyRegion ;
@@ -1408,10 +1496,11 @@
 	vcard:street-address "CALLE CEBREROS 50" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13063> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13063> .
+<http://safeair.es/project/resources/ElderlyRegion/13063> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13063> ;
+	safeair:locName "13063" .
 
-<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/LATINA> a safeair:District ;
+	rdfs:label "LATINA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
 <http://safeair.es/project/resources/ElderlyRegion/13064> a safeair:ElderlyRegion ;
@@ -1424,14 +1513,15 @@
 	vcard:street-address "CALLE ROMPEDIZO 15" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13064> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13064> .
+<http://safeair.es/project/resources/ElderlyRegion/13064> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13064> ;
+	safeair:locName "13064" .
 
 <http://safeair.es/project/resources/District/LATINA> owl:sameAs <https://www.wikidata.org/wiki/Q794954> ;
-	a safeair:District ;
-	rdfs:label "LATINA" .
+	rdfs:label "LATINA" ;
+	a safeair:District .
 
-<http://safeair.es/project/resources/ElderlyRegion/13255> a safeair:ElderlyRegion ;
-	safeair:locId "13255"^^xsd:int ;
+<http://safeair.es/project/resources/ElderlyRegion/13255> safeair:locId "13255"^^xsd:int ;
+	a safeair:ElderlyRegion ;
 	geo:lat "40.399706"^^xsd:double ;
 	geo:long "-3.7739300000000005"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079024> .
@@ -1440,11 +1530,12 @@
 	vcard:street-address "CARRETERA BOADILLA DEL MONTE 34" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13255> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13255> .
+<http://safeair.es/project/resources/ElderlyRegion/13255> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13255> ;
+	safeair:locName "13255" .
 
 <http://safeair.es/project/resources/District/LATINA> a safeair:District ;
-	rdfs:label "LATINA" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
+	owl:sameAs <https://www.wikidata.org/wiki/Q794954> ;
+	rdfs:label "LATINA" .
 
 <http://safeair.es/project/resources/ElderlyRegion/5248> a safeair:ElderlyRegion ;
 	safeair:locId "5248"^^xsd:int ;
@@ -1456,10 +1547,11 @@
 	vcard:street-address "AVENIDA LAS AGUILAS 110" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5248> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5248> .
+<http://safeair.es/project/resources/ElderlyRegion/5248> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5248> ;
+	safeair:locName "5248" .
 
-<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/LATINA> a safeair:District ;
+	rdfs:label "LATINA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
 <http://safeair.es/project/resources/ElderlyRegion/7122> a safeair:ElderlyRegion ;
@@ -1472,11 +1564,12 @@
 	vcard:street-address "CALLE CASTROSERNA 4" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/7122> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7122> .
+<http://safeair.es/project/resources/ElderlyRegion/7122> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7122> ;
+	safeair:locName "7122" .
 
-<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
+<http://safeair.es/project/resources/District/LATINA> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q794954> ;
+	rdfs:label "LATINA" .
 
 <http://safeair.es/project/resources/ElderlyRegion/7823> a safeair:ElderlyRegion ;
 	safeair:locId "7823"^^xsd:int ;
@@ -1488,11 +1581,12 @@
 	vcard:street-address "PLAZA CUACOS DE YUSTE 1" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/7823> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7823> .
+<http://safeair.es/project/resources/ElderlyRegion/7823> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7823> ;
+	safeair:locName "7823" .
 
-<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
+<http://safeair.es/project/resources/District/LATINA> owl:sameAs <https://www.wikidata.org/wiki/Q794954> ;
 	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
+	rdfs:label "LATINA" .
 
 <http://safeair.es/project/resources/ElderlyRegion/9869> a safeair:ElderlyRegion ;
 	safeair:locId "9869"^^xsd:int ;
@@ -1504,7 +1598,8 @@
 	vcard:street-address "CALLE MARCELINO CASTILLO 29" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9869> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9869> .
+<http://safeair.es/project/resources/ElderlyRegion/9869> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9869> ;
+	safeair:locName "9869" .
 
 <http://safeair.es/project/resources/District/LATINA> a safeair:District ;
 	rdfs:label "LATINA" ;
@@ -1520,10 +1615,11 @@
 	vcard:street-address "CALLE VALMOJADO 12" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3244> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3244> .
+<http://safeair.es/project/resources/ElderlyRegion/3244> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3244> ;
+	safeair:locName "3244" .
 
-<http://safeair.es/project/resources/District/LATINA> a safeair:District ;
-	rdfs:label "LATINA" ;
+<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
 <http://safeair.es/project/resources/ElderlyRegion/3243> a safeair:ElderlyRegion ;
@@ -1536,11 +1632,12 @@
 	vcard:street-address "CALLE QUERO 59" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3243> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3243> .
+<http://safeair.es/project/resources/ElderlyRegion/3243> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3243> ;
+	safeair:locName "3243" .
 
-<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
+<http://safeair.es/project/resources/District/LATINA> owl:sameAs <https://www.wikidata.org/wiki/Q794954> ;
 	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
+	rdfs:label "LATINA" .
 
 <http://safeair.es/project/resources/ElderlyRegion/9888> a safeair:ElderlyRegion ;
 	safeair:locId "9888"^^xsd:int ;
@@ -1552,11 +1649,12 @@
 	vcard:street-address "CALLE CARAMUEL 53" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9888> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9888> .
+<http://safeair.es/project/resources/ElderlyRegion/9888> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9888> ;
+	safeair:locName "9888" .
 
-<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
+<http://safeair.es/project/resources/District/LATINA> owl:sameAs <https://www.wikidata.org/wiki/Q794954> ;
+	rdfs:label "LATINA" ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/13011> a safeair:ElderlyRegion ;
 	safeair:locId "13011"^^xsd:int ;
@@ -1568,11 +1666,12 @@
 	vcard:street-address "PASEO LANCEROS 2" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13011> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13011> .
+<http://safeair.es/project/resources/ElderlyRegion/13011> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13011> ;
+	safeair:locName "13011" .
 
-<http://safeair.es/project/resources/District/LATINA> owl:sameAs <https://www.wikidata.org/wiki/Q794954> ;
-	rdfs:label "LATINA" ;
-	a safeair:District .
+<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
 <http://safeair.es/project/resources/ElderlyRegion/12935> a safeair:ElderlyRegion ;
 	safeair:locId "12935"^^xsd:int ;
@@ -1584,14 +1683,15 @@
 	vcard:street-address "AVENIDA AVIACION 73" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12935> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12935> .
+<http://safeair.es/project/resources/ElderlyRegion/12935> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12935> ;
+	safeair:locName "12935" .
 
-<http://safeair.es/project/resources/District/LATINA> owl:sameAs <https://www.wikidata.org/wiki/Q794954> ;
-	a safeair:District ;
-	rdfs:label "LATINA" .
+<http://safeair.es/project/resources/District/LATINA> a safeair:District ;
+	rdfs:label "LATINA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11029> a safeair:ElderlyRegion ;
-	safeair:locId "11029"^^xsd:int ;
+<http://safeair.es/project/resources/ElderlyRegion/11029> safeair:locId "11029"^^xsd:int ;
+	a safeair:ElderlyRegion ;
 	geo:lat "40.379373"^^xsd:double ;
 	geo:long "-3.7709099999999998"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079018> .
@@ -1600,14 +1700,15 @@
 	vcard:street-address "CALLE RAFAEL FINAT 44" ;
 	vcard:region <http://safeair.es/project/resources/District/LATINA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11029> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11029> .
+<http://safeair.es/project/resources/ElderlyRegion/11029> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11029> ;
+	safeair:locName "11029" .
 
-<http://safeair.es/project/resources/District/LATINA> rdfs:label "LATINA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/LATINA> a safeair:District ;
+	rdfs:label "LATINA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q794954> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11032> a safeair:ElderlyRegion ;
-	safeair:locId "11032"^^xsd:int ;
+<http://safeair.es/project/resources/ElderlyRegion/11032> safeair:locId "11032"^^xsd:int ;
+	a safeair:ElderlyRegion ;
 	geo:lat "40.453383"^^xsd:double ;
 	geo:long "-3.789886"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079024> .
@@ -1616,10 +1717,11 @@
 	vcard:street-address "CALLE ESCULTOR PERESEJO 70" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11032> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11032> .
+<http://safeair.es/project/resources/ElderlyRegion/11032> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11032> ;
+	safeair:locName "11032" .
 
-<http://safeair.es/project/resources/District/MONCLOAARAVACA> rdfs:label "MONCLOAARAVACA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/MONCLOAARAVACA> a safeair:District ;
+	rdfs:label "MONCLOAARAVACA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2017682> .
 
 <http://safeair.es/project/resources/ElderlyRegion/11033> a safeair:ElderlyRegion ;
@@ -1632,7 +1734,8 @@
 	vcard:street-address "CALLE VIRGEN DE LOS ROSALES 102" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11033> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11033> .
+<http://safeair.es/project/resources/ElderlyRegion/11033> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11033> ;
+	safeair:locName "11033" .
 
 <http://safeair.es/project/resources/District/MONCLOAARAVACA> a safeair:District ;
 	rdfs:label "MONCLOAARAVACA" ;
@@ -1648,10 +1751,11 @@
 	vcard:street-address "CALLE CAROLI 4" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11034> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11034> .
+<http://safeair.es/project/resources/ElderlyRegion/11034> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11034> ;
+	safeair:locName "11034" .
 
-<http://safeair.es/project/resources/District/MONCLOAARAVACA> a safeair:District ;
-	rdfs:label "MONCLOAARAVACA" ;
+<http://safeair.es/project/resources/District/MONCLOAARAVACA> rdfs:label "MONCLOAARAVACA" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2017682> .
 
 <http://safeair.es/project/resources/ElderlyRegion/13258> a safeair:ElderlyRegion ;
@@ -1664,23 +1768,25 @@
 	vcard:street-address "AVENIDA DOCTOR FEDERICO RUBIO Y GALI 63" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13258> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13258> .
+<http://safeair.es/project/resources/ElderlyRegion/13258> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13258> ;
+	safeair:locName "13258" .
 
-<http://safeair.es/project/resources/District/MONCLOAARAVACA> a safeair:District ;
-	rdfs:label "MONCLOAARAVACA" ;
+<http://safeair.es/project/resources/District/MONCLOAARAVACA> rdfs:label "MONCLOAARAVACA" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2017682> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3763> geo:lat "40.467487"^^xsd:double ;
+<http://safeair.es/project/resources/ElderlyRegion/3763> a safeair:ElderlyRegion ;
+	safeair:locId "3763"^^xsd:int ;
+	geo:lat "40.467487"^^xsd:double ;
 	geo:long "-3.720136"^^xsd:double ;
-	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079039> ;
-	a safeair:ElderlyRegion ;
-	safeair:locId "3763"^^xsd:int .
+	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079039> .
 
 <http://safeair.es/project/resources/vcard/elderlyareas/3763> a vcard:VCard ;
 	vcard:street-address "CALLE VALDERREY 40" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3763> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3763> .
+<http://safeair.es/project/resources/ElderlyRegion/3763> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3763> ;
+	safeair:locName "3763" .
 
 <http://safeair.es/project/resources/District/MONCLOAARAVACA> a safeair:District ;
 	rdfs:label "MONCLOAARAVACA" ;
@@ -1696,10 +1802,11 @@
 	vcard:street-address "CALLE ANICETO MARINAS 98" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3062> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3062> .
+<http://safeair.es/project/resources/ElderlyRegion/3062> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3062> ;
+	safeair:locName "3062" .
 
-<http://safeair.es/project/resources/District/MONCLOAARAVACA> rdfs:label "MONCLOAARAVACA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/MONCLOAARAVACA> a safeair:District ;
+	rdfs:label "MONCLOAARAVACA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2017682> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9315> a safeair:ElderlyRegion ;
@@ -1712,15 +1819,16 @@
 	vcard:street-address "CALLE ALCALDE MARTIN DE ALZAGA 19" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9315> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9315> .
+<http://safeair.es/project/resources/ElderlyRegion/9315> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9315> ;
+	safeair:locName "9315" .
 
-<http://safeair.es/project/resources/District/MONCLOAARAVACA> rdfs:label "MONCLOAARAVACA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/MONCLOAARAVACA> a safeair:District ;
+	rdfs:label "MONCLOAARAVACA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2017682> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10108> a safeair:ElderlyRegion ;
+<http://safeair.es/project/resources/ElderlyRegion/10108> geo:lat "40.466528000000004"^^xsd:double ;
+	a safeair:ElderlyRegion ;
 	safeair:locId "10108"^^xsd:int ;
-	geo:lat "40.466528000000004"^^xsd:double ;
 	geo:long "-3.7185660000000005"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079039> .
 
@@ -1728,7 +1836,8 @@
 	vcard:street-address "CALLE VALDERREY 52" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10108> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10108> .
+<http://safeair.es/project/resources/ElderlyRegion/10108> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10108> ;
+	safeair:locName "10108" .
 
 <http://safeair.es/project/resources/District/MONCLOAARAVACA> a safeair:District ;
 	rdfs:label "MONCLOAARAVACA" ;
@@ -1744,7 +1853,8 @@
 	vcard:street-address "CALLE VALDERROMAN 24" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10116> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10116> .
+<http://safeair.es/project/resources/ElderlyRegion/10116> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10116> ;
+	safeair:locName "10116" .
 
 <http://safeair.es/project/resources/District/MONCLOAARAVACA> a safeair:District ;
 	rdfs:label "MONCLOAARAVACA" ;
@@ -1760,11 +1870,12 @@
 	vcard:street-address "AVENIDA VALLADOLID 4" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12847> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12847> .
+<http://safeair.es/project/resources/ElderlyRegion/12847> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12847> ;
+	safeair:locName "12847" .
 
-<http://safeair.es/project/resources/District/MONCLOAARAVACA> rdfs:label "MONCLOAARAVACA" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2017682> .
+<http://safeair.es/project/resources/District/MONCLOAARAVACA> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2017682> ;
+	rdfs:label "MONCLOAARAVACA" .
 
 <http://safeair.es/project/resources/ElderlyRegion/10103> a safeair:ElderlyRegion ;
 	safeair:locId "10103"^^xsd:int ;
@@ -1776,7 +1887,8 @@
 	vcard:street-address "CALLE GENERAL CADENAS CAMPOS 21" ;
 	vcard:region <http://safeair.es/project/resources/District/MONCLOAARAVACA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10103> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10103> .
+<http://safeair.es/project/resources/ElderlyRegion/10103> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10103> ;
+	safeair:locName "10103" .
 
 <http://safeair.es/project/resources/District/MONCLOAARAVACA> rdfs:label "MONCLOAARAVACA" ;
 	a safeair:District ;
@@ -1792,11 +1904,12 @@
 	vcard:street-address "CALLE CAMINO DE LOS VINATEROS 107" ;
 	vcard:region <http://safeair.es/project/resources/District/MORATALAZ> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5177> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5177> .
+<http://safeair.es/project/resources/ElderlyRegion/5177> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5177> ;
+	safeair:locName "5177" .
 
-<http://safeair.es/project/resources/District/MORATALAZ> a safeair:District ;
-	rdfs:label "MORATALAZ" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2076109> .
+<http://safeair.es/project/resources/District/MORATALAZ> owl:sameAs <https://www.wikidata.org/wiki/Q2076109> ;
+	a safeair:District ;
+	rdfs:label "MORATALAZ" .
 
 <http://safeair.es/project/resources/ElderlyRegion/9518> a safeair:ElderlyRegion ;
 	safeair:locId "9518"^^xsd:int ;
@@ -1808,7 +1921,8 @@
 	vcard:street-address "CALLE ARROYO DE LAS PILILLAS 41" ;
 	vcard:region <http://safeair.es/project/resources/District/MORATALAZ> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9518> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9518> .
+<http://safeair.es/project/resources/ElderlyRegion/9518> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9518> ;
+	safeair:locName "9518" .
 
 <http://safeair.es/project/resources/District/MORATALAZ> rdfs:label "MORATALAZ" ;
 	a safeair:District ;
@@ -1824,10 +1938,11 @@
 	vcard:street-address "CALLE CAMINO DE LOS VINATEROS 134" ;
 	vcard:region <http://safeair.es/project/resources/District/MORATALAZ> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5330> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5330> .
+<http://safeair.es/project/resources/ElderlyRegion/5330> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5330> ;
+	safeair:locName "5330" .
 
-<http://safeair.es/project/resources/District/MORATALAZ> rdfs:label "MORATALAZ" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/MORATALAZ> a safeair:District ;
+	rdfs:label "MORATALAZ" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2076109> .
 
 <http://safeair.es/project/resources/ElderlyRegion/12967> a safeair:ElderlyRegion ;
@@ -1840,11 +1955,12 @@
 	vcard:street-address "CALLE ARROYO DE LAS PILILLAS 56" ;
 	vcard:region <http://safeair.es/project/resources/District/MORATALAZ> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12967> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12967> .
+<http://safeair.es/project/resources/ElderlyRegion/12967> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12967> ;
+	safeair:locName "12967" .
 
-<http://safeair.es/project/resources/District/MORATALAZ> a safeair:District ;
-	rdfs:label "MORATALAZ" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2076109> .
+<http://safeair.es/project/resources/District/MORATALAZ> owl:sameAs <https://www.wikidata.org/wiki/Q2076109> ;
+	a safeair:District ;
+	rdfs:label "MORATALAZ" .
 
 <http://safeair.es/project/resources/ElderlyRegion/12979> a safeair:ElderlyRegion ;
 	safeair:locId "12979"^^xsd:int ;
@@ -1856,11 +1972,12 @@
 	vcard:street-address "CALLE ARROYO BELINCOSO 13" ;
 	vcard:region <http://safeair.es/project/resources/District/MORATALAZ> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12979> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12979> .
+<http://safeair.es/project/resources/ElderlyRegion/12979> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12979> ;
+	safeair:locName "12979" .
 
 <http://safeair.es/project/resources/District/MORATALAZ> a safeair:District ;
-	rdfs:label "MORATALAZ" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2076109> .
+	owl:sameAs <https://www.wikidata.org/wiki/Q2076109> ;
+	rdfs:label "MORATALAZ" .
 
 <http://safeair.es/project/resources/ElderlyRegion/12949> a safeair:ElderlyRegion ;
 	safeair:locId "12949"^^xsd:int ;
@@ -1872,11 +1989,12 @@
 	vcard:street-address "CALLE FUENTE CARRANTONA 4" ;
 	vcard:region <http://safeair.es/project/resources/District/MORATALAZ> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12949> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12949> .
+<http://safeair.es/project/resources/ElderlyRegion/12949> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12949> ;
+	safeair:locName "12949" .
 
-<http://safeair.es/project/resources/District/MORATALAZ> owl:sameAs <https://www.wikidata.org/wiki/Q2076109> ;
+<http://safeair.es/project/resources/District/MORATALAZ> a safeair:District ;
 	rdfs:label "MORATALAZ" ;
-	a safeair:District .
+	owl:sameAs <https://www.wikidata.org/wiki/Q2076109> .
 
 <http://safeair.es/project/resources/ElderlyRegion/13221> a safeair:ElderlyRegion ;
 	safeair:locId "13221"^^xsd:int ;
@@ -1888,11 +2006,12 @@
 	vcard:street-address "CALLE BENJAMIN PALENCIA 24" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13221> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13221> .
+<http://safeair.es/project/resources/ElderlyRegion/13221> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13221> ;
+	safeair:locName "13221" .
 
 <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> ;
-	rdfs:label "PUENTEDEVALLECAS" .
+	rdfs:label "PUENTEDEVALLECAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> .
 
 <http://safeair.es/project/resources/ElderlyRegion/3929> a safeair:ElderlyRegion ;
 	safeair:locId "3929"^^xsd:int ;
@@ -1904,11 +2023,12 @@
 	vcard:street-address "AVENIDA ENTREVIAS 50" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3929> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3929> .
+<http://safeair.es/project/resources/ElderlyRegion/3929> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3929> ;
+	safeair:locName "3929" .
 
-<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> a safeair:District ;
+<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> owl:sameAs <https://www.wikidata.org/wiki/Q2003054> ;
 	rdfs:label "PUENTEDEVALLECAS" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> .
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/3603> a safeair:ElderlyRegion ;
 	safeair:locId "3603"^^xsd:int ;
@@ -1920,10 +2040,11 @@
 	vcard:street-address "CALLE MARISMAS 61" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3603> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3603> .
+<http://safeair.es/project/resources/ElderlyRegion/3603> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3603> ;
+	safeair:locName "3603" .
 
-<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> rdfs:label "PUENTEDEVALLECAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> a safeair:District ;
+	rdfs:label "PUENTEDEVALLECAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9534> a safeair:ElderlyRegion ;
@@ -1936,7 +2057,8 @@
 	vcard:street-address "CALLE BENJAMIN PALENCIA 2" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9534> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9534> .
+<http://safeair.es/project/resources/ElderlyRegion/9534> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9534> ;
+	safeair:locName "9534" .
 
 <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> rdfs:label "PUENTEDEVALLECAS" ;
 	a safeair:District ;
@@ -1952,7 +2074,8 @@
 	vcard:street-address "CALLE ESCRITOR 4" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9540> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9540> .
+<http://safeair.es/project/resources/ElderlyRegion/9540> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9540> ;
+	safeair:locName "9540" .
 
 <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> a safeair:District ;
 	rdfs:label "PUENTEDEVALLECAS" ;
@@ -1968,7 +2091,8 @@
 	vcard:street-address "AVENIDA ALBUFERA 290" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9544> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9544> .
+<http://safeair.es/project/resources/ElderlyRegion/9544> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9544> ;
+	safeair:locName "9544" .
 
 <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> a safeair:District ;
 	rdfs:label "PUENTEDEVALLECAS" ;
@@ -1984,11 +2108,12 @@
 	vcard:street-address "CALLE BENALMADENA 3" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8324> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8324> .
+<http://safeair.es/project/resources/ElderlyRegion/8324> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8324> ;
+	safeair:locName "8324" .
 
-<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> owl:sameAs <https://www.wikidata.org/wiki/Q2003054> ;
+<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> a safeair:District ;
 	rdfs:label "PUENTEDEVALLECAS" ;
-	a safeair:District .
+	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9556> a safeair:ElderlyRegion ;
 	safeair:locId "9556"^^xsd:int ;
@@ -2000,11 +2125,12 @@
 	vcard:street-address "CALLE TORREMOLINOS 16" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9556> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9556> .
+<http://safeair.es/project/resources/ElderlyRegion/9556> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9556> ;
+	safeair:locName "9556" .
 
-<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> owl:sameAs <https://www.wikidata.org/wiki/Q2003054> ;
+<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> a safeair:District ;
 	rdfs:label "PUENTEDEVALLECAS" ;
-	a safeair:District .
+	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> .
 
 <http://safeair.es/project/resources/ElderlyRegion/3234> a safeair:ElderlyRegion ;
 	safeair:locId "3234"^^xsd:int ;
@@ -2016,7 +2142,8 @@
 	vcard:street-address "AVENIDA MIGUEL HERNANDEZ 100" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3234> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3234> .
+<http://safeair.es/project/resources/ElderlyRegion/3234> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3234> ;
+	safeair:locName "3234" .
 
 <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> a safeair:District ;
 	rdfs:label "PUENTEDEVALLECAS" ;
@@ -2032,10 +2159,11 @@
 	vcard:street-address "CALLE MARTINEZ DE LA RIVA 101" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10000> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10000> .
+<http://safeair.es/project/resources/ElderlyRegion/10000> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10000> ;
+	safeair:locName "10000" .
 
-<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> a safeair:District ;
-	rdfs:label "PUENTEDEVALLECAS" ;
+<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> rdfs:label "PUENTEDEVALLECAS" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> .
 
 <http://safeair.es/project/resources/ElderlyRegion/5425> a safeair:ElderlyRegion ;
@@ -2048,10 +2176,11 @@
 	vcard:street-address "RONDA SUR 119" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5425> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5425> .
+<http://safeair.es/project/resources/ElderlyRegion/5425> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5425> ;
+	safeair:locName "5425" .
 
-<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> rdfs:label "PUENTEDEVALLECAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/PUENTEDEVALLECAS> a safeair:District ;
+	rdfs:label "PUENTEDEVALLECAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2003054> .
 
 <http://safeair.es/project/resources/ElderlyRegion/13001> a safeair:ElderlyRegion ;
@@ -2064,7 +2193,8 @@
 	vcard:street-address "AVENIDA MIGUEL HERNANDEZ 11" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13001> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13001> .
+<http://safeair.es/project/resources/ElderlyRegion/13001> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13001> ;
+	safeair:locName "13001" .
 
 <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> rdfs:label "PUENTEDEVALLECAS" ;
 	a safeair:District ;
@@ -2080,7 +2210,8 @@
 	vcard:street-address "CALLE FELIPE DE DIEGO 8" ;
 	vcard:region <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12944> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12944> .
+<http://safeair.es/project/resources/ElderlyRegion/12944> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12944> ;
+	safeair:locName "12944" .
 
 <http://safeair.es/project/resources/District/PUENTEDEVALLECAS> rdfs:label "PUENTEDEVALLECAS" ;
 	a safeair:District ;
@@ -2096,11 +2227,12 @@
 	vcard:street-address "CALLE CERRO NEGRO 5" ;
 	vcard:region <http://safeair.es/project/resources/District/RETIRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8103> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8103> .
+<http://safeair.es/project/resources/ElderlyRegion/8103> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8103> ;
+	safeair:locName "8103" .
 
 <http://safeair.es/project/resources/District/RETIRO> a safeair:District ;
-	rdfs:label "RETIRO" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2002296> .
+	owl:sameAs <https://www.wikidata.org/wiki/Q2002296> ;
+	rdfs:label "RETIRO" .
 
 <http://safeair.es/project/resources/ElderlyRegion/9065> a safeair:ElderlyRegion ;
 	safeair:locId "9065"^^xsd:int ;
@@ -2112,10 +2244,11 @@
 	vcard:street-address "CALLE LUIS PEIDRO 17" ;
 	vcard:region <http://safeair.es/project/resources/District/RETIRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9065> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9065> .
+<http://safeair.es/project/resources/ElderlyRegion/9065> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9065> ;
+	safeair:locName "9065" .
 
-<http://safeair.es/project/resources/District/RETIRO> rdfs:label "RETIRO" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/RETIRO> a safeair:District ;
+	rdfs:label "RETIRO" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2002296> .
 
 <http://safeair.es/project/resources/ElderlyRegion/8106> a safeair:ElderlyRegion ;
@@ -2128,11 +2261,12 @@
 	vcard:street-address "CALLE ANDALUCIA 15" ;
 	vcard:region <http://safeair.es/project/resources/District/RETIRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8106> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8106> .
+<http://safeair.es/project/resources/ElderlyRegion/8106> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8106> ;
+	safeair:locName "8106" .
 
-<http://safeair.es/project/resources/District/RETIRO> a safeair:District ;
+<http://safeair.es/project/resources/District/RETIRO> owl:sameAs <https://www.wikidata.org/wiki/Q2002296> ;
 	rdfs:label "RETIRO" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2002296> .
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/5899> a safeair:ElderlyRegion ;
 	safeair:locId "5899"^^xsd:int ;
@@ -2144,7 +2278,8 @@
 	vcard:street-address "CALLE JUAN ESPLANDIU 4" ;
 	vcard:region <http://safeair.es/project/resources/District/RETIRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5899> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5899> .
+<http://safeair.es/project/resources/ElderlyRegion/5899> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5899> ;
+	safeair:locName "5899" .
 
 <http://safeair.es/project/resources/District/RETIRO> rdfs:label "RETIRO" ;
 	a safeair:District ;
@@ -2160,7 +2295,8 @@
 	vcard:street-address "CALLE FEDERICO MORENO TORROBA 9" ;
 	vcard:region <http://safeair.es/project/resources/District/RETIRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/5994> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5994> .
+<http://safeair.es/project/resources/ElderlyRegion/5994> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/5994> ;
+	safeair:locName "5994" .
 
 <http://safeair.es/project/resources/District/RETIRO> a safeair:District ;
 	rdfs:label "RETIRO" ;
@@ -2176,11 +2312,12 @@
 	vcard:street-address "CALLE JUAN DE URBIETA 50" ;
 	vcard:region <http://safeair.es/project/resources/District/RETIRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13047> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13047> .
+<http://safeair.es/project/resources/ElderlyRegion/13047> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13047> ;
+	safeair:locName "13047" .
 
 <http://safeair.es/project/resources/District/RETIRO> rdfs:label "RETIRO" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2002296> .
+	owl:sameAs <https://www.wikidata.org/wiki/Q2002296> ;
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/12916> a safeair:ElderlyRegion ;
 	safeair:locId "12916"^^xsd:int ;
@@ -2192,11 +2329,12 @@
 	vcard:street-address "CALLE NUEVO BAZTAN 6" ;
 	vcard:region <http://safeair.es/project/resources/District/RETIRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12916> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12916> .
+<http://safeair.es/project/resources/ElderlyRegion/12916> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12916> ;
+	safeair:locName "12916" .
 
-<http://safeair.es/project/resources/District/RETIRO> a safeair:District ;
+<http://safeair.es/project/resources/District/RETIRO> owl:sameAs <https://www.wikidata.org/wiki/Q2002296> ;
 	rdfs:label "RETIRO" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2002296> .
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/12917> a safeair:ElderlyRegion ;
 	safeair:locId "12917"^^xsd:int ;
@@ -2208,7 +2346,8 @@
 	vcard:street-address "AVENIDA CIUDAD DE BARCELONA 154" ;
 	vcard:region <http://safeair.es/project/resources/District/RETIRO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12917> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12917> .
+<http://safeair.es/project/resources/ElderlyRegion/12917> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12917> ;
+	safeair:locName "12917" .
 
 <http://safeair.es/project/resources/District/RETIRO> rdfs:label "RETIRO" ;
 	a safeair:District ;
@@ -2224,10 +2363,11 @@
 	vcard:street-address "PLAZA SAN CAYETANO 1" ;
 	vcard:region <http://safeair.es/project/resources/District/SALAMANCA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13185> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13185> .
+<http://safeair.es/project/resources/ElderlyRegion/13185> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13185> ;
+	safeair:locName "13185" .
 
-<http://safeair.es/project/resources/District/SALAMANCA> rdfs:label "SALAMANCA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/SALAMANCA> a safeair:District ;
+	rdfs:label "SALAMANCA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1773521> .
 
 <http://safeair.es/project/resources/ElderlyRegion/6808> a safeair:ElderlyRegion ;
@@ -2240,7 +2380,8 @@
 	vcard:street-address "CALLE RAMON DE AGUINAGA 1" ;
 	vcard:region <http://safeair.es/project/resources/District/SALAMANCA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6808> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6808> .
+<http://safeair.es/project/resources/ElderlyRegion/6808> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6808> ;
+	safeair:locName "6808" .
 
 <http://safeair.es/project/resources/District/SALAMANCA> a safeair:District ;
 	rdfs:label "SALAMANCA" ;
@@ -2256,10 +2397,11 @@
 	vcard:street-address "CALLE LOS PEASCALES 7" ;
 	vcard:region <http://safeair.es/project/resources/District/SALAMANCA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6798> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6798> .
+<http://safeair.es/project/resources/ElderlyRegion/6798> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6798> ;
+	safeair:locName "6798" .
 
-<http://safeair.es/project/resources/District/SALAMANCA> rdfs:label "SALAMANCA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/SALAMANCA> a safeair:District ;
+	rdfs:label "SALAMANCA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1773521> .
 
 <http://safeair.es/project/resources/ElderlyRegion/3614> a safeair:ElderlyRegion ;
@@ -2272,11 +2414,12 @@
 	vcard:street-address "CALLE FRANCISCO SILVELA 12" ;
 	vcard:region <http://safeair.es/project/resources/District/SALAMANCA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3614> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3614> .
+<http://safeair.es/project/resources/ElderlyRegion/3614> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3614> ;
+	safeair:locName "3614" .
 
-<http://safeair.es/project/resources/District/SALAMANCA> owl:sameAs <https://www.wikidata.org/wiki/Q1773521> ;
-	a safeair:District ;
-	rdfs:label "SALAMANCA" .
+<http://safeair.es/project/resources/District/SALAMANCA> a safeair:District ;
+	rdfs:label "SALAMANCA" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1773521> .
 
 <http://safeair.es/project/resources/ElderlyRegion/6968> a safeair:ElderlyRegion ;
 	safeair:locId "6968"^^xsd:int ;
@@ -2288,7 +2431,8 @@
 	vcard:street-address "AVENIDA BRASILIA 6" ;
 	vcard:region <http://safeair.es/project/resources/District/SALAMANCA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6968> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6968> .
+<http://safeair.es/project/resources/ElderlyRegion/6968> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6968> ;
+	safeair:locName "6968" .
 
 <http://safeair.es/project/resources/District/SALAMANCA> rdfs:label "SALAMANCA" ;
 	a safeair:District ;
@@ -2304,11 +2448,12 @@
 	vcard:street-address "AVENIDA BRASILIA 9" ;
 	vcard:region <http://safeair.es/project/resources/District/SALAMANCA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12919> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12919> .
+<http://safeair.es/project/resources/ElderlyRegion/12919> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12919> ;
+	safeair:locName "12919" .
 
-<http://safeair.es/project/resources/District/SALAMANCA> a safeair:District ;
+<http://safeair.es/project/resources/District/SALAMANCA> owl:sameAs <https://www.wikidata.org/wiki/Q1773521> ;
 	rdfs:label "SALAMANCA" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1773521> .
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/12921> a safeair:ElderlyRegion ;
 	safeair:locId "12921"^^xsd:int ;
@@ -2320,7 +2465,8 @@
 	vcard:street-address "CALLE PRINCIPE DE VERGARA 64" ;
 	vcard:region <http://safeair.es/project/resources/District/SALAMANCA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12921> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12921> .
+<http://safeair.es/project/resources/ElderlyRegion/12921> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12921> ;
+	safeair:locName "12921" .
 
 <http://safeair.es/project/resources/District/SALAMANCA> rdfs:label "SALAMANCA" ;
 	a safeair:District ;
@@ -2336,7 +2482,8 @@
 	vcard:street-address "CALLE MANCHESTER 30" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13073> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13073> .
+<http://safeair.es/project/resources/ElderlyRegion/13073> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13073> ;
+	safeair:locName "13073" .
 
 <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> rdfs:label "SANBLASCANILLEJAS" ;
 	a safeair:District ;
@@ -2352,7 +2499,8 @@
 	vcard:street-address "AVENIDA CANILLEJAS A VICALVARO 135" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9666> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9666> .
+<http://safeair.es/project/resources/ElderlyRegion/9666> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9666> ;
+	safeair:locName "9666" .
 
 <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
 	rdfs:label "SANBLASCANILLEJAS" ;
@@ -2368,10 +2516,11 @@
 	vcard:street-address "PASEO GINEBRA 20" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9517> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9517> .
+<http://safeair.es/project/resources/ElderlyRegion/9517> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9517> ;
+	safeair:locName "9517" .
 
-<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> rdfs:label "SANBLASCANILLEJAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
+	rdfs:label "SANBLASCANILLEJAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9763> a safeair:ElderlyRegion ;
@@ -2384,10 +2533,11 @@
 	vcard:street-address "CALLE MARIA SEVILLA DIAGO 2" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9763> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9763> .
+<http://safeair.es/project/resources/ElderlyRegion/9763> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9763> ;
+	safeair:locName "9763" .
 
-<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> rdfs:label "SANBLASCANILLEJAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
+	rdfs:label "SANBLASCANILLEJAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9858> a safeair:ElderlyRegion ;
@@ -2400,11 +2550,12 @@
 	vcard:street-address "PLAZA CEFIRO 2" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9858> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9858> .
+<http://safeair.es/project/resources/ElderlyRegion/9858> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9858> ;
+	safeair:locName "9858" .
 
-<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> rdfs:label "SANBLASCANILLEJAS" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
+<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> ;
+	rdfs:label "SANBLASCANILLEJAS" .
 
 <http://safeair.es/project/resources/ElderlyRegion/4949> a safeair:ElderlyRegion ;
 	safeair:locId "4949"^^xsd:int ;
@@ -2416,10 +2567,11 @@
 	vcard:street-address "CALLE NAVARIDAS 11" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4949> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4949> .
+<http://safeair.es/project/resources/ElderlyRegion/4949> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4949> ;
+	safeair:locName "4949" .
 
-<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> rdfs:label "SANBLASCANILLEJAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
+	rdfs:label "SANBLASCANILLEJAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9938> a safeair:ElderlyRegion ;
@@ -2432,7 +2584,8 @@
 	vcard:street-address "AVENIDA SEXTA 4" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9938> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9938> .
+<http://safeair.es/project/resources/ElderlyRegion/9938> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9938> ;
+	safeair:locName "9938" .
 
 <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
 	rdfs:label "SANBLASCANILLEJAS" ;
@@ -2448,11 +2601,12 @@
 	vcard:street-address "PLAZA GRECIA 3" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4921> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4921> .
+<http://safeair.es/project/resources/ElderlyRegion/4921> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4921> ;
+	safeair:locName "4921" .
 
-<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> owl:sameAs <https://www.wikidata.org/wiki/Q2001937> ;
-	a safeair:District ;
-	rdfs:label "SANBLASCANILLEJAS" .
+<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
+	rdfs:label "SANBLASCANILLEJAS" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
 
 <http://safeair.es/project/resources/ElderlyRegion/4919> a safeair:ElderlyRegion ;
 	safeair:locId "4919"^^xsd:int ;
@@ -2464,7 +2618,8 @@
 	vcard:street-address "CALLE LUCANO 29" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4919> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4919> .
+<http://safeair.es/project/resources/ElderlyRegion/4919> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4919> ;
+	safeair:locName "4919" .
 
 <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
 	rdfs:label "SANBLASCANILLEJAS" ;
@@ -2480,10 +2635,11 @@
 	vcard:street-address "CALLE ALBAIDA 3" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3526> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3526> .
+<http://safeair.es/project/resources/ElderlyRegion/3526> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3526> ;
+	safeair:locName "3526" .
 
-<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> rdfs:label "SANBLASCANILLEJAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
+	rdfs:label "SANBLASCANILLEJAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
 
 <http://safeair.es/project/resources/ElderlyRegion/12725> a safeair:ElderlyRegion ;
@@ -2496,7 +2652,8 @@
 	vcard:street-address "CALLE MARSELLA 4" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12725> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12725> .
+<http://safeair.es/project/resources/ElderlyRegion/12725> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12725> ;
+	safeair:locName "12725" .
 
 <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
 	rdfs:label "SANBLASCANILLEJAS" ;
@@ -2512,10 +2669,11 @@
 	vcard:street-address "CALLE NECTAR 32" ;
 	vcard:region <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4901> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4901> .
+<http://safeair.es/project/resources/ElderlyRegion/4901> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4901> ;
+	safeair:locName "4901" .
 
-<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> rdfs:label "SANBLASCANILLEJAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/SANBLASCANILLEJAS> a safeair:District ;
+	rdfs:label "SANBLASCANILLEJAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q2001937> .
 
 <http://safeair.es/project/resources/ElderlyRegion/13201> a safeair:ElderlyRegion ;
@@ -2528,7 +2686,8 @@
 	vcard:street-address "CALLE NUESTRA SEORA DEL CARMEN 3" ;
 	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13201> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13201> .
+<http://safeair.es/project/resources/ElderlyRegion/13201> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13201> ;
+	safeair:locName "13201" .
 
 <http://safeair.es/project/resources/District/TETUAN> a safeair:District ;
 	rdfs:label "TETUAN" ;
@@ -2544,11 +2703,12 @@
 	vcard:street-address "AVENIDA BRASIL 13" ;
 	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3311> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3311> .
+<http://safeair.es/project/resources/ElderlyRegion/3311> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3311> ;
+	safeair:locName "3311" .
 
-<http://safeair.es/project/resources/District/TETUAN> a safeair:District ;
-	rdfs:label "TETUAN" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1773540> .
+<http://safeair.es/project/resources/District/TETUAN> owl:sameAs <https://www.wikidata.org/wiki/Q1773540> ;
+	a safeair:District ;
+	rdfs:label "TETUAN" .
 
 <http://safeair.es/project/resources/ElderlyRegion/9208> a safeair:ElderlyRegion ;
 	safeair:locId "9208"^^xsd:int ;
@@ -2560,7 +2720,8 @@
 	vcard:street-address "CALLE SINESIO DELGADO 23" ;
 	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9208> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9208> .
+<http://safeair.es/project/resources/ElderlyRegion/9208> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9208> ;
+	safeair:locName "9208" .
 
 <http://safeair.es/project/resources/District/TETUAN> a safeair:District ;
 	rdfs:label "TETUAN" ;
@@ -2576,7 +2737,8 @@
 	vcard:street-address "CALLE VILLAAMIL 90" ;
 	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9224> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9224> .
+<http://safeair.es/project/resources/ElderlyRegion/9224> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9224> ;
+	safeair:locName "9224" .
 
 <http://safeair.es/project/resources/District/TETUAN> a safeair:District ;
 	rdfs:label "TETUAN" ;
@@ -2592,7 +2754,8 @@
 	vcard:street-address "CALLE GOIRI 19" ;
 	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3151> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3151> .
+<http://safeair.es/project/resources/ElderlyRegion/3151> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3151> ;
+	safeair:locName "3151" .
 
 <http://safeair.es/project/resources/District/TETUAN> a safeair:District ;
 	rdfs:label "TETUAN" ;
@@ -2608,10 +2771,11 @@
 	vcard:street-address "CALLE SAN RAIMUNDO 41" ;
 	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10151> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10151> .
+<http://safeair.es/project/resources/ElderlyRegion/10151> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10151> ;
+	safeair:locName "10151" .
 
-<http://safeair.es/project/resources/District/TETUAN> a safeair:District ;
-	rdfs:label "TETUAN" ;
+<http://safeair.es/project/resources/District/TETUAN> rdfs:label "TETUAN" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1773540> .
 
 <http://safeair.es/project/resources/ElderlyRegion/3980> a safeair:ElderlyRegion ;
@@ -2624,10 +2788,11 @@
 	vcard:street-address "AVENIDA GENERAL PERON 9" ;
 	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3980> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3980> .
+<http://safeair.es/project/resources/ElderlyRegion/3980> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3980> ;
+	safeair:locName "3980" .
 
-<http://safeair.es/project/resources/District/TETUAN> rdfs:label "TETUAN" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/TETUAN> a safeair:District ;
+	rdfs:label "TETUAN" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1773540> .
 
 <http://safeair.es/project/resources/ElderlyRegion/11025> a safeair:ElderlyRegion ;
@@ -2640,7 +2805,8 @@
 	vcard:street-address "CALLE ANTONIO GONZALEZ ECHARTE 2" ;
 	vcard:region <http://safeair.es/project/resources/District/TETUAN> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11025> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11025> .
+<http://safeair.es/project/resources/ElderlyRegion/11025> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11025> ;
+	safeair:locName "11025" .
 
 <http://safeair.es/project/resources/District/TETUAN> a safeair:District ;
 	rdfs:label "TETUAN" ;
@@ -2656,7 +2822,8 @@
 	vcard:street-address "CALLE SILVINA 18" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13066> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13066> .
+<http://safeair.es/project/resources/ElderlyRegion/13066> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13066> ;
+	safeair:locName "13066" .
 
 <http://safeair.es/project/resources/District/USERA> a safeair:District ;
 	rdfs:label "USERA" ;
@@ -2672,10 +2839,11 @@
 	vcard:street-address "CALLE ANTONIO LOPEZ 237" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6355> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6355> .
+<http://safeair.es/project/resources/ElderlyRegion/6355> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6355> ;
+	safeair:locName "6355" .
 
-<http://safeair.es/project/resources/District/USERA> rdfs:label "USERA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/USERA> a safeair:District ;
+	rdfs:label "USERA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q953368> .
 
 <http://safeair.es/project/resources/ElderlyRegion/6360> a safeair:ElderlyRegion ;
@@ -2688,7 +2856,8 @@
 	vcard:street-address "CALLE EVANGELIOS 2" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6360> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6360> .
+<http://safeair.es/project/resources/ElderlyRegion/6360> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6360> ;
+	safeair:locName "6360" .
 
 <http://safeair.es/project/resources/District/USERA> a safeair:District ;
 	rdfs:label "USERA" ;
@@ -2704,7 +2873,8 @@
 	vcard:street-address "CALLE CAMINO VIEJO DE VILLAVERDE 34" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/7687> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7687> .
+<http://safeair.es/project/resources/ElderlyRegion/7687> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7687> ;
+	safeair:locName "7687" .
 
 <http://safeair.es/project/resources/District/USERA> a safeair:District ;
 	rdfs:label "USERA" ;
@@ -2720,10 +2890,11 @@
 	vcard:street-address "CALLE SEGURA 3" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/7730> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7730> .
+<http://safeair.es/project/resources/ElderlyRegion/7730> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7730> ;
+	safeair:locName "7730" .
 
-<http://safeair.es/project/resources/District/USERA> a safeair:District ;
-	rdfs:label "USERA" ;
+<http://safeair.es/project/resources/District/USERA> rdfs:label "USERA" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q953368> .
 
 <http://safeair.es/project/resources/ElderlyRegion/7760> a safeair:ElderlyRegion ;
@@ -2736,7 +2907,8 @@
 	vcard:street-address "CALLE CESTONA 84" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/7760> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7760> .
+<http://safeair.es/project/resources/ElderlyRegion/7760> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7760> ;
+	safeair:locName "7760" .
 
 <http://safeair.es/project/resources/District/USERA> a safeair:District ;
 	rdfs:label "USERA" ;
@@ -2752,10 +2924,11 @@
 	vcard:street-address "AVENIDA RAFAELA YBARRA 43" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8176> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8176> .
+<http://safeair.es/project/resources/ElderlyRegion/8176> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8176> ;
+	safeair:locName "8176" .
 
-<http://safeair.es/project/resources/District/USERA> rdfs:label "USERA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/USERA> a safeair:District ;
+	rdfs:label "USERA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q953368> .
 
 <http://safeair.es/project/resources/ElderlyRegion/2503> a safeair:ElderlyRegion ;
@@ -2768,7 +2941,8 @@
 	vcard:street-address "CALLE CERECINOS 2" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/2503> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2503> .
+<http://safeair.es/project/resources/ElderlyRegion/2503> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/2503> ;
+	safeair:locName "2503" .
 
 <http://safeair.es/project/resources/District/USERA> a safeair:District ;
 	rdfs:label "USERA" ;
@@ -2784,10 +2958,11 @@
 	vcard:street-address "AVENIDA POBLADOS 169" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3241> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3241> .
+<http://safeair.es/project/resources/ElderlyRegion/3241> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3241> ;
+	safeair:locName "3241" .
 
-<http://safeair.es/project/resources/District/USERA> rdfs:label "USERA" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/USERA> a safeair:District ;
+	rdfs:label "USERA" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q953368> .
 
 <http://safeair.es/project/resources/ElderlyRegion/3240> a safeair:ElderlyRegion ;
@@ -2800,7 +2975,8 @@
 	vcard:street-address "CALLE DOCTOR TOLOSA LATOUR 18" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3240> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3240> .
+<http://safeair.es/project/resources/ElderlyRegion/3240> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3240> ;
+	safeair:locName "3240" .
 
 <http://safeair.es/project/resources/District/USERA> a safeair:District ;
 	rdfs:label "USERA" ;
@@ -2816,11 +2992,12 @@
 	vcard:street-address "CALLE EXPROPIACION 3" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4534> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4534> .
+<http://safeair.es/project/resources/ElderlyRegion/4534> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4534> ;
+	safeair:locName "4534" .
 
-<http://safeair.es/project/resources/District/USERA> owl:sameAs <https://www.wikidata.org/wiki/Q953368> ;
-	rdfs:label "USERA" ;
-	a safeair:District .
+<http://safeair.es/project/resources/District/USERA> rdfs:label "USERA" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q953368> .
 
 <http://safeair.es/project/resources/ElderlyRegion/10059> a safeair:ElderlyRegion ;
 	safeair:locId "10059"^^xsd:int ;
@@ -2832,11 +3009,12 @@
 	vcard:street-address "CALLE RICARDO BELTRAN Y ROZPIDE 10" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/10059> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10059> .
+<http://safeair.es/project/resources/ElderlyRegion/10059> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/10059> ;
+	safeair:locName "10059" .
 
-<http://safeair.es/project/resources/District/USERA> a safeair:District ;
+<http://safeair.es/project/resources/District/USERA> owl:sameAs <https://www.wikidata.org/wiki/Q953368> ;
 	rdfs:label "USERA" ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q953368> .
+	a safeair:District .
 
 <http://safeair.es/project/resources/ElderlyRegion/12548> a safeair:ElderlyRegion ;
 	safeair:locId "12548"^^xsd:int ;
@@ -2848,7 +3026,8 @@
 	vcard:street-address "CALLE DOCTOR TOLOSA LATOUR 14" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12548> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12548> .
+<http://safeair.es/project/resources/ElderlyRegion/12548> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12548> ;
+	safeair:locName "12548" .
 
 <http://safeair.es/project/resources/District/USERA> a safeair:District ;
 	rdfs:label "USERA" ;
@@ -2864,7 +3043,8 @@
 	vcard:street-address "CALLE GRAN AVENIDA 17" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12218> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12218> .
+<http://safeair.es/project/resources/ElderlyRegion/12218> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12218> ;
+	safeair:locName "12218" .
 
 <http://safeair.es/project/resources/District/USERA> a safeair:District ;
 	rdfs:label "USERA" ;
@@ -2880,7 +3060,8 @@
 	vcard:street-address "PLAZA PUEBLO 2" ;
 	vcard:region <http://safeair.es/project/resources/District/USERA> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12982> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12982> .
+<http://safeair.es/project/resources/ElderlyRegion/12982> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12982> ;
+	safeair:locName "12982" .
 
 <http://safeair.es/project/resources/District/USERA> a safeair:District ;
 	rdfs:label "USERA" ;
@@ -2896,7 +3077,8 @@
 	vcard:street-address "CALLE TREN DE ARGANDA 9" ;
 	vcard:region <http://safeair.es/project/resources/District/VICALVARO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/4607> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4607> .
+<http://safeair.es/project/resources/ElderlyRegion/4607> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/4607> ;
+	safeair:locName "4607" .
 
 <http://safeair.es/project/resources/District/VICALVARO> rdfs:label "VICALVARO" ;
 	a safeair:District ;
@@ -2912,7 +3094,8 @@
 	vcard:street-address "CALLE VILLABLANCA 1" ;
 	vcard:region <http://safeair.es/project/resources/District/VICALVARO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/3542> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3542> .
+<http://safeair.es/project/resources/ElderlyRegion/3542> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/3542> ;
+	safeair:locName "3542" .
 
 <http://safeair.es/project/resources/District/VICALVARO> a safeair:District ;
 	rdfs:label "VICALVARO" ;
@@ -2928,11 +3111,12 @@
 	vcard:street-address "CALLE LAGO VAN 16" ;
 	vcard:region <http://safeair.es/project/resources/District/VICALVARO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13023> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13023> .
+<http://safeair.es/project/resources/ElderlyRegion/13023> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13023> ;
+	safeair:locName "13023" .
 
-<http://safeair.es/project/resources/District/VICALVARO> owl:sameAs <https://www.wikidata.org/wiki/Q589403> ;
+<http://safeair.es/project/resources/District/VICALVARO> rdfs:label "VICALVARO" ;
 	a safeair:District ;
-	rdfs:label "VICALVARO" .
+	owl:sameAs <https://www.wikidata.org/wiki/Q589403> .
 
 <http://safeair.es/project/resources/ElderlyRegion/12938> a safeair:ElderlyRegion ;
 	safeair:locId "12938"^^xsd:int ;
@@ -2944,10 +3128,11 @@
 	vcard:street-address "CALLE LADERA DE LOS ALMENDROS 14" ;
 	vcard:region <http://safeair.es/project/resources/District/VICALVARO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12938> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12938> .
+<http://safeair.es/project/resources/ElderlyRegion/12938> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12938> ;
+	safeair:locName "12938" .
 
-<http://safeair.es/project/resources/District/VICALVARO> a safeair:District ;
-	rdfs:label "VICALVARO" ;
+<http://safeair.es/project/resources/District/VICALVARO> rdfs:label "VICALVARO" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q589403> .
 
 <http://safeair.es/project/resources/ElderlyRegion/11030> a safeair:ElderlyRegion ;
@@ -2960,10 +3145,11 @@
 	vcard:street-address "CALLE EZCARAY 68" ;
 	vcard:region <http://safeair.es/project/resources/District/VICALVARO> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11030> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11030> .
+<http://safeair.es/project/resources/ElderlyRegion/11030> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11030> ;
+	safeair:locName "11030" .
 
-<http://safeair.es/project/resources/District/VICALVARO> a safeair:District ;
-	rdfs:label "VICALVARO" ;
+<http://safeair.es/project/resources/District/VICALVARO> rdfs:label "VICALVARO" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q589403> .
 
 <http://safeair.es/project/resources/ElderlyRegion/13069> a safeair:ElderlyRegion ;
@@ -2976,7 +3162,8 @@
 	vcard:street-address "CALLE PICO MAMPODRE 9" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLADEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/13069> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13069> .
+<http://safeair.es/project/resources/ElderlyRegion/13069> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/13069> ;
+	safeair:locName "13069" .
 
 <http://safeair.es/project/resources/District/VILLADEVALLECAS> a safeair:District ;
 	rdfs:label "VILLADEVALLECAS" ;
@@ -2992,11 +3179,12 @@
 	vcard:street-address "CALLE VIRGEN DE LAS VIAS 22" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLADEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9580> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9580> .
+<http://safeair.es/project/resources/ElderlyRegion/9580> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9580> ;
+	safeair:locName "9580" .
 
-<http://safeair.es/project/resources/District/VILLADEVALLECAS> a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q1947988> ;
-	rdfs:label "VILLADEVALLECAS" .
+<http://safeair.es/project/resources/District/VILLADEVALLECAS> rdfs:label "VILLADEVALLECAS" ;
+	a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q1947988> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9587> a safeair:ElderlyRegion ;
 	safeair:locId "9587"^^xsd:int ;
@@ -3008,10 +3196,11 @@
 	vcard:street-address "CALLE MONTE DE MONTJUICH 9" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLADEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9587> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9587> .
+<http://safeair.es/project/resources/ElderlyRegion/9587> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9587> ;
+	safeair:locName "9587" .
 
-<http://safeair.es/project/resources/District/VILLADEVALLECAS> rdfs:label "VILLADEVALLECAS" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/VILLADEVALLECAS> a safeair:District ;
+	rdfs:label "VILLADEVALLECAS" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1947988> .
 
 <http://safeair.es/project/resources/ElderlyRegion/8727> a safeair:ElderlyRegion ;
@@ -3024,10 +3213,11 @@
 	vcard:street-address "CALLE BABILAFUENTE 2" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLADEVALLECAS> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8727> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8727> .
+<http://safeair.es/project/resources/ElderlyRegion/8727> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8727> ;
+	safeair:locName "8727" .
 
-<http://safeair.es/project/resources/District/VILLADEVALLECAS> a safeair:District ;
-	rdfs:label "VILLADEVALLECAS" ;
+<http://safeair.es/project/resources/District/VILLADEVALLECAS> rdfs:label "VILLADEVALLECAS" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q1947988> .
 
 <http://safeair.es/project/resources/ElderlyRegion/7394> a safeair:ElderlyRegion ;
@@ -3040,7 +3230,8 @@
 	vcard:street-address "CALLE UNANIMIDAD 23" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/7394> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7394> .
+<http://safeair.es/project/resources/ElderlyRegion/7394> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/7394> ;
+	safeair:locName "7394" .
 
 <http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
 	rdfs:label "VILLAVERDE" ;
@@ -3056,10 +3247,11 @@
 	vcard:street-address "CALLE ALCARRIA 8" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8983> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8983> .
+<http://safeair.es/project/resources/ElderlyRegion/8983> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8983> ;
+	safeair:locName "8983" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
-	rdfs:label "VILLAVERDE" ;
+<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9012> a safeair:ElderlyRegion ;
@@ -3072,11 +3264,12 @@
 	vcard:street-address "CALLE PAN Y TOROS 24" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9012> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9012> .
+<http://safeair.es/project/resources/ElderlyRegion/9012> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9012> ;
+	safeair:locName "9012" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
+<http://safeair.es/project/resources/District/VILLAVERDE> owl:sameAs <https://www.wikidata.org/wiki/Q919536> ;
 	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
+	rdfs:label "VILLAVERDE" .
 
 <http://safeair.es/project/resources/ElderlyRegion/9397> a safeair:ElderlyRegion ;
 	safeair:locId "9397"^^xsd:int ;
@@ -3088,7 +3281,8 @@
 	vcard:street-address "CALLE SAN LUCIANO 11" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9397> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9397> .
+<http://safeair.es/project/resources/ElderlyRegion/9397> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9397> ;
+	safeair:locName "9397" .
 
 <http://safeair.es/project/resources/District/VILLAVERDE> owl:sameAs <https://www.wikidata.org/wiki/Q919536> ;
 	a safeair:District ;
@@ -3104,7 +3298,8 @@
 	vcard:street-address "CALLE LA CANCION DEL OLVIDO 20" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9412> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9412> .
+<http://safeair.es/project/resources/ElderlyRegion/9412> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9412> ;
+	safeair:locName "9412" .
 
 <http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
 	rdfs:label "VILLAVERDE" ;
@@ -3120,7 +3315,8 @@
 	vcard:street-address "CALLE LA DEL MANOJO DE ROSAS 96" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9369> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9369> .
+<http://safeair.es/project/resources/ElderlyRegion/9369> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9369> ;
+	safeair:locName "9369" .
 
 <http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
 	a safeair:District ;
@@ -3136,11 +3332,12 @@
 	vcard:street-address "CALLE LA DEL MANOJO DE ROSAS 69" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9387> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9387> .
+<http://safeair.es/project/resources/ElderlyRegion/9387> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9387> ;
+	safeair:locName "9387" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> owl:sameAs <https://www.wikidata.org/wiki/Q919536> ;
+<http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
 	rdfs:label "VILLAVERDE" ;
-	a safeair:District .
+	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9617> a safeair:ElderlyRegion ;
 	safeair:locId "9617"^^xsd:int ;
@@ -3152,10 +3349,11 @@
 	vcard:street-address "CALLE ALCOCER 26" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9617> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9617> .
+<http://safeair.es/project/resources/ElderlyRegion/9617> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9617> ;
+	safeair:locName "9617" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
+	rdfs:label "VILLAVERDE" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/ElderlyRegion/9618> a safeair:ElderlyRegion ;
@@ -3168,10 +3366,11 @@
 	vcard:street-address "PASEO ALBERTO PALACIOS 1" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/9618> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9618> .
+<http://safeair.es/project/resources/ElderlyRegion/9618> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/9618> ;
+	safeair:locName "9618" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
-	rdfs:label "VILLAVERDE" ;
+<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
+	a safeair:District ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/ElderlyRegion/6018> a safeair:ElderlyRegion ;
@@ -3184,11 +3383,12 @@
 	vcard:street-address "PLAZA PINAZO 9" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6018> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6018> .
+<http://safeair.es/project/resources/ElderlyRegion/6018> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6018> ;
+	safeair:locName "6018" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> owl:sameAs <https://www.wikidata.org/wiki/Q919536> ;
-	a safeair:District ;
-	rdfs:label "VILLAVERDE" .
+<http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
+	rdfs:label "VILLAVERDE" ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/ElderlyRegion/11027> a safeair:ElderlyRegion ;
 	safeair:locId "11027"^^xsd:int ;
@@ -3200,11 +3400,12 @@
 	vcard:street-address "CALLE GODELLA 102" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/11027> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11027> .
+<http://safeair.es/project/resources/ElderlyRegion/11027> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/11027> ;
+	safeair:locName "11027" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> owl:sameAs <https://www.wikidata.org/wiki/Q919536> ;
+<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
 	a safeair:District ;
-	rdfs:label "VILLAVERDE" .
+	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/ElderlyRegion/6050> a safeair:ElderlyRegion ;
 	safeair:locId "6050"^^xsd:int ;
@@ -3216,10 +3417,11 @@
 	vcard:street-address "CALLE BURJASOT 1" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/6050> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6050> .
+<http://safeair.es/project/resources/ElderlyRegion/6050> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/6050> ;
+	safeair:locName "6050" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
+	rdfs:label "VILLAVERDE" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/ElderlyRegion/8979> a safeair:ElderlyRegion ;
@@ -3232,14 +3434,15 @@
 	vcard:street-address "CALLE SANTIAGO AMON 2" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/8979> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8979> .
+<http://safeair.es/project/resources/ElderlyRegion/8979> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/8979> ;
+	safeair:locName "8979" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
-	a safeair:District ;
-	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
+<http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
+	owl:sameAs <https://www.wikidata.org/wiki/Q919536> ;
+	rdfs:label "VILLAVERDE" .
 
-<http://safeair.es/project/resources/ElderlyRegion/12813> safeair:locId "12813"^^xsd:int ;
-	a safeair:ElderlyRegion ;
+<http://safeair.es/project/resources/ElderlyRegion/12813> a safeair:ElderlyRegion ;
+	safeair:locId "12813"^^xsd:int ;
 	geo:lat "40.343005"^^xsd:double ;
 	geo:long "-3.714007"^^xsd:double ;
 	safeair:isClosestTo <http://safeair.es/project/resources/Station/28079017> .
@@ -3248,10 +3451,11 @@
 	vcard:street-address "CALLE ASTILLERO 5" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12813> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12813> .
+<http://safeair.es/project/resources/ElderlyRegion/12813> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12813> ;
+	safeair:locName "12813" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
+	rdfs:label "VILLAVERDE" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
 
 <http://safeair.es/project/resources/ElderlyRegion/12840> a safeair:ElderlyRegion ;
@@ -3264,8 +3468,9 @@
 	vcard:street-address "CALLE VILLALONSO 18" ;
 	vcard:region <http://safeair.es/project/resources/District/VILLAVERDE> .
 
-<http://safeair.es/project/resources/ElderlyRegion/12840> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12840> .
+<http://safeair.es/project/resources/ElderlyRegion/12840> safeair:hasVCard <http://safeair.es/project/resources/vcard/elderlyareas/12840> ;
+	safeair:locName "12840" .
 
-<http://safeair.es/project/resources/District/VILLAVERDE> rdfs:label "VILLAVERDE" ;
-	a safeair:District ;
+<http://safeair.es/project/resources/District/VILLAVERDE> a safeair:District ;
+	rdfs:label "VILLAVERDE" ;
 	owl:sameAs <https://www.wikidata.org/wiki/Q919536> .
