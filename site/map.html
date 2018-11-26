@@ -18,9 +18,15 @@
   </head>
 
   <body id="page-top">
-    <nav id="map-menu">
-      <p>Filter layers</p>
-    </nav>
+    <div class="map-overlay">
+        <nav id="map-menu">
+            <p>Filter layers</p>
+        </nav>
+        <div class='map-overlay-inner'>
+            <label>Month: <span id='month-slider-value'>2017-12</span></label>
+            <input id='month-slider' type='range' min='1' max='12' step='1' value='12' />
+        </div>
+    </div>
     <div id='map3'></div>
 
     <!-- Bootstrap core JavaScript -->
@@ -37,6 +43,10 @@
 
     <script src="districts.js"></script>
     <script>
+
+        var slider = document.getElementById('month-slider');
+        var sliderValue = document.getElementById('month-slider-value');
+
         mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnbWVpc3RlciIsImEiOiJjam9qMG82NXUwMDh5M3FvOXpscndzMnc0In0.h1EaT7zfQ179dTjcnzIKlw';
         var map = new mapboxgl.Map({
             container: 'map3',
@@ -162,6 +172,10 @@
 
           console.log(things);
         }
+
+        function updateDistrictMonth(month) {
+
+        }
         
         map.on('load', function() {
           
@@ -228,6 +242,8 @@
               paint: { }
           });
 
+          updateDistrictMonth(12);
+
           map.on('click', function(e) {
 
                 var selObj = map.queryRenderedFeatures(e.point, {
@@ -269,6 +285,11 @@
           // Change it back to a pointer when it leaves.
           map.on('mouseleave', 'SportPark', function () {
               map.getCanvas().style.cursor = '';
+          });
+
+          slider.addEventListener('input', function(e) {
+              updateDistrictMonth(e.target.value);
+              sliderValue.textContent = "2017-" + e.target.value;
           });
 
         });
