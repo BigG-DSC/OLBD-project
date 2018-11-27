@@ -23,8 +23,10 @@
             <p>Filter layers</p>
         </nav>
         <div class='map-overlay-inner'>
-            <label>Month: <span id='month-slider-value'>2017-12</span></label>
-            <input id='month-slider' type='range' min='1' max='12' step='1' value='12' />
+            <label>Month: <span id='month-slider-value'>2017-6</span></label>
+            <input id='month-slider' type='range' min='1' max='12' step='1' value='6' />
+            <select id="chemical-select" class="styled-select slate">
+            </select>
         </div>
     </div>
     <div id='map3'></div>
@@ -47,6 +49,8 @@
         var slider = document.getElementById('month-slider');
         var sliderValue = document.getElementById('month-slider-value');
 
+        var chemicalSelect = document.getElementById('chemical-select');
+
         mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnbWVpc3RlciIsImEiOiJjam9qMG82NXUwMDh5M3FvOXpscndzMnc0In0.h1EaT7zfQ179dTjcnzIKlw';
         var map = new mapboxgl.Map({
             container: 'map3',
@@ -56,6 +60,33 @@
         });
 
         map.addControl(new mapboxgl.FullscreenControl());
+
+        var chemicals = {
+          "BEN": "safeair:BEN",
+          "CH4": "safeair:CH4",
+          "CO": "m3lite:ChemicalAgentAtmosphericConcentrationCO",
+          "EBE": "safeair:EBE",
+          "NMCH": "safeair:NMHC",
+          "NO": "m3lite:ChemicalAgentAtmosphericNO",
+          "NO2": "m3lite:ChemicalAgentAtmosphericNO2",
+          "NOx": "safeair:NOx",
+          "O3": "m3lite:ChemicalAgentAtmosphericConcentrationO3",
+          "PM10": "safeair:PM10",
+          "PM25": "safeair:PM25",
+          "SO2": "m3lite:ChemicalAgentAtmosphericConcentrationSO2",
+          "TCH": "safeair:TCH",
+          "TOL": "safeair:TOL"
+        };
+
+        for (chem in chemicals) {
+            var option = document.createElement('option');
+            option.value = chem;
+            option.text = chem;
+            chemicalSelect.appendChild(option);
+        }
+
+        var currentChemical = "BEN";
+        var currentMonth = "6";
 
         function sparqlQuery(query, baseURL, format) {
           if(!format)
@@ -92,8 +123,6 @@
                       geo:lat ?lat;
                       geo:long ?lon.
             }`;
-
-            console.log(query);
 
           var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
           things = data.split("\n").slice(1);
@@ -175,8 +204,39 @@
           console.log(things);
         }
 
-        function updateDistrictMonth(month) {
+        function updateDistrictMonth(month, chemical) {
 
+            districts.features.forEach(function(district) {
+
+              var query = `
+                  PREFIX safeair: <http://safeair.es/project/ontology/safeair#>
+                  PREFIX m3lite: <http://purl.org/iot/vocab/m3-lite#>
+                  PREFIX time: <https://www.w3.org/TR/owl-time/>
+                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+                  SELECT ?meas
+                  WHERE {
+                      ?station a safeair:Station;
+                               safeair:hasDistrict <` + district.properties.URI + `>;
+                               safeair:hasMeasurement ?mid.
+                      ?mid     a safeair:Measurement;
+                               `+ chemicals[chemical] + ` ?meas;
+                               time:month "` + month + `"^^xsd:int .  
+                  } LIMIT 1
+              `;
+
+              var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
+              var measurement = data.split("\n").slice(1)[0];
+              var disname = district.properties.URI.split("/")[6]; 
+
+              var color = (20 - measurement) / 20 * 255;
+
+              if(measurement == ""){
+                map.setPaintProperty(disname, 'fill-color', 'rgb(0, 0, 0)');
+              } else {
+               map.setPaintProperty(disname, 'fill-color', 'rgb(255, ' + color + ', 0)');
+              }
+            });
         }
         
         map.on('load', function() {
@@ -199,13 +259,13 @@
               });
           });
 
-          var things = getSpatialThingData("School");
+          var schools = getSpatialThingData("School");
           map.addLayer({
               id: 'School',
               type: 'symbol',
               source: {
                   type: 'geojson',
-                  data: things
+                  data: schools
               },
               layout: {
                   'icon-image': 'college-15',
@@ -214,16 +274,13 @@
               paint: { }
           });
 
-          var things = getSpatialThingData("ElderlyRegion");
-
-          console.log(things);
-
+          var elRegions = getSpatialThingData("ElderlyRegion");
           map.addLayer({
               id: 'ElderlyRegion',
               type: 'symbol',
               source: {
                   type: 'geojson',
-                  data: things
+                  data: elRegions
               },
               layout: {
                   'icon-image': 'picnic-site-15',
@@ -232,14 +289,13 @@
               paint: { }
           });
 
-          var things = getSpatialThingData("SportPark");
-
+          var sportParks = getSpatialThingData("SportPark");
           map.addLayer({
               id: 'SportPark',
               type: 'symbol',
               source: {
                   type: 'geojson',
-                  data: things
+                  data: sportParks
               },
               layout: {
                   'icon-image': 'golf-15',
@@ -248,7 +304,7 @@
               paint: { }
           });
 
-          updateDistrictMonth(12);
+          updateDistrictMonth(currentMonth, currentChemical);
 
           map.on('click', function(e) {
 
@@ -271,7 +327,7 @@
                 } else {
                     highliteDistrict();
                 }
-              });
+          });
 
           // Change the cursor to a pointer when the mouse is over the places layer.
           map.on('mouseenter', 'School', function () {
@@ -294,10 +350,15 @@
           });
 
           slider.addEventListener('input', function(e) {
-              updateDistrictMonth(e.target.value);
+              currentMonth = e.target.value;
+              updateDistrictMonth(currentMonth, currentChemical);
               sliderValue.textContent = "2017-" + e.target.value;
           });
 
+          chemicalSelect.addEventListener('input', function(e) {
+            currentChemical = e.target.value;
+            updateDistrictMonth(currentMonth, currentChemical);
+          });
         });
 
     </script>

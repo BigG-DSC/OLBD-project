@@ -86,3 +86,31 @@
     margin: 0;
     cursor: ew-resize;
 }
+
+.styled-select {
+   background: 0;
+   height: 29px;
+   overflow: hidden;
+   width: 170px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 170px;
+}
+
+.styled-select.slate {
+   height: 34px;
+   width: 170px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 170px;
+}
