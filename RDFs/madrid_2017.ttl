@@ -8,7 +8,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 
-<http://safeair.es/project/resources/28079040_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "5.935517873197082" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "32.393616156211976" ;
 	safeair:PM10 "26.489572239452283" ;
@@ -16,7 +16,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "5.046588722047302" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.928497942994817" ;
 	safeair:PM10 "25.433736972094167" ;
@@ -24,7 +24,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "5.5363460413440695" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.746144255271258" ;
 	safeair:PM10 "17.501120633515626" ;
@@ -32,7 +32,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "36.09656626885508" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "52.69316808159539" ;
 	safeair:NOx "108.00297809357649" ;
@@ -41,7 +41,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "38.103512555856916" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "60.15541194684991" ;
 	safeair:NOx "118.53379829108236" ;
@@ -50,7 +50,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "11.923999058232814" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "40.37377104586012" ;
 	safeair:PM10 "23.124709103080786" ;
@@ -58,7 +58,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "3.932276926383211" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.079638432192535" ;
 	safeair:PM10 "28.13099826331412" ;
@@ -66,7 +66,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.2925590334384" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.86588776187472" ;
 	safeair:PM10 "12.66624937925615" ;
@@ -74,7 +74,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "37.53573352277706" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "56.3174926158577" ;
 	safeair:PM10 "21.6680828005989" ;
@@ -82,7 +82,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "16.126441059498212" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "48.07087366165405" ;
 	safeair:NOx "72.75650934862928" ;
@@ -91,7 +91,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "15.902423082852934" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "43.60174978980498" ;
 	safeair:PM10 "16.33348521030722" ;
@@ -99,7 +99,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079040_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079040_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "18.858509762154423" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "44.264453798709646" ;
 	safeair:PM10 "31.029444427589084" ;
@@ -107,7 +107,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.277155128950556"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "9.081817649854923" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.82807654048092" ;
@@ -115,7 +115,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.27028482230903444"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "8.924714277337358" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.997278830109902" ;
@@ -123,7 +123,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.28096624291818545"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "8.827422212067004" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "28.615946462120014" ;
@@ -131,7 +131,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5276435178221756"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "69.96418748904567" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "58.87734800164603" ;
@@ -140,7 +140,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5983991874300274"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "83.67306920575247" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "65.8646121369885" ;
@@ -149,7 +149,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3725823552224779"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "18.927725392144744" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "39.340607518603626" ;
@@ -157,7 +157,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.26771969827446374"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "5.335658770404415" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "21.44303246640493" ;
@@ -165,7 +165,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.31364940056974017"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "10.347298344763884" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.023796775286428" ;
@@ -173,7 +173,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.587251026836054"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "62.99524414962926" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "54.499768591182026" ;
@@ -181,7 +181,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.458316246369484"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "42.43933958277206" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "57.328553885201124" ;
@@ -190,7 +190,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4133351599519509"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "27.264625303906843" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.34977311296448" ;
@@ -198,7 +198,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079039_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079039_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4101040940282267"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "27.331974576328058" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.99333777089827" ;
@@ -206,7 +206,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.25415157220516654"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "4.65332297756689" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "23.619228743645746" ;
@@ -215,7 +215,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2572836740101756"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "4.318838747273161" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "22.963371393082873" ;
@@ -224,7 +224,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.27795658874152457"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "4.854292234772409" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "21.698519515489632" ;
@@ -233,7 +233,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4056293591896867"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "34.55400337272898" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "47.95433532469844" ;
@@ -243,7 +243,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.43496842581814754"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "42.395515290807026" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "55.632784884597214" ;
@@ -253,7 +253,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3209255368223769"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "7.70907661607808" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "29.752960578771773" ;
@@ -262,7 +262,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2539927403895955"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "3.2479745077912443" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "19.784545082172375" ;
@@ -271,7 +271,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3142105685242536"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "5.313599806495292" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "22.53734050916889" ;
@@ -280,7 +280,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4832678190308166"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "37.943451130189835" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "49.46204097267018" ;
@@ -289,7 +289,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3245432804625807"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "16.70608647015743" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "40.61367949157282" ;
@@ -299,7 +299,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3645512625047072"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "12.894110512346971" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "34.977981583057314" ;
@@ -308,7 +308,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079057_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079057_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3767057696132334"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "17.511736950927535" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "36.62819931316418" ;
@@ -317,28 +317,28 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.515163927885005" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "20.834954968376806" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "56.36257241500283" ;
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.0273758411869145" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "19.958387684761544" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "66.95337727519906" ;
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.289765346127373" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "19.322347709149714" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "65.35790168050353" ;
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "29.94499385570591" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "44.40709334553813" ;
 	safeair:NOx "90.28972385215138" ;
@@ -346,7 +346,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "35.42091838139025" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "52.5714678379699" ;
 	safeair:NOx "106.87400704759602" ;
@@ -354,35 +354,35 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "7.50358589828572" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "29.633633669980934" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "46.44582121633052" ;
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.083855111474873" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "16.755690795252537" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "58.121774240736634" ;
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "3.1695342707429757" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "21.68048475967293" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "69.32194472999564" ;
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "31.559078407695278" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "45.451090661347955" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "25.80593257757136" ;
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "11.622606780556529" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "39.56528654798027" ;
 	safeair:NOx "57.32718548351816" ;
@@ -390,21 +390,21 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "10.589525691698764" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "31.25630282761062" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "49.00817269686624" ;
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079049_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079049_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "10.682521484281965" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "34.58190722239526" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "38.05796905096779" ;
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "3.4571840471535857" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "23.53106464020627" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "75.77429925682695" ;
@@ -412,7 +412,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.9749652294848303" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "23.56186402942547" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "81.98887893263723" ;
@@ -420,7 +420,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "3.560461540916095" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "22.698450358822583" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "76.82352056042296" ;
@@ -428,7 +428,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "33.58482596460846" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "47.356651540868704" ;
 	safeair:NOx "98.82382606569192" ;
@@ -437,7 +437,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "36.69570164976145" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "54.110649947509636" ;
 	safeair:NOx "110.3781657660589" ;
@@ -446,7 +446,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.214495376902301" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "31.45645273337549" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "65.10692276821996" ;
@@ -454,7 +454,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.454593332233409" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "19.492017725389534" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "79.84098223737251" ;
@@ -462,7 +462,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "3.8824344307801137" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "24.789353900625304" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "74.81768313321183" ;
@@ -470,7 +470,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "35.81198927477185" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "54.70677987743154" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "32.61069969356142" ;
@@ -478,7 +478,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "12.140393341813073" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.21923193549434" ;
 	safeair:NOx "59.82941711575948" ;
@@ -487,7 +487,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "11.427537118510074" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "36.03674346603172" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "55.33518029749153" ;
@@ -495,7 +495,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079060_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079060_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "16.05683217190985" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "39.047772482817514" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "44.404416745696665" ;
@@ -503,7 +503,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201707> a safeair:Measurement ;
 	safeair:BEN "0.35440813460028736"^^xsd:double ;
 	safeair:EBE "0.46198740231080976" ;
 	m3lite:ChemicalAgentAtmosphericNO "9.373408731826313" ;
@@ -515,8 +515,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201706> a safeair:Measurement ;
-	safeair:BEN "0.3350810492333653"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079038_201706> safeair:BEN "0.3350810492333653"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:EBE "0.49378191486893885" ;
 	m3lite:ChemicalAgentAtmosphericNO "10.630706899681474" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "34.87612901098635" ;
@@ -527,7 +527,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201705> a safeair:Measurement ;
 	safeair:BEN "0.3717229870737587"^^xsd:double ;
 	safeair:EBE "0.474595951869648" ;
 	m3lite:ChemicalAgentAtmosphericNO "10.898632294033776" ;
@@ -539,7 +539,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201712> a safeair:Measurement ;
 	safeair:BEN "0.956225811071802"^^xsd:double ;
 	safeair:EBE "0.658685207289575" ;
 	m3lite:ChemicalAgentAtmosphericNO "52.70243871297605" ;
@@ -552,7 +552,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201711> a safeair:Measurement ;
 	safeair:BEN "1.3596428811224146"^^xsd:double ;
 	safeair:EBE "1.1747233498108012" ;
 	m3lite:ChemicalAgentAtmosphericNO "65.70233141113647" ;
@@ -565,7 +565,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201709> a safeair:Measurement ;
 	safeair:BEN "0.44312650041948715"^^xsd:double ;
 	safeair:EBE "0.6527547804912526" ;
 	m3lite:ChemicalAgentAtmosphericNO "16.03808759421475" ;
@@ -577,8 +577,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201708> safeair:BEN "0.2717810175662412"^^xsd:double ;
-	a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201708> a safeair:Measurement ;
+	safeair:BEN "0.2717810175662412"^^xsd:double ;
 	safeair:EBE "0.4684437010783083" ;
 	m3lite:ChemicalAgentAtmosphericNO "5.568962490491114" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "25.475100942133967" ;
@@ -589,7 +589,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201704> a safeair:Measurement ;
 	safeair:BEN "0.46110194979773217"^^xsd:double ;
 	safeair:EBE "0.5776233420533878" ;
 	m3lite:ChemicalAgentAtmosphericNO "12.218963536310936" ;
@@ -601,7 +601,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201701> a safeair:Measurement ;
 	safeair:BEN "1.1505121909986948"^^xsd:double ;
 	safeair:EBE "1.1505494515405745" ;
 	m3lite:ChemicalAgentAtmosphericNO "57.21362492618787" ;
@@ -613,7 +613,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201710> a safeair:Measurement ;
 	safeair:BEN "0.7223827151990293"^^xsd:double ;
 	safeair:EBE "0.8731639041623303" ;
 	m3lite:ChemicalAgentAtmosphericNO "34.16917315233608" ;
@@ -626,7 +626,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201703> a safeair:Measurement ;
 	safeair:BEN "0.5788655204405415"^^xsd:double ;
 	safeair:EBE "0.8161902523526617" ;
 	m3lite:ChemicalAgentAtmosphericNO "24.109118571758813" ;
@@ -638,7 +638,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079038_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079038_201702> a safeair:Measurement ;
 	safeair:BEN "0.5326159012839409"^^xsd:double ;
 	safeair:EBE "0.6870659556101055" ;
 	m3lite:ChemicalAgentAtmosphericNO "28.544464089010848" ;
@@ -650,7 +650,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.21841855098431806"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "6.70796205959075" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "32.8555104559629" ;
@@ -658,7 +658,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.21992941868967464"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "5.52333335165726" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "32.00026936841989" ;
@@ -666,7 +666,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.23147160546622017"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "5.552485725990861" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.878167242097685" ;
@@ -674,7 +674,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4583357783931539"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "39.855638129803545" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "54.458072444270655" ;
@@ -683,7 +683,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4715162195319823"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "45.551078298276465" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "59.450180586796016" ;
@@ -692,7 +692,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2901251795707436"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "12.139137816903434" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "39.21397825735214" ;
@@ -700,7 +700,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.21458993170420318"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "4.463019805404069" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.343634129354538" ;
@@ -708,7 +708,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.24783213942473442"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "6.279620905189841" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.676191680373062" ;
@@ -716,7 +716,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4788588154672959"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "33.45335915182751" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "52.04830858766683" ;
@@ -724,7 +724,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3325380634125725"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "22.811059746061957" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "48.394955819553324" ;
@@ -733,7 +733,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3376105915055098"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "19.038695811776968" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "42.528037706349075" ;
@@ -741,7 +741,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079016_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079016_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3415249568387203"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "19.828979223980173" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "44.24570725070328" ;
@@ -749,7 +749,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "8.484031110979107" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "37.54095964248441" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "58.429436266811244" ;
@@ -757,7 +757,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "3.885780673757262" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "24.516207187398894" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "64.36714035193091" ;
@@ -765,7 +765,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "7.871086663939255" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.731060384416153" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "58.41223829712539" ;
@@ -773,16 +773,16 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201712> m3lite:ChemicalAgentAtmosphericNO2 "60.60704653180472" ;
-	a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "87.21654014546884" ;
+	m3lite:ChemicalAgentAtmosphericNO2 "60.60704653180472" ;
 	safeair:NOx "194.3433894212115" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "18.635358204903962" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationSO2 "5.48492241461368" ;
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "104.14054984144218" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "77.93591230685591" ;
 	safeair:NOx "237.6023352593046" ;
@@ -791,7 +791,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "22.023424057358557" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "48.790194989764046" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "47.55487694260455" ;
@@ -799,7 +799,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.689539789020807" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "33.379026380621546" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "62.34917824955199" ;
@@ -807,7 +807,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "8.647132875591844" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.50916127472428" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "71.83095207990536" ;
@@ -815,7 +815,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "77.450419580436" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "66.02842201277915" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "22.059639330701607" ;
@@ -823,7 +823,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "53.034601129494156" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "60.94295639408687" ;
 	safeair:NOx "142.09184460582063" ;
@@ -832,7 +832,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "36.29894828678781" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "47.16073071993147" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "41.27382845955682" ;
@@ -840,7 +840,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079017_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079017_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "38.83068748785394" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "49.027744561541446" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "31.643769398042604" ;
@@ -848,7 +848,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "5.767270402399843" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "29.16134068671749" ;
 	safeair:PM10 "16.34426696492736" ;
@@ -856,7 +856,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "5.930346668508914" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "31.262700956303075" ;
 	safeair:PM10 "18.183149474339714" ;
@@ -864,7 +864,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.448672458093047" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.733002090669522" ;
 	safeair:PM10 "12.496534947293114" ;
@@ -872,7 +872,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "35.30334239463486" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "54.36764213024282" ;
 	safeair:NOx "108.49452332442748" ;
@@ -881,7 +881,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "41.34776561651531" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "60.91854629014661" ;
 	safeair:NOx "124.37001874588105" ;
@@ -890,7 +890,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "11.305013001152249" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "35.28705327448609" ;
 	safeair:PM10 "12.740259359445352" ;
@@ -898,7 +898,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "4.18152027620107" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "23.686030278465687" ;
 	safeair:PM10 "16.680245437750212" ;
@@ -906,7 +906,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.215335308701258" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "26.976597931917" ;
 	safeair:PM10 "13.29587332302475" ;
@@ -914,7 +914,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "34.93330106022259" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "48.78590693641738" ;
 	safeair:PM10 "15.80962356737388" ;
@@ -922,7 +922,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "21.167467034712462" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "48.04959900537778" ;
 	safeair:NOx "80.53837700720798" ;
@@ -931,7 +931,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "17.893227434982368" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.13499380250517" ;
 	safeair:PM10 "16.252842072784198" ;
@@ -939,7 +939,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079048_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079048_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "18.373062109277466" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "40.91652143619287" ;
 	safeair:PM10 "22.121946478325583" ;
@@ -947,28 +947,28 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "8.10170923347748" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "31.298615270861685" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "66.19039041594927" ;
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.964877657266721" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.91852979820377" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "75.0089936066171" ;
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "9.599814720948018" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "25.073508970998887" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "68.86638188307619" ;
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "50.62219101125291" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "49.989593973450866" ;
 	safeair:NOx "127.58861082740944" ;
@@ -976,7 +976,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "59.617661772264775" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "65.56882912698778" ;
 	safeair:NOx "156.98934620445758" ;
@@ -984,35 +984,35 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "17.52481212928624" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "40.63192730352738" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "54.72408409199859" ;
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.994421109349764" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "26.72406112233945" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "69.49602805175962" ;
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "11.98725172753362" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "25.025969313997333" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "69.71875188969716" ;
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "44.501476228736045" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "48.15477792732987" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "26.60654647593271" ;
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "28.61464312505596" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "51.21663894068918" ;
 	safeair:NOx "95.14098003354148" ;
@@ -1020,21 +1020,21 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "25.372243708090487" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "36.27017379601949" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "48.12816857201832" ;
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079054_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079054_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "25.603912513328712" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "35.6735095397755" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "39.03749933730887" ;
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2200407686026964"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "17.261222441464973" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "50.363412934413496" ;
@@ -1042,7 +1042,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.11846815170530017"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "15.902704600246368" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "42.26499019515868" ;
@@ -1050,7 +1050,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.21987570422476896"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "12.502343972719169" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.437337963084914" ;
@@ -1058,7 +1058,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5040728015004035"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "87.90118577077577" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "72.2586033546426" ;
@@ -1067,7 +1067,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.6082256381851118"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "103.88054335457488" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "86.08225082048118" ;
@@ -1076,7 +1076,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.34070267284702144"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "32.580541705403625" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "59.895439977591074" ;
@@ -1084,7 +1084,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.22879417836648813"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "18.18369073143421" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "45.74859957763308" ;
@@ -1092,7 +1092,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.30171571879580766"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "18.761564975559747" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "43.41017113144535" ;
@@ -1100,7 +1100,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5983529166795968"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "76.59390448631314" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "68.13443142966355" ;
@@ -1108,7 +1108,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.46698081601120667"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "71.114225525203" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "79.56855287028107" ;
@@ -1117,7 +1117,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.38555318089227103"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "35.470180179707455" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "48.78230547030031" ;
@@ -1125,7 +1125,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079056_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079056_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.44820191189654396"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "46.60100846474562" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "53.77886229626508" ;
@@ -1133,28 +1133,28 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "7.982482085763498" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.71253703872014" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "68.08812154548772" ;
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "5.680919370887965" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.33146058151455" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "75.53967686784456" ;
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.521467823534565" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.419717096071285" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "67.0981583809047" ;
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "41.65687656600884" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "52.60769554046664" ;
 	safeair:NOx "116.4730315620579" ;
@@ -1162,7 +1162,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "45.62345594178242" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "57.81156305145801" ;
 	safeair:NOx "127.72327068229563" ;
@@ -1170,35 +1170,35 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "11.204644412194787" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "37.51088534108637" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "47.30769230768581" ;
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "5.936998281722634" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.68299118519405" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "62.59976380339842" ;
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.990385196831438" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.748624297038223" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "68.07594068868286" ;
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "37.40324185148759" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "50.35231063044959" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "23.692071986761256" ;
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "21.80497183197838" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "49.85214199460519" ;
 	safeair:NOx "83.23903521142927" ;
@@ -1206,21 +1206,21 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "16.547550524263723" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "39.73268822582301" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "45.47285601050684" ;
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079027_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079027_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "21.72400346365667" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "39.61697189612075" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "34.888237046390685" ;
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079011_201707> a safeair:Measurement ;
 	safeair:BEN "0.28197869002197384"^^xsd:double ;
 	safeair:EBE "0.18165228401755262" ;
 	m3lite:ChemicalAgentAtmosphericNO "10.709217518982015" ;
@@ -1229,7 +1229,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079011_201706> a safeair:Measurement ;
 	safeair:BEN "0.31274325086172833"^^xsd:double ;
 	safeair:EBE "0.17641644468772147" ;
 	m3lite:ChemicalAgentAtmosphericNO "12.115861401711841" ;
@@ -1238,8 +1238,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201705> a safeair:Measurement ;
-	safeair:BEN "0.27566097879596546"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079011_201705> safeair:BEN "0.27566097879596546"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:EBE "0.21551992789346355" ;
 	m3lite:ChemicalAgentAtmosphericNO "10.982051186573642" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "33.71294665894718" ;
@@ -1247,7 +1247,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079011_201712> a safeair:Measurement ;
 	safeair:BEN "0.7925198362518436"^^xsd:double ;
 	safeair:EBE "0.2859299657822734" ;
 	m3lite:ChemicalAgentAtmosphericNO "44.7587549673202" ;
@@ -1257,7 +1257,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079011_201711> a safeair:Measurement ;
 	safeair:BEN "1.0032587106498956"^^xsd:double ;
 	safeair:EBE "0.4762734384324221" ;
 	m3lite:ChemicalAgentAtmosphericNO "54.10666989178233" ;
@@ -1267,7 +1267,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079011_201709> a safeair:Measurement ;
 	safeair:BEN "0.5281465851324462"^^xsd:double ;
 	safeair:EBE "0.27967709062422763" ;
 	m3lite:ChemicalAgentAtmosphericNO "19.518776077901457" ;
@@ -1276,7 +1276,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079011_201708> a safeair:Measurement ;
 	safeair:BEN "0.23273066665496087"^^xsd:double ;
 	safeair:EBE "0.1465897049301548" ;
 	m3lite:ChemicalAgentAtmosphericNO "6.431520846177429" ;
@@ -1285,8 +1285,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201704> a safeair:Measurement ;
-	safeair:BEN "0.29767716929671145"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079011_201704> safeair:BEN "0.29767716929671145"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:EBE "0.19868779333789005" ;
 	m3lite:ChemicalAgentAtmosphericNO "10.272947165313035" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "32.61500656929745" ;
@@ -1294,7 +1294,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079011_201701> a safeair:Measurement ;
 	safeair:BEN "2.1509897360867307"^^xsd:double ;
 	safeair:EBE "0.48376885792300495" ;
 	m3lite:ChemicalAgentAtmosphericNO "43.8321153454714" ;
@@ -1303,7 +1303,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079011_201710> a safeair:Measurement ;
 	safeair:BEN "0.7436718095602761"^^xsd:double ;
 	safeair:EBE "0.42366860005636864" ;
 	m3lite:ChemicalAgentAtmosphericNO "33.71966432939312" ;
@@ -1313,7 +1313,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079011_201703> a safeair:Measurement ;
 	safeair:BEN "0.5066079785927516"^^xsd:double ;
 	safeair:EBE "0.23499210276412388" ;
 	m3lite:ChemicalAgentAtmosphericNO "21.70027503073069" ;
@@ -1322,7 +1322,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079011_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079011_201702> a safeair:Measurement ;
 	safeair:BEN "0.9531972773956369"^^xsd:double ;
 	safeair:EBE "0.3319090255219836" ;
 	m3lite:ChemicalAgentAtmosphericNO "22.29681379334829" ;
@@ -1331,7 +1331,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3348193232034563"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "14.691736842945883" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "40.71281366536788" ;
@@ -1339,7 +1339,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3454452083873873"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "13.182505346144913" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "43.25992402712193" ;
@@ -1347,7 +1347,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3728538912299617"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "14.8924631652142" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "39.10838976695481" ;
@@ -1355,7 +1355,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5660112410826443"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "64.01679009194869" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "52.857507660884956" ;
@@ -1364,7 +1364,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.6612043564116241"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "84.51513135835262" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "65.26817549627798" ;
@@ -1373,7 +1373,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.44037848944448427"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "29.26255409946869" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "50.559942639463905" ;
@@ -1381,7 +1381,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3274300936462133"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "10.004507950357935" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "34.77785816501903" ;
@@ -1389,7 +1389,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.415242411571831"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "21.411397032551406" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.09417449576694" ;
@@ -1397,7 +1397,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5095638397303439"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "68.2599591419995" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "56.29436925434996" ;
@@ -1405,7 +1405,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5604989372772862"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "58.531107198168186" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "62.22400374511363" ;
@@ -1414,7 +1414,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.35478379921498354"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "35.266743321638714" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "44.7253986577607" ;
@@ -1422,7 +1422,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079004_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079004_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.387633942214329"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "42.056758960604306" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "50.50300208442253" ;
@@ -1430,7 +1430,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.1374940817845305" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.231227956321465" ;
 	safeair:PM10 "16.88778913754029" ;
@@ -1438,7 +1438,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "4.102316018625507" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "28.337969401954314" ;
 	safeair:PM10 "21.419379918625037" ;
@@ -1446,7 +1446,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "5.38974566308088" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "29.248921422086394" ;
 	safeair:PM10 "14.44319632497246" ;
@@ -1454,7 +1454,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "50.848908654706584" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "54.31482240038317" ;
 	safeair:NOx "132.29837907429217" ;
@@ -1463,7 +1463,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "68.24720324123825" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "65.3636033797599" ;
 	safeair:NOx "170.01614011559747" ;
@@ -1472,7 +1472,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "14.204312407684137" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.00341226169697" ;
 	safeair:PM10 "16.117934674627417" ;
@@ -1480,7 +1480,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "4.414428207408163" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "26.002677958720938" ;
 	safeair:PM10 "18.5922105280761" ;
@@ -1488,7 +1488,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "7.135019542953406" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "32.13348579219974" ;
 	safeair:PM10 "15.455212985599571" ;
@@ -1496,7 +1496,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "51.26178456105426" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "58.673154980088604" ;
 	safeair:PM10 "20.346825721922375" ;
@@ -1504,7 +1504,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "36.140361423377264" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "54.8296831029186" ;
 	safeair:NOx "110.19818171184724" ;
@@ -1513,7 +1513,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "21.328962277706484" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.92882183648973" ;
 	safeair:PM10 "15.237685364551085" ;
@@ -1521,7 +1521,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079047_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079047_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "25.329853972895044" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "45.54478302104263" ;
 	safeair:PM10 "21.71611296756914" ;
@@ -1529,7 +1529,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079024_201707> a safeair:Measurement ;
 	safeair:BEN "0.2100514302182528"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.14066943884780284"^^xsd:double ;
 	safeair:EBE "0.1453052912270151" ;
@@ -1545,8 +1545,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201706> a safeair:Measurement ;
-	safeair:BEN "0.16705781312504056"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079024_201706> safeair:BEN "0.16705781312504056"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.165459749415129"^^xsd:double ;
 	safeair:EBE "0.12645888364662705" ;
 	safeair:NMHC "0.13348565755526265" ;
@@ -1561,7 +1561,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079024_201705> a safeair:Measurement ;
 	safeair:BEN "0.17398211188824197"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.20964257021020172"^^xsd:double ;
 	safeair:EBE "0.11253559675071247" ;
@@ -1577,7 +1577,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079024_201712> a safeair:Measurement ;
 	safeair:BEN "0.693773018016109"^^xsd:double ;
 	safeair:CH4 "1.2126767785874046"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3014858093549368"^^xsd:double ;
@@ -1595,8 +1595,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201711> a safeair:Measurement ;
-	safeair:BEN "0.6918559218997246"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079024_201711> safeair:BEN "0.6918559218997246"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:CH4 "1.2317288038731449"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3264616851633479"^^xsd:double ;
 	safeair:EBE "0.4291661251894792" ;
@@ -1613,8 +1613,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201709> a safeair:Measurement ;
-	safeair:BEN "0.24593854884175573"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079024_201709> safeair:BEN "0.24593854884175573"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.21733248744901296"^^xsd:double ;
 	safeair:EBE "0.1315759488853118" ;
 	safeair:NMHC "0.08757100385135272" ;
@@ -1629,8 +1629,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201708> a safeair:Measurement ;
-	safeair:BEN "0.20170913076723102"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079024_201708> safeair:BEN "0.20170913076723102"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.15881455110405504"^^xsd:double ;
 	safeair:EBE "0.13566504949759728" ;
 	safeair:NMHC "0.08141026409507245" ;
@@ -1645,7 +1645,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079024_201704> a safeair:Measurement ;
 	safeair:BEN "0.24939329296081708"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2231843790320263"^^xsd:double ;
 	safeair:EBE "0.11705368788705055" ;
@@ -1661,8 +1661,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201701> a safeair:Measurement ;
-	safeair:BEN "0.47520893826000893"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079024_201701> safeair:BEN "0.47520893826000893"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4673688898333898"^^xsd:double ;
 	safeair:EBE "0.16344652655817787" ;
 	safeair:NMHC "0.10582290608716487" ;
@@ -1677,8 +1677,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201710> a safeair:Measurement ;
-	safeair:BEN "0.29984901895793536"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079024_201710> safeair:BEN "0.29984901895793536"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:CH4 "1.211841028271257"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2365959011679436"^^xsd:double ;
 	safeair:EBE "0.196084724028539" ;
@@ -1695,7 +1695,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079024_201703> a safeair:Measurement ;
 	safeair:BEN "0.2422080930596911"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.21829136011734032"^^xsd:double ;
 	safeair:EBE "0.13186778660080786" ;
@@ -1711,7 +1711,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079024_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079024_201702> a safeair:Measurement ;
 	safeair:BEN "0.3254142599714208"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.25834310636542457"^^xsd:double ;
 	safeair:EBE "0.14233263225884082" ;
@@ -1727,8 +1727,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201707> safeair:BEN "0.5206904617437379"^^xsd:double ;
-	a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079008_201707> a safeair:Measurement ;
+	safeair:BEN "0.5206904617437379"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.22876119635668246"^^xsd:double ;
 	safeair:EBE "0.36963209999079144" ;
 	safeair:NMHC "0.1246123240451305" ;
@@ -1743,7 +1743,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079008_201706> a safeair:Measurement ;
 	safeair:BEN "0.5413918001287683"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3025581426104592"^^xsd:double ;
 	safeair:EBE "0.41098489569435015" ;
@@ -1759,7 +1759,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079008_201705> a safeair:Measurement ;
 	safeair:BEN "0.5577715650248929"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3721323810276526"^^xsd:double ;
 	safeair:EBE "0.305167922636635" ;
@@ -1775,10 +1775,10 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079008_201712> m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5173035350550595"^^xsd:double ;
 	safeair:BEN "1.1755448388289573"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:CH4 "1.5075018938655442"^^xsd:double ;
-	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5173035350550595"^^xsd:double ;
 	safeair:EBE "0.6447840325760483" ;
 	safeair:NMHC "0.08353619259777965" ;
 	m3lite:ChemicalAgentAtmosphericNO "60.87780898877822" ;
@@ -1793,7 +1793,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079008_201711> a safeair:Measurement ;
 	safeair:BEN "1.3491423803037577"^^xsd:double ;
 	safeair:CH4 "1.4538356669165085"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.561619404502803"^^xsd:double ;
@@ -1811,7 +1811,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079008_201709> a safeair:Measurement ;
 	safeair:BEN "0.7463437026085867"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3703024140144317"^^xsd:double ;
 	safeair:EBE "0.4520895731564712" ;
@@ -1827,7 +1827,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079008_201708> a safeair:Measurement ;
 	safeair:BEN "0.4351613035570627"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.24805909727905076"^^xsd:double ;
 	safeair:EBE "0.29147672739336344" ;
@@ -1843,7 +1843,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079008_201704> a safeair:Measurement ;
 	safeair:BEN "0.5886255119441016"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.46669617483873993"^^xsd:double ;
 	safeair:EBE "0.31324028659028935" ;
@@ -1859,8 +1859,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201701> safeair:BEN "1.1594859000705087"^^xsd:double ;
-	a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079008_201701> a safeair:Measurement ;
+	safeair:BEN "1.1594859000705087"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4930705088055878"^^xsd:double ;
 	safeair:EBE "0.46285725482707435" ;
 	safeair:NMHC "0.20470095038990424" ;
@@ -1875,7 +1875,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079008_201710> a safeair:Measurement ;
 	safeair:BEN "1.0363197636432682"^^xsd:double ;
 	safeair:CH4 "1.3035128876893194"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.460976391593059"^^xsd:double ;
@@ -1893,8 +1893,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201703> a safeair:Measurement ;
-	safeair:BEN "0.8842650187461017"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079008_201703> safeair:BEN "0.8842650187461017"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3653994840525045"^^xsd:double ;
 	safeair:EBE "0.44862245504382453" ;
 	safeair:NMHC "0.16740330558229177" ;
@@ -1909,9 +1909,9 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079008_201702> a safeair:Measurement ;
-	safeair:BEN "0.870525500396261"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079008_201702> safeair:BEN "0.870525500396261"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.449154416589119"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:EBE "0.3201464442639339" ;
 	safeair:NMHC "0.15910298461545963" ;
 	m3lite:ChemicalAgentAtmosphericNO "33.4237849236898" ;
@@ -1925,7 +1925,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "14.662914474491348" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "35.6854648657653" ;
 	safeair:PM10 "13.66475510562451" ;
@@ -1933,7 +1933,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "15.639942388144968" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "35.90802443007324" ;
 	safeair:PM10 "14.95915652346796" ;
@@ -1941,7 +1941,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "14.983631150290384" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "32.85070672789012" ;
 	safeair:PM10 "11.494027068373567" ;
@@ -1949,7 +1949,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "43.64469967389969" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "53.67643194186962" ;
 	safeair:NOx "120.59997127339061" ;
@@ -1958,7 +1958,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "32.25753819260349" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "58.161967378944844" ;
 	safeair:NOx "107.6118401161289" ;
@@ -1967,7 +1967,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "9.90139964240891" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "24.46747597595171" ;
 	safeair:PM10 "11.398106096601442" ;
@@ -1975,7 +1975,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "8.823496241602584" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.014581416016668" ;
 	safeair:PM10 "14.152270048402738" ;
@@ -1983,7 +1983,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "11.053956142407408" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "29.10136498322087" ;
 	safeair:PM10 "11.088357708627282" ;
@@ -1991,7 +1991,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "48.367297812903786" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "54.87751982816056" ;
 	safeair:PM10 "17.596659353286746" ;
@@ -1999,7 +1999,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "19.807292303934428" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "46.85540406110734" ;
 	safeair:NOx "77.25381026606651" ;
@@ -2008,7 +2008,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "27.349384771707488" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.01623585613828" ;
 	safeair:PM10 "12.474594502578476" ;
@@ -2016,7 +2016,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079050_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079050_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "27.725333048341135" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "43.74504287910891" ;
 	safeair:PM10 "18.814007090557862" ;
@@ -2024,7 +2024,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079018_201707> a safeair:Measurement ;
 	safeair:BEN "0.2574626542705043"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.28497289635005363"^^xsd:double ;
 	safeair:EBE "0.1891124646372422" ;
@@ -2037,8 +2037,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201706> a safeair:Measurement ;
-	safeair:BEN "0.2502910402211596"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079018_201706> safeair:BEN "0.2502910402211596"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4905868763161261"^^xsd:double ;
 	safeair:EBE "0.20509482024202502" ;
 	m3lite:ChemicalAgentAtmosphericNO "4.7858836484687215" ;
@@ -2050,7 +2050,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079018_201705> a safeair:Measurement ;
 	safeair:BEN "0.2979057398800837"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.39351379773941975"^^xsd:double ;
 	safeair:EBE "0.2134942922480676" ;
@@ -2063,7 +2063,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079018_201712> a safeair:Measurement ;
 	safeair:BEN "0.7371648689653472"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.49840089166243806"^^xsd:double ;
 	safeair:EBE "0.4463538897154051" ;
@@ -2077,8 +2077,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201711> a safeair:Measurement ;
-	safeair:BEN "0.85532050193316"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079018_201711> safeair:BEN "0.85532050193316"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5375427066945783"^^xsd:double ;
 	safeair:EBE "0.6345873792071354" ;
 	m3lite:ChemicalAgentAtmosphericNO "58.5127059431749" ;
@@ -2091,8 +2091,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201709> a safeair:Measurement ;
-	safeair:BEN "0.43791671178423935"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079018_201709> safeair:BEN "0.43791671178423935"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.19674174516354906"^^xsd:double ;
 	safeair:EBE "0.27255246201369965" ;
 	m3lite:ChemicalAgentAtmosphericNO "11.715532034038743" ;
@@ -2104,8 +2104,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201708> safeair:BEN "0.25103521867325607"^^xsd:double ;
-	a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079018_201708> a safeair:Measurement ;
+	safeair:BEN "0.25103521867325607"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.22798078983313227"^^xsd:double ;
 	safeair:EBE "0.17863802756632363" ;
 	m3lite:ChemicalAgentAtmosphericNO "4.107421573686208" ;
@@ -2117,7 +2117,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079018_201704> a safeair:Measurement ;
 	safeair:BEN "0.3014336258889204"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.44666505946089824"^^xsd:double ;
 	safeair:EBE "0.1646270608059359" ;
@@ -2130,8 +2130,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201701> a safeair:Measurement ;
-	safeair:BEN "1.100000023841858"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079018_201701> safeair:BEN "1.100000023841858"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5338036325914078"^^xsd:double ;
 	safeair:EBE "0.20000000298023224" ;
 	m3lite:ChemicalAgentAtmosphericNO "42.65426637969865" ;
@@ -2143,8 +2143,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201710> a safeair:Measurement ;
-	safeair:BEN "0.649631536522506"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079018_201710> safeair:BEN "0.649631536522506"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3332315297934578"^^xsd:double ;
 	safeair:EBE "0.4749411251483356" ;
 	m3lite:ChemicalAgentAtmosphericNO "28.439634214480254" ;
@@ -2157,8 +2157,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201703> a safeair:Measurement ;
-	safeair:BEN "0.5704185512208322"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079018_201703> safeair:BEN "0.5704185512208322"^^xsd:double ;
+	a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4802284209103825"^^xsd:double ;
 	safeair:EBE "0.21525720599107667" ;
 	m3lite:ChemicalAgentAtmosphericNO "16.794397246503433" ;
@@ -2170,7 +2170,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079018_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079018_201702> a safeair:Measurement ;
 	safeair:BEN "0.4984242440968093"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5228960416515293"^^xsd:double ;
 	safeair:EBE "0.19092010610467292" ;
@@ -2183,28 +2183,28 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "3.7843908096107515" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "20.64693928577592" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "71.68728421791637" ;
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "3.0462708966662264" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "18.17292902417647" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "79.46006475836167" ;
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.989030689589867" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "19.33278717331633" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "70.99706882151214" ;
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "30.524223450499907" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "40.98501428351696" ;
 	safeair:NOx "87.77581006390905" ;
@@ -2212,7 +2212,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "32.014045638718365" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "43.829434821099234" ;
 	safeair:NOx "92.8661184011901" ;
@@ -2220,35 +2220,35 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "8.605207213422894" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.865263961424755" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "59.71709955400251" ;
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.8435815258087964" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "17.64810312571649" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "74.40234250701111" ;
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "3.771575290337114" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "19.88771458537178" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "74.38763292702421" ;
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "22.58367462019226" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "28.043745007993998" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "34.42486660743769" ;
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "13.244000659663019" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "33.77684741382517" ;
 	safeair:NOx "54.01261311108038" ;
@@ -2256,42 +2256,42 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "10.428388277418485" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "33.26587012379886" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "52.62639975741579" ;
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079059_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079059_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "12.258501558058418" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "31.365768748203372" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "42.67282034365262" ;
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.3481984689774658" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "13.94773884317372" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "66.43048425621586" ;
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.3582395713974216" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "13.691070554893958" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "75.35725947874225" ;
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.4122952943826728" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "11.456199894672757" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "71.0678570438595" ;
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "13.288377957112507" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "24.439878922647065" ;
 	safeair:NOx "44.81746365285678" ;
@@ -2299,7 +2299,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "15.036870488764789" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "29.78871071481757" ;
 	safeair:NOx "52.87383663080539" ;
@@ -2307,35 +2307,35 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.9197469036366557" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "16.392646792045905" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "60.21223482328392" ;
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "1.7105953324570866" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "11.529724064925993" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "72.03138116491334" ;
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "2.483472323769339" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "11.204544080219273" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "67.91308803543933" ;
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "14.719543140455766" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "27.781603264195706" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "29.730677362893257" ;
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "5.01100654860303" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "22.9243638917143" ;
 	safeair:NOx "30.61127040786653" ;
@@ -2343,21 +2343,21 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "4.86495300006819" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "14.859324711805124" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "54.696024555930286" ;
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079058_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079058_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericNO "6.95473689791002" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "17.03225673439049" ;
 	m3lite:ChemicalAgentAtmosphericConcentrationO3 "43.46726318455503" ;
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.17348587140144267"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "6.882220886374487" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "35.058985312197365" ;
@@ -2366,7 +2366,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.17710478760224738"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "5.970424447656315" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "31.278120138318346" ;
@@ -2375,7 +2375,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2128721866476965"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "6.80149910362359" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "30.287058660819266" ;
@@ -2384,7 +2384,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.43989701578241447"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "46.25007048661093" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "55.6966522856352" ;
@@ -2394,7 +2394,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.4365082218980047"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "47.611054000140875" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "61.31027393119546" ;
@@ -2404,7 +2404,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2546603529321674"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "14.949710566389404" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "44.74500156674724" ;
@@ -2413,7 +2413,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.1716484321856327"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "5.812452454794781" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "32.33214348412267" ;
@@ -2422,7 +2422,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2717696461463828"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "7.366467480635537" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "29.20679248188058" ;
@@ -2431,7 +2431,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5281228281710723"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "46.08427537119158" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "53.63265045564236" ;
@@ -2440,7 +2440,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.26247962832481164"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "20.22231206677979" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "50.0080282524103" ;
@@ -2450,7 +2450,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3341706169683256"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "18.825341128535943" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "42.150950904101094" ;
@@ -2459,7 +2459,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079036_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079036_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.408406431157142"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "25.70044709389267" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "43.563927357557816" ;
@@ -2468,7 +2468,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201707> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.30039962508204077"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "11.436965831290873" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "42.81874039122435" ;
@@ -2477,7 +2477,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201706> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201706> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.27977893576933777"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "10.373993304273256" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "43.317475413266905" ;
@@ -2486,7 +2486,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201705> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.29907216755048543"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "11.16232360301651" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "40.54077773125997" ;
@@ -2495,7 +2495,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201712> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2997318727166762"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "39.2429775280974" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "50.56882022472308" ;
@@ -2505,7 +2505,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201711> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201711> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3516628255062492"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "67.89800832295717" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "61.70632795879829" ;
@@ -2515,7 +2515,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201709> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201709> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3740057714998619"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "14.502716851390504" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.29460108737837" ;
@@ -2524,7 +2524,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201708> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201708> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.2771017043077486"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "8.368392214024679" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "38.709956963287276" ;
@@ -2533,7 +2533,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201704> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201704> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.30271513117667503"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "12.500574469371113" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "41.272238011737734" ;
@@ -2542,7 +2542,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201701> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201701> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.5238110131972377"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "53.13521191197031" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "59.64276860713672" ;
@@ -2551,7 +2551,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201710> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.272214529650475"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "35.698285446794436" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "64.35037424394413" ;
@@ -2561,7 +2561,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201703> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.3882973765055709"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "24.687358694325205" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "46.070252528213324" ;
@@ -2570,7 +2570,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079035_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079035_201702> a safeair:Measurement ;
 	m3lite:ChemicalAgentAtmosphericConcentrationCO "0.40128253335265635"^^xsd:double ;
 	m3lite:ChemicalAgentAtmosphericNO "27.40199572344995" ;
 	m3lite:ChemicalAgentAtmosphericNO2 "49.349899565868064" ;
@@ -2579,7 +2579,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "2"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201707> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079055_201707> a safeair:Measurement ;
 	safeair:BEN "0.33458410455178383"^^xsd:double ;
 	safeair:EBE "0.28488615520535354" ;
 	safeair:NMHC "0.07259041070020299" ;
@@ -2591,8 +2591,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "7"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201706> a safeair:Measurement ;
-	safeair:BEN "0.2370862494215291"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079055_201706> safeair:BEN "0.2370862494215291"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:EBE "0.37890848528674625" ;
 	safeair:NMHC "0.10337050912290174" ;
 	m3lite:ChemicalAgentAtmosphericNO "7.168472534498954" ;
@@ -2603,7 +2603,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "6"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201705> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079055_201705> a safeair:Measurement ;
 	safeair:BEN "0.4105648649948014"^^xsd:double ;
 	safeair:EBE "0.12044782157039786" ;
 	safeair:NMHC "0.14357576572173833" ;
@@ -2615,7 +2615,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "5"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201712> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079055_201712> a safeair:Measurement ;
 	safeair:BEN "1.0369228834234216"^^xsd:double ;
 	safeair:CH4 "1.2858159939877318"^^xsd:double ;
 	safeair:EBE "0.5157848838394615" ;
@@ -2629,8 +2629,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "12"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201711> a safeair:Measurement ;
-	safeair:BEN "0.8280068653402536"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079055_201711> safeair:BEN "0.8280068653402536"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:CH4 "1.310604265450256"^^xsd:double ;
 	safeair:EBE "0.7085486224492213" ;
 	safeair:NMHC "0.14216769012229497" ;
@@ -2643,8 +2643,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "11"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201709> a safeair:Measurement ;
-	safeair:BEN "0.44531478892072757"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079055_201709> safeair:BEN "0.44531478892072757"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:EBE "0.5029010083400615" ;
 	safeair:NMHC "0.14698111251788049" ;
 	m3lite:ChemicalAgentAtmosphericNO "16.17713418656952" ;
@@ -2655,7 +2655,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "9"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201708> safeair:BEN "0.308987407410004"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079055_201708> safeair:BEN "0.308987407410004"^^xsd:double ;
 	a safeair:Measurement ;
 	safeair:EBE "0.3421842004620406" ;
 	safeair:NMHC "0.16165344626757608" ;
@@ -2667,8 +2667,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "8"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201704> a safeair:Measurement ;
-	safeair:BEN "0.3770112586054749"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079055_201704> safeair:BEN "0.3770112586054749"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:EBE "0.1244433370788278" ;
 	safeair:NMHC "0.1701089587988947" ;
 	m3lite:ChemicalAgentAtmosphericNO "9.66670541734398" ;
@@ -2679,8 +2679,8 @@
 	time:year "2017"^^xsd:int ;
 	time:month "4"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201701> a safeair:Measurement ;
-	safeair:BEN "0.698801161824763"^^xsd:double ;
+<http://safeair.es/project/resources/Measurement/28079055_201701> safeair:BEN "0.698801161824763"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:EBE "0.25278629519779566" ;
 	safeair:NMHC "0.2293836548520595" ;
 	m3lite:ChemicalAgentAtmosphericNO "49.84216854010706" ;
@@ -2691,9 +2691,9 @@
 	time:year "2017"^^xsd:int ;
 	time:month "1"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201710> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079055_201710> safeair:CH4 "1.3455910322305868"^^xsd:double ;
 	safeair:BEN "0.6183035519652714"^^xsd:double ;
-	safeair:CH4 "1.3455910322305868"^^xsd:double ;
+	a safeair:Measurement ;
 	safeair:EBE "0.6164650536578397" ;
 	safeair:NMHC "0.1531826414048265" ;
 	m3lite:ChemicalAgentAtmosphericNO "28.17624807476766" ;
@@ -2705,7 +2705,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "10"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201703> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079055_201703> a safeair:Measurement ;
 	safeair:BEN "0.5409897268878648"^^xsd:double ;
 	safeair:EBE "0.31887608619334945" ;
 	safeair:NMHC "0.19269905065654214" ;
@@ -2717,7 +2717,7 @@
 	time:year "2017"^^xsd:int ;
 	time:month "3"^^xsd:int .
 
-<http://safeair.es/project/resources/28079055_201702> a safeair:Measurement ;
+<http://safeair.es/project/resources/Measurement/28079055_201702> a safeair:Measurement ;
 	safeair:BEN "0.633266196664522"^^xsd:double ;
 	safeair:EBE "0.3605513277820827" ;
 	safeair:NMHC "0.19759774580960593" ;
