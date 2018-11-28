@@ -1,468 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-  <head>
+        <title>SafeAir</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
 
-    <title>SafeAir</title>
+        <link href='css/styles.css' rel='stylesheet' />
+    </head>
 
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
-
-    <link href='css/styles.css' rel='stylesheet' />
-
-  </head>
-
-  <body id="page-top">
-    <div class="map-overlay">
-        <nav id="map-menu">
-            <p>Filter layers</p>
-        </nav>
-        <div class='map-overlay-inner'>
-            <label>Month: <span id='month-slider-value'>2017-6</span></label>
-            <input id='month-slider' type='range' min='1' max='12' step='1' value='6' />
-            <select id="chemical-select" class="styled-select slate">
-            </select>
+    <body id="page-top">
+        <div class="map-overlay">
+            <nav id="map-menu">
+                <p>Filter layers</p>
+            </nav>
+            <div class='map-overlay-inner'>
+                <label>Month: <span id='month-slider-value'>2017-6</span></label>
+                <input id='month-slider' type='range' min='1' max='12' step='1' value='6' />
+                <select id="chemical-select" class="styled-select slate">
+                </select>
+            </div>
         </div>
-    </div>
-    <div id='map3'></div>
+        <div id='map3'></div>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <script src="js/Chart.min.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script src="districts.js"></script>
+        <script>
 
-    <script src="districts.js"></script>
-    <script>
+            var slider = document.getElementById('month-slider');
+            var sliderValue = document.getElementById('month-slider-value');
 
-        var slider = document.getElementById('month-slider');
-        var sliderValue = document.getElementById('month-slider-value');
+            var chemicalSelect = document.getElementById('chemical-select');
 
-        var chemicalSelect = document.getElementById('chemical-select');
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnbWVpc3RlciIsImEiOiJjam9qMG82NXUwMDh5M3FvOXpscndzMnc0In0.h1EaT7zfQ179dTjcnzIKlw';
+            var map = new mapboxgl.Map({
+                container: 'map3',
+                style: 'mapbox://styles/bigmeister/cjokjgwjc0old2rqshpbrkz1q',
+                center: [-3.7034, 40.4750], // starting position [lng, lat]
+                zoom: 9.6 // starting zoom
+            });
 
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYmlnbWVpc3RlciIsImEiOiJjam9qMG82NXUwMDh5M3FvOXpscndzMnc0In0.h1EaT7zfQ179dTjcnzIKlw';
-        var map = new mapboxgl.Map({
-            container: 'map3',
-            style: 'mapbox://styles/bigmeister/cjokjgwjc0old2rqshpbrkz1q',
-            center: [-3.7034, 40.4750], // starting position [lng, lat]
-            zoom: 9.6 // starting zoom
-        });
+            map.addControl(new mapboxgl.FullscreenControl());
 
-        map.addControl(new mapboxgl.FullscreenControl());
+            var chemicals = {
+                "BEN": "safeair:BEN",
+                "CH4": "safeair:CH4",
+                "CO": "m3lite:ChemicalAgentAtmosphericConcentrationCO",
+                "EBE": "safeair:EBE",
+                "NMCH": "safeair:NMHC",
+                "NO": "m3lite:ChemicalAgentAtmosphericNO",
+                "NO2": "m3lite:ChemicalAgentAtmosphericNO2",
+                "NOx": "safeair:NOx",
+                "O3": "m3lite:ChemicalAgentAtmosphericConcentrationO3",
+                "PM10": "safeair:PM10",
+                "PM25": "safeair:PM25",
+                "SO2": "m3lite:ChemicalAgentAtmosphericConcentrationSO2",
+                "TCH": "safeair:TCH",
+                "TOL": "safeair:TOL"
+            };
 
-        var chemicals = {
-          "BEN": "safeair:BEN",
-          "CH4": "safeair:CH4",
-          "CO": "m3lite:ChemicalAgentAtmosphericConcentrationCO",
-          "EBE": "safeair:EBE",
-          "NMCH": "safeair:NMHC",
-          "NO": "m3lite:ChemicalAgentAtmosphericNO",
-          "NO2": "m3lite:ChemicalAgentAtmosphericNO2",
-          "NOx": "safeair:NOx",
-          "O3": "m3lite:ChemicalAgentAtmosphericConcentrationO3",
-          "PM10": "safeair:PM10",
-          "PM25": "safeair:PM25",
-          "SO2": "m3lite:ChemicalAgentAtmosphericConcentrationSO2",
-          "TCH": "safeair:TCH",
-          "TOL": "safeair:TOL"
-        };
-
-        for (chem in chemicals) {
-            var option = document.createElement('option');
-            option.value = chem;
-            option.text = chem;
-            chemicalSelect.appendChild(option);
-        }
-
-        var currentChemical = "BEN";
-        var currentMonth = "6";
-
-        function sparqlQuery(query, baseURL, format) {
-          if(!format)
-            format="application/json";
-          var params={
-            "query": query
-          };
-          
-          var querypart="";
-          for(var k in params) {
-            querypart+=k+"="+encodeURIComponent(params[k])+"&";
-          }
-          var queryURL=baseURL + '?' + querypart;
-          if (window.XMLHttpRequest) {
-            xmlhttp=new XMLHttpRequest();
-          }
-          else {
-            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-          }
-          xmlhttp.open("GET",queryURL,false);
-          xmlhttp.send();
-          return xmlhttp.responseText;
-        }
-
-        function getSpatialThingData(type) {
-          var query = `
-            PREFIX safeair: <http://safeair.es/project/ontology/safeair#> 
-            PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
-
-            SELECT ?object ?name ?lat ?lon
-            WHERE { 
-              ?object a safeair:` + type + `; 
-                      safeair:locName ?name;
-                      geo:lat ?lat;
-                      geo:long ?lon.
-            }`;
-
-          var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
-          things = data.split("\n").slice(1);
-
-          thingGeoJsonFeatures = []
-
-          for (i in things) {
-              thing = things[i].split(",");
-
-              thingGeoJsonFeatures.push(
-                  { 
-                      type: 'Feature', 
-                      properties: { 
-                          ID: thing[0],
-                          Name: thing[1]
-                      }, 
-                      geometry: { 
-                          type: 'Point', 
-                          coordinates: [parseFloat(thing[3]), parseFloat(thing[2])] 
-                      } 
-                  }
-              );
-          }
-
-          var thingsGeoJson = {
-              type: 'FeatureCollection',
-              features: thingGeoJsonFeatures
-          };
-
-          return(thingsGeoJson);
-        }
-
-        function highliteDistrict(object="none") {
-
-          var name = "";
-
-          if (object != "none") {
-            var query = `
-              PREFIX safeair: <http://safeair.es/project/ontology/safeair#>
-              PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
-
-              SELECT ?district
-              WHERE {
-                  ?object safeair:locName "` + object + `";
-                          safeair:hasVCard ?vcard.
-                  ?vcard a vcard:VCard;
-                         vcard:region ?district.
-              }
-            `;
-
-            var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
-            name = data.split("\n")[1].split("/")[6].trim();
-
-            map.setPaintProperty(name, 'fill-opacity', 0.75);
-          }
-
-          districts.features.forEach(function(district) {
-            var disname = district.properties.URI.split("/")[6].trim(); 
-            if(name !== disname) {
-              map.setPaintProperty(disname, 'fill-opacity', 0.25);
+            for (chem in chemicals) {
+                var option = document.createElement('option');
+                option.value = chem;
+                option.text = chem;
+                chemicalSelect.appendChild(option);
             }
-          });
-        }
 
-        function createChart(data) {
-            var ctx = document.getElementById("chemChart").getContext('2d');
-            var chart = new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                    datasets: [{
-                        label: currentChemical + " concentration",
-                        data: data,
-                        backgroundColor: "#3887be"
-                    }]
-                },
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:true
-                            }
-                        }]
+            var currentChemical = "BEN";
+            var currentMonth = "6";
+
+            function sparqlQuery(query, baseURL, format) {
+                if(!format) format="application/json";
+                var params={
+                  "query": query
+                };
+                
+                var querypart="";
+                for(var k in params) {
+                    querypart+=k+"="+encodeURIComponent(params[k])+"&";
+                }
+                var queryURL=baseURL + '?' + querypart;
+                if (window.XMLHttpRequest) {
+                    xmlhttp=new XMLHttpRequest();
+                }
+                else {
+                    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.open("GET",queryURL,false);
+                xmlhttp.send();
+
+                return xmlhttp.responseText;
+            }
+
+            function getSpatialThingData(type) {
+                var query = `
+                    PREFIX safeair: <http://safeair.es/project/ontology/safeair#> 
+                    PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+                    SELECT ?object ?name ?lat ?lon
+                    WHERE { 
+                      ?object a safeair:` + type + `; 
+                              safeair:locName ?name;
+                              geo:lat ?lat;
+                              geo:long ?lon.
+                    }`;
+
+                var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
+                things = data.split("\n").slice(1);
+
+                thingGeoJsonFeatures = []
+
+                for (i in things) {
+                    thing = things[i].split(",");
+
+                    thingGeoJsonFeatures.push(
+                        { 
+                            type: 'Feature', 
+                            properties: { 
+                                ID: thing[0],
+                                Name: thing[1]
+                            }, 
+                            geometry: { 
+                                type: 'Point', 
+                                coordinates: [parseFloat(thing[3]), parseFloat(thing[2])] 
+                            } 
+                        }
+                    );
+                }
+
+                var thingsGeoJson = {
+                    type: 'FeatureCollection',
+                    features: thingGeoJsonFeatures
+                };
+
+                return(thingsGeoJson);
+            }
+
+            function highliteDistrict(object="none") {
+                if (object != "none") {
+                    var query = `
+                        PREFIX safeair: <http://safeair.es/project/ontology/safeair#>
+                        PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+                        SELECT ?district
+                        WHERE {
+                            ?object safeair:locName "` + object + `";
+                                    safeair:hasVCard ?vcard.
+                            ?vcard a vcard:VCard;
+                                   vcard:region ?district.
+                        }`;
+
+                    var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
+                    name = data.split("\n")[1].split("/")[6].trim();
+
+                    map.setPaintProperty(name, 'fill-opacity', 0.75);
+                }
+
+                districts.features.forEach(function(district) {
+                    var disname = district.properties.URI.split("/")[6].trim(); 
+                    if(name !== disname) {
+                        map.setPaintProperty(disname, 'fill-opacity', 0.25);
                     }
-                }
-            });
-        }
+                });
+            }
 
-        function getMeasurements(object) {
-          var query = `
-            PREFIX safeair: <http://safeair.es/project/ontology/safeair#> 
-            PREFIX m3lite: <http://purl.org/iot/vocab/m3-lite#>
-            PREFIX time: <https://www.w3.org/TR/owl-time/>
+            function createChart(data) {
+                var ctx = document.getElementById("chemChart").getContext('2d');
+                var chart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                        datasets: [{
+                            label: currentChemical + " concentration",
+                            data: data,
+                            backgroundColor: "#3887be"
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero:true
+                                }
+                            }]
+                        }
+                    }
+                });
+            }
 
-            SELECT ?meas
-            WHERE { 
-                ?object   safeair:locName "` + object + `";
-                          safeair:isClosestTo ?station.
+            function getMeasurements(object) {
+                var query = `
+                    PREFIX safeair: <http://safeair.es/project/ontology/safeair#> 
+                    PREFIX m3lite: <http://purl.org/iot/vocab/m3-lite#>
+                    PREFIX time: <https://www.w3.org/TR/owl-time/>
 
-                ?station  safeair:hasMeasurement ?mid.
+                    SELECT ?meas
+                    WHERE { 
+                        ?object   safeair:locName "` + object + `";
+                                  safeair:isClosestTo ?station.
 
-                ?mid      ` + chemicals[currentChemical] + ` ?meas;
-                          time:month ?month.
-            } ORDER BY ?month
-          `;
+                        ?station  safeair:hasMeasurement ?mid.
 
-          var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
-          measurements = data.split("\n").slice(1, -1);
+                        ?mid      ` + chemicals[currentChemical] + ` ?meas;
+                                  time:month ?month.
+                    } ORDER BY ?month`;
 
-          if(measurements.length > 0){
-            createChart(measurements); 
-          }     
-        }
+                var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
+                measurements = data.split("\n").slice(1, -1);
 
-        function getMaximumConcentration() {
-            var query = `
-                PREFIX safeair: <http://safeair.es/project/ontology/safeair#> 
-                PREFIX m3lite: <http://purl.org/iot/vocab/m3-lite#>
+                if(measurements.length > 0){
+                    createChart(measurements); 
+                }     
+            }
 
-                SELECT (max(?mid) as ?max)
-                WHERE { 
-                    ?meas ` + chemicals[currentChemical] + ` ?mid.
-                }
-            `;
-            var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
+            function getMaximumConcentration() {
+                var query = `
+                    PREFIX safeair: <http://safeair.es/project/ontology/safeair#> 
+                    PREFIX m3lite: <http://purl.org/iot/vocab/m3-lite#>
 
-            return data.split("\n").slice(1, -1);
-        }
+                    SELECT (max(?mid) as ?max)
+                    WHERE {   
+                        ?meas ` + chemicals[currentChemical] + ` ?mid.
+                    }`;
 
-        function updateDistrictMonth(month) {
+                var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
 
-            var maxCon = getMaximumConcentration();
+                return data.split("\n").slice(1, -1);
+            }
 
-            districts.features.forEach(function(district) {
+            function updateDistrictMonth(month) {
 
-              var query = `
-                  PREFIX safeair: <http://safeair.es/project/ontology/safeair#>
-                  PREFIX m3lite: <http://purl.org/iot/vocab/m3-lite#>
-                  PREFIX time: <https://www.w3.org/TR/owl-time/>
-                  PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+                var maxCon = getMaximumConcentration();
 
-                  SELECT ?meas
-                  WHERE {
-                      ?station a safeair:Station;
-                               safeair:hasDistrict <` + district.properties.URI + `>;
-                               safeair:hasMeasurement ?mid.
+                districts.features.forEach(function(district) {
 
-                      ?mid     a safeair:Measurement;
-                               `+ chemicals[currentChemical] + ` ?meas;
-                               time:month "` + month + `"^^xsd:int .  
-                  }
-              `;
+                  var query = `
+                      PREFIX safeair: <http://safeair.es/project/ontology/safeair#>
+                      PREFIX m3lite: <http://purl.org/iot/vocab/m3-lite#>
+                      PREFIX time: <https://www.w3.org/TR/owl-time/>
+                      PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-              var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
-              var measurement = data.split("\n").slice(1, -1);
-              var disname = district.properties.URI.split("/")[6]; 
+                      SELECT ?meas
+                      WHERE {
+                          ?station a safeair:Station;
+                                   safeair:hasDistrict <` + district.properties.URI + `>;
+                                   safeair:hasMeasurement ?mid.
 
-              if(measurement == ""){
-                  map.setPaintProperty(disname, 'fill-color', 'rgb(0, 0, 0)');
-              } else {
+                          ?mid     a safeair:Measurement;
+                                   `+ chemicals[currentChemical] + ` ?meas;
+                                   time:month "` + month + `"^^xsd:int .  
+                      }
+                  `;
+
+                  var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
                   var measurement = data.split("\n").slice(1, -1);
+                  var disname = district.properties.URI.split("/")[6]; 
 
-                  var count = measurement.length;
-                  var total = 0;
-                  for (i = 0; i < count; i++) {
-                    total += parseFloat(measurement[i]);
+                  if(measurement == ""){
+                      map.setPaintProperty(disname, 'fill-color', 'rgb(0, 0, 0)');
+                  } else {
+                      var measurement = data.split("\n").slice(1, -1);
+
+                      var count = measurement.length;
+                      var total = 0;
+                      for (i = 0; i < count; i++) {
+                        total += parseFloat(measurement[i]);
+                      }
+
+                      var color = (maxCon - total/count) / maxCon * 255;
+                      map.setPaintProperty(disname, 'fill-color', 'rgb(255, ' + color + ', 0)');
                   }
+                });
+            }
+            
+            map.on('load', function() {
+              
+                districts.features.forEach(function(district) {
 
-                  var color = (maxCon - total/count) / maxCon * 255;
-                  map.setPaintProperty(disname, 'fill-color', 'rgb(255, ' + color + ', 0)');
-              }
-            });
-        }
-        
-        map.on('load', function() {
-          
-          districts.features.forEach(function(district) {
+                    var name = district.properties.URI.split("/")[6]; 
 
-              var name = district.properties.URI.split("/")[6]; 
-
-              map.addLayer({
-                  id: name,
-                  type: 'fill',
-                  source: {
-                      type: 'geojson',
-                      data: district
-                  },
-                  paint: {
-                      'fill-color': '#088',
-                      'fill-opacity': 0.25
-                  }
-              });
-          });
-
-          var schools = getSpatialThingData("School");
-          map.addLayer({
-              id: 'School',
-              type: 'symbol',
-              source: {
-                  type: 'geojson',
-                  data: schools
-              },
-              layout: {
-                  'icon-image': 'college-15',
-                  'icon-allow-overlap': false
-              },
-              paint: { }
-          });
-
-          var elRegions = getSpatialThingData("ElderlyRegion");
-          map.addLayer({
-              id: 'ElderlyRegion',
-              type: 'symbol',
-              source: {
-                  type: 'geojson',
-                  data: elRegions
-              },
-              layout: {
-                  'icon-image': 'picnic-site-15',
-                  'icon-allow-overlap': false
-              },
-              paint: { }
-          });
-
-          var sportParks = getSpatialThingData("SportPark");
-          map.addLayer({
-              id: 'SportPark',
-              type: 'symbol',
-              source: {
-                  type: 'geojson',
-                  data: sportParks
-              },
-              layout: {
-                  'icon-image': 'golf-15',
-                  'icon-allow-overlap': false
-              },
-              paint: { }
-          });
-
-          updateDistrictMonth(currentMonth, currentChemical);
-
-          map.on('click', function(e) {
-
-                var selObj = map.queryRenderedFeatures(e.point, {
-                    layers: ['School', 'SportPark', 'ElderlyRegion']
+                    map.addLayer({
+                        id: name,
+                        type: 'fill',
+                        source: {
+                            type: 'geojson',
+                            data: district
+                        },
+                        paint: {
+                            'fill-color': '#088',
+                            'fill-opacity': 0.25
+                        }
+                    });
                 });
 
-                if (selObj.length > 0) {
-                    var object = selObj[0];
-                    var name = object.properties.Name;
+                var schools = getSpatialThingData("School");
+                map.addLayer({
+                    id: 'School',
+                    type: 'symbol',
+                    source: {
+                        type: 'geojson',
+                        data: schools
+                    },
+                    layout: {
+                        'icon-image': 'college-15',
+                        'icon-allow-overlap': false
+                    },
+                    paint: { }
+                });
 
-                    new mapboxgl.Popup()
-                        .setLngLat([e.lngLat.lng, e.lngLat.lat])
-                        .setHTML("<div class='popup'><label><b>Loc name: </b>" + name + "</label><br><canvas id='chemChart' width='200px' height='150px'></canvas></div>")
-                        .addTo(map);
+                var elRegions = getSpatialThingData("ElderlyRegion");
+                map.addLayer({
+                    id: 'ElderlyRegion',
+                    type: 'symbol',
+                    source: {
+                        type: 'geojson',
+                        data: elRegions
+                    },
+                    layout: {
+                        'icon-image': 'picnic-site-15',
+                        'icon-allow-overlap': false
+                    },
+                    paint: { }
+                });
 
-                    highliteDistrict(name);
-                    getMeasurements(name);
+                var sportParks = getSpatialThingData("SportPark");
+                map.addLayer({
+                    id: 'SportPark',
+                    type: 'symbol',
+                    source: {
+                        type: 'geojson',
+                        data: sportParks
+                    },
+                    layout: {
+                        'icon-image': 'golf-15',
+                        'icon-allow-overlap': false
+                    },
+                    paint: { }
+                });
 
-                } else {
-                    highliteDistrict();
-                }
-          });
+                updateDistrictMonth(currentMonth, currentChemical);
 
-          // Change the cursor to a pointer when the mouse is over the places layer.
-          map.on('mouseenter', 'School', function () {
-              map.getCanvas().style.cursor = 'pointer';
-          });
+                map.on('click', function(e) {
+                    var selObj = map.queryRenderedFeatures(e.point, {
+                        layers: ['School', 'SportPark', 'ElderlyRegion']
+                    });
 
-          // Change it back to a pointer when it leaves.
-          map.on('mouseleave', 'School', function () {
-              map.getCanvas().style.cursor = '';
-          });
+                    if (selObj.length > 0) {
+                        var object = selObj[0];
+                        var name = object.properties.Name;
 
-          // Change the cursor to a pointer when the mouse is over the places layer.
-          map.on('mouseenter', 'SportPark', function () {
-              map.getCanvas().style.cursor = 'pointer';
-          });
+                        new mapboxgl.Popup()
+                            .setLngLat([e.lngLat.lng, e.lngLat.lat])
+                            .setHTML("<div class='popup'><label><b>Loc name: </b>" + name + "</label><br><canvas id='chemChart' width='200px' height='150px'></canvas></div>")
+                            .addTo(map);
 
-          // Change it back to a pointer when it leaves.
-          map.on('mouseleave', 'SportPark', function () {
-              map.getCanvas().style.cursor = '';
-          });
+                        highliteDistrict(name);
+                        getMeasurements(name);
 
-          // Change the cursor to a pointer when the mouse is over the places layer.
-          map.on('mouseenter', 'ElderlyRegion', function () {
-              map.getCanvas().style.cursor = 'pointer';
-          });
+                    } else {
+                        highliteDistrict();
+                    }
+                });
 
-          // Change it back to a pointer when it leaves.
-          map.on('mouseleave', 'ElderlyRegion', function () {
-              map.getCanvas().style.cursor = '';
-          });
+                // Change the cursor to a pointer when the mouse is over the places layer.
+                map.on('mouseenter', 'School', function () {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+
+                // Change it back to a pointer when it leaves.
+                map.on('mouseleave', 'School', function () {
+                    map.getCanvas().style.cursor = '';
+                });
+
+                // Change the cursor to a pointer when the mouse is over the places layer.
+                map.on('mouseenter', 'SportPark', function () {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+
+                // Change it back to a pointer when it leaves.
+                map.on('mouseleave', 'SportPark', function () {
+                    map.getCanvas().style.cursor = '';
+                });
+
+                // Change the cursor to a pointer when the mouse is over the places layer.
+                map.on('mouseenter', 'ElderlyRegion', function () {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+
+                // Change it back to a pointer when it leaves.
+                map.on('mouseleave', 'ElderlyRegion', function () {
+                    map.getCanvas().style.cursor = '';
+                });
 
 
-          slider.addEventListener('input', function(e) {
-              currentMonth = e.target.value;
-              updateDistrictMonth(currentMonth);
-              sliderValue.textContent = "2017-" + e.target.value;
-          });
+                slider.addEventListener('input', function(e) {
+                    currentMonth = e.target.value;
+                    updateDistrictMonth(currentMonth);
+                    sliderValue.textContent = "2017-" + e.target.value;
+                });
 
-          chemicalSelect.addEventListener('input', function(e) {
-            currentChemical = e.target.value;
-            updateDistrictMonth(currentMonth);
-          });
-        });
+                chemicalSelect.addEventListener('input', function(e) {
+                    currentChemical = e.target.value;
+                    updateDistrictMonth(currentMonth);
+                });
+            });
+        </script>
+        <script>
+            var toggleableLayerIds = [ 'School', 'SportPark', 'ElderlyRegion'];
 
-    </script>
+            for (var i = 0; i < toggleableLayerIds.length; i++) {
+                var id = toggleableLayerIds[i];
 
-    <script>
-      var toggleableLayerIds = [ 'School', 'SportPark', 'ElderlyRegion'];
+                var link = document.createElement('a');
+                link.href = '#';
+                link.className = 'active';
+                link.textContent = id;
 
-      for (var i = 0; i < toggleableLayerIds.length; i++) {
-          var id = toggleableLayerIds[i];
+                link.onclick = function (e) {
+                    var clickedLayer = this.textContent;
+                    e.preventDefault();
+                    e.stopPropagation();
 
-          var link = document.createElement('a');
-          link.href = '#';
-          link.className = 'active';
-          link.textContent = id;
+                    var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
 
-          link.onclick = function (e) {
-              var clickedLayer = this.textContent;
-              e.preventDefault();
-              e.stopPropagation();
+                    if (visibility === 'visible') {
+                        map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+                        this.className = '';
+                    } else {
+                        this.className = 'active';
+                        map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+                    }
+                };
 
-              var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+                var layers = document.getElementById('map-menu');
+                layers.appendChild(link);
+            }
+        </script>
 
-              if (visibility === 'visible') {
-                  map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-                  this.className = '';
-              } else {
-                  this.className = 'active';
-                  map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-              }
-          };
-
-          var layers = document.getElementById('map-menu');
-          layers.appendChild(link);
-      }
-    </script>
-
-  </body>
+    </body>
 
 </html>
