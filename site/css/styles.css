@@ -114,3 +114,9 @@
    height: 34px;
    width: 170px;
 }
+
+.popup {
+    display: block;
+    width: 300px;
+    height: 250px;
+}

@@ -40,8 +40,7 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/Chart.min.js"></script>
 
     <script src="districts.js"></script>
     <script>
@@ -187,24 +186,74 @@
           });
         }
 
+        function createChart(data) {
+            var ctx = document.getElementById("chemChart").getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    datasets: [{
+                        label: currentChemical + " concentration",
+                        data: data,
+                        backgroundColor: "#3887be"
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+
         function getMeasurements(object) {
           var query = `
             PREFIX safeair: <http://safeair.es/project/ontology/safeair#> 
-            SELECT ?object ?meas
+            PREFIX m3lite: <http://purl.org/iot/vocab/m3-lite#>
+            PREFIX time: <https://www.w3.org/TR/owl-time/>
+
+            SELECT ?meas
             WHERE { 
-                ?object safeair:locName "` + object + `";
-                       safeair:isClosestTo ?station.
-                ?station safeair:hasMeasurement ?meas.
-            } LIMIT 100
+                ?object   safeair:locName "` + object + `";
+                          safeair:isClosestTo ?station.
+
+                ?station  safeair:hasMeasurement ?mid.
+
+                ?mid      ` + chemicals[currentChemical] + ` ?meas;
+                          time:month ?month.
+            } ORDER BY ?month
           `;
 
           var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
-          things = data.split("\n").slice(1);
+          measurements = data.split("\n").slice(1, -1);
 
-          console.log(things);
+          if(measurements.length > 0){
+            createChart(measurements); 
+          }     
         }
 
-        function updateDistrictMonth(month, chemical) {
+        function getMaximumConcentration() {
+            var query = `
+                PREFIX safeair: <http://safeair.es/project/ontology/safeair#> 
+                PREFIX m3lite: <http://purl.org/iot/vocab/m3-lite#>
+
+                SELECT (max(?mid) as ?max)
+                WHERE { 
+                    ?meas ` + chemicals[currentChemical] + ` ?mid.
+                }
+            `;
+            var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
+
+            return data.split("\n").slice(1, -1);
+        }
+
+        function updateDistrictMonth(month) {
+
+            var maxCon = getMaximumConcentration();
 
             districts.features.forEach(function(district) {
 
@@ -219,21 +268,27 @@
                       ?station a safeair:Station;
                                safeair:hasDistrict <` + district.properties.URI + `>;
                                safeair:hasMeasurement ?mid.
+
                       ?mid     a safeair:Measurement;
-                               `+ chemicals[chemical] + ` ?meas;
+                               `+ chemicals[currentChemical] + ` ?meas;
                                time:month "` + month + `"^^xsd:int .  
-                  } LIMIT 1
+                  }
               `;
 
               var data = sparqlQuery(query, "http://localhost:7201/repositories/safeair");
-              var measurement = data.split("\n").slice(1)[0];
+              var measurement = data.split("\n").slice(1, -1);
               var disname = district.properties.URI.split("/")[6]; 
-
-              var color = (20 - measurement) / 20 * 255;
 
               if(measurement == ""){
                 map.setPaintProperty(disname, 'fill-color', 'rgb(0, 0, 0)');
               } else {
+                var measurement = data.split("\n").slice(1, -1);
+                console.log(measurement);
+                measurement = measurement.reduce((previous, current) => current += previous) / measurement.length
+
+                console.log(measurement);
+
+                var color = (maxCon - measurement) / maxCon * 255;
                map.setPaintProperty(disname, 'fill-color', 'rgb(255, ' + color + ', 0)');
               }
             });
@@ -316,13 +371,13 @@
                     var object = selObj[0];
                     var name = object.properties.Name;
 
-                    highliteDistrict(name);
-                    //getMeasurements(name);
-
                     new mapboxgl.Popup()
                         .setLngLat([e.lngLat.lng, e.lngLat.lat])
-                        .setHTML(name)
+                        .setHTML("<div class='popup'><label><b>Loc name: </b>" + name + "</label><br><canvas id='chemChart' width='200px' height='150px'></canvas></div>")
                         .addTo(map);
+
+                    highliteDistrict(name);
+                    getMeasurements(name);
 
                 } else {
                     highliteDistrict();
@@ -349,15 +404,26 @@
               map.getCanvas().style.cursor = '';
           });
 
+          // Change the cursor to a pointer when the mouse is over the places layer.
+          map.on('mouseenter', 'ElderlyRegion', function () {
+              map.getCanvas().style.cursor = 'pointer';
+          });
+
+          // Change it back to a pointer when it leaves.
+          map.on('mouseleave', 'ElderlyRegion', function () {
+              map.getCanvas().style.cursor = '';
+          });
+
+
           slider.addEventListener('input', function(e) {
               currentMonth = e.target.value;
-              updateDistrictMonth(currentMonth, currentChemical);
+              updateDistrictMonth(currentMonth);
               sliderValue.textContent = "2017-" + e.target.value;
           });
 
           chemicalSelect.addEventListener('input', function(e) {
             currentChemical = e.target.value;
-            updateDistrictMonth(currentMonth, currentChemical);
+            updateDistrictMonth(currentMonth);
           });
         });
 
