@@ -47,6 +47,7 @@
 	geo:lat "40.44004722222222" ;
 	geo:long "-3.6392333333333333" ;
 	safeair:hasDistrict <http://safeair.es/project/resources/District/CIUDADLINEAL> ;
+	safeair:hasDistrict <http://safeair.es/project/resources/District/SANBLASCANILLEJAS> ;
 	safeair:locId "station-28079016" ;
 	safeair:locaName "Arturo Soria" .
 
@@ -69,6 +70,7 @@
 	geo:long "-3.7318527777777777" ;
 	geo:lat "40.39478055555556" ;
 	safeair:hasDistrict <http://safeair.es/project/resources/District/CARABANCHEL> ;
+	safeair:hasDistrict <http://safeair.es/project/resources/District/LATINA> ;
 	safeair:locId "station-28079018" ;
 	safeair:locaName "Farolillo" .
 
@@ -190,6 +192,7 @@
 	geo:lat "40.46557222222223" ;
 	geo:long "-3.688769444444445" ;
 	safeair:hasDistrict <http://safeair.es/project/resources/District/CHAMARTIN> ;
+	safeair:hasDistrict <http://safeair.es/project/resources/District/TETUAN> ;
 	safeair:locId "station-28079050" ;
 	safeair:locaName "Plaza Castilla" .
 
@@ -201,6 +204,7 @@
 	geo:lat "40.372933333333336" ;
 	geo:long "-3.612116666666666" ;
 	safeair:hasDistrict <http://safeair.es/project/resources/District/VILLADEVALLECAS> ;
+	safeair:hasDistrict <http://safeair.es/project/resources/District/VICALVARO> ;
 	safeair:locId "station-28079054" ;
 	safeair:locaName "Ensanche de Vallecas" .
 
@@ -223,6 +227,7 @@
 	a safeair:Station ;
 	geo:long "-3.7187277777777785" ;
 	safeair:hasDistrict <http://safeair.es/project/resources/District/CARABANCHEL> ;
+	safeair:hasDistrict <http://safeair.es/project/resources/District/USERA> ;
 	safeair:locId "station-28079056" ;
 	safeair:locaName "Pza. Fernández Ladreda" .
 
