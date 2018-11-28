@@ -280,16 +280,18 @@
               var disname = district.properties.URI.split("/")[6]; 
 
               if(measurement == ""){
-                map.setPaintProperty(disname, 'fill-color', 'rgb(0, 0, 0)');
+                  map.setPaintProperty(disname, 'fill-color', 'rgb(0, 0, 0)');
               } else {
-                var measurement = data.split("\n").slice(1, -1);
-                console.log(measurement);
-                measurement = measurement.reduce((previous, current) => current += previous) / measurement.length
+                  var measurement = data.split("\n").slice(1, -1);
 
-                console.log(measurement);
+                  var count = measurement.length;
+                  var total = 0;
+                  for (i = 0; i < count; i++) {
+                    total += parseFloat(measurement[i]);
+                  }
 
-                var color = (maxCon - measurement) / maxCon * 255;
-               map.setPaintProperty(disname, 'fill-color', 'rgb(255, ' + color + ', 0)');
+                  var color = (maxCon - total/count) / maxCon * 255;
+                  map.setPaintProperty(disname, 'fill-color', 'rgb(255, ' + color + ', 0)');
               }
             });
         }
