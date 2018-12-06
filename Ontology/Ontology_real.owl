@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://safeair.es/project/ontology/SafeAir#"
+     xml:base="http://safeair.es/project/ontology/SafeAir"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:m3lite="http://purl.org/iot/vocab/m3-lite#"
+     xmlns:safeair="http://safeair.es/project/ontology/SafeAir#"
+     xmlns:wikidata="https://www.wikidata.org/wiki/"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
+    <owl:Ontology rdf:about="http://safeair.es/project/ontology/SafeAir#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasAddress -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#hasVCard -->
+
+    <owl:ObjectProperty rdf:about="http://safeair.es/project/ontology/SafeAir#hasVCard">
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#VCard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#isClosestTo -->
+
+    <owl:ObjectProperty rdf:about="http://safeair.es/project/ontology/SafeAir#isClosestTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:range rdf:resource="http://safeair.es/project/ontology/SafeAir#Station"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#isInNeighborhood -->
+
+    <owl:ObjectProperty rdf:about="http://safeair.es/project/ontology/SafeAir#isInNeighborhood">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:range rdf:resource="http://safeair.es/project/ontology/SafeAir#Neighborhood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs">
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#Neighborhood"/>
+        <rdfs:range rdf:resource="https://www.wikidata.org/wiki/Q3032114"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/observationResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/observationResult">
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#Station"/>
+        <rdfs:range rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationCO -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationCO">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationO3 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationO3">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationSO2 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericConcentrationSO2">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericNO -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericNO">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericNO2 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/iot/vocab/m3-lite#ChemicalAgentAtmosphericNO2">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#locId -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#locId">
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#locName -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#locName">
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#measurement -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#measurement">
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#msrBEN -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#msrBEN">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#msrCH4 -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#msrCH4">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#msrEBE -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#msrEBE">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#msrNMHC -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#msrNMHC">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#msrNOx -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#msrNOx">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#msrPM10 -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#msrPM10">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#msrPM25 -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#msrPM25">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#msrTCH -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#msrTCH">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#msrTOL -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#msrTOL">
+        <rdfs:subPropertyOf rdf:resource="http://safeair.es/project/ontology/SafeAir#measurement"/>
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#neighborhood -->
+
+    <owl:DatatypeProperty rdf:about="http://safeair.es/project/ontology/SafeAir#neighborhood">
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#Neighborhood"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#month -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#month">
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/time#year">
+        <rdfs:domain rdf:resource="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#postal-code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#postal-code">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#VCard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#region -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#region">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#VCard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#street-address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#street-address">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#VCard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#ElderlyRegion -->
+
+    <owl:Class rdf:about="http://safeair.es/project/ontology/SafeAir#ElderlyRegion">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#MeasurementValue -->
+
+    <owl:Class rdf:about="http://safeair.es/project/ontology/SafeAir#MeasurementValue"/>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#Neighborhood -->
+
+    <owl:Class rdf:about="http://safeair.es/project/ontology/SafeAir#Neighborhood"/>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#School -->
+
+    <owl:Class rdf:about="http://safeair.es/project/ontology/SafeAir#School">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#SportPark -->
+
+    <owl:Class rdf:about="http://safeair.es/project/ontology/SafeAir#SportPark">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://safeair.es/project/ontology/SafeAir#Station -->
+
+    <owl:Class rdf:about="http://safeair.es/project/ontology/SafeAir#Station">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#VCard -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#VCard"/>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Q3032114 -->
+
+    <owl:Class rdf:about="https://www.wikidata.org/wiki/Q3032114"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
